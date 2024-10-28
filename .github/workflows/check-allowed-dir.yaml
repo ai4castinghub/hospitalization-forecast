@@ -7,7 +7,8 @@ on:
       - 'model-output/**'
 
 jobs:
-  check:
+  check-allowed-dir:
+    name: Check Allowed Directories  # This will appear in status checks as a specific job name
     runs-on: ubuntu-latest
 
     steps:
