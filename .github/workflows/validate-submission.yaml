@@ -13,7 +13,7 @@ jobs:
   validate_and_check:
     runs-on: ubuntu-latest
     env:
-      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
       - name: Checkout code
@@ -54,6 +54,7 @@ jobs:
       - name: Check if changes are outside allowed directories and add label
         env:
           PR_NUMBER: ${{ github.event.pull_request.number }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           # Check if there are changes in the model-output directory
           if grep -q '^model-output/' changed_files.txt; then
@@ -83,6 +84,7 @@ jobs:
         if: ${{ always() }}
         env:
           PR_NUMBER: ${{ github.event.pull_request.number }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           if [[ ${{ steps.validation.outcome }} == "success" ]]; then
             # Add "passed-validation" label and success comment if validation succeeded
