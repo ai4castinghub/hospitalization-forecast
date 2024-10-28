@@ -12,6 +12,8 @@ on:
 jobs:
   validate_and_check:
     runs-on: ubuntu-latest
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
       - name: Checkout code
@@ -75,13 +77,3 @@ jobs:
           )
           hubValidations::check_for_errors(v, verbose = TRUE)
         shell: Rscript {0}
-
-      # Auto-merge if all checks pass
-      - name: Auto-merge PR if all checks pass
-        if: ${{ success() }}  # Run only if all prior steps succeeded
-        env:
-          GITHUB_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
-        run: |
-          PR_NUMBER=${{ github.event.pull_request.number }}
-          gh pr merge $PR_NUMBER --repo ${{ github.repository }} --merge --auto
-        shell: bash
