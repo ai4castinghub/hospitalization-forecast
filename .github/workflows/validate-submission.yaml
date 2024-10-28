@@ -13,7 +13,7 @@ jobs:
   validate_and_check:
     runs-on: ubuntu-latest
     env:
-      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
       - name: Checkout code
@@ -51,21 +51,21 @@ jobs:
           echo "Changed files:"
           cat changed_files.txt
 
-      - name: Check if changes are outside allowed directories and add label
-        env:
-          PR_NUMBER: ${{ github.event.pull_request.number }}
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Check if changes are outside allowed directories
         run: |
-          # Check if there are changes in the model-output directory
-          if grep -q '^model-output/' changed_files.txt; then
-            echo "Adding 'data submission' label as changes were made in model-output."
-            gh pr edit $PR_NUMBER --add-label "data submission"
-            gh pr comment $PR_NUMBER --body "Detected changes in model-output directory. Label 'data submission' has been added."
+          # Filter out files not in the allowed directories
+          UNALLOWED_CHANGES=$(grep -vE '^model-metadata/|^model-output/' changed_files.txt || true)
+          
+          if [[ -n "$UNALLOWED_CHANGES" ]]; then
+            echo "Error: Changes outside allowed directories detected:"
+            echo "$UNALLOWED_CHANGES"
+            exit 1
+          else
+            echo "All changes are within allowed directories."
           fi
 
       # Run R-based validations
       - name: Run validations
-        id: validation
         env:
           PR_NUMBER: ${{ github.event.number }}
         run: |
@@ -77,20 +77,3 @@ jobs:
           )
           hubValidations::check_for_errors(v, verbose = TRUE)
         shell: Rscript {0}
-        continue-on-error: true  # Continue even if there are validation errors to handle comments/labels
-
-      # Handle results: add label and comment based on validation success
-      - name: Handle validation results
-        if: ${{ always() }}
-        env:
-          PR_NUMBER: ${{ github.event.pull_request.number }}
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          if [[ ${{ steps.validation.outcome }} == "success" ]]; then
-            # Add "passed-validation" label and success comment if validation succeeded
-            gh pr edit $PR_NUMBER --add-label "passed-validation"
-            gh pr comment $PR_NUMBER --body "✅ Validation successful! Label 'passed-validation' has been added."
-          else
-            # Comment with errors if validation failed
-            gh pr comment $PR_NUMBER --body "❌ Validation failed. Please address the issues above and re-submit."
-          fi
