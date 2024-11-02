@@ -6,6 +6,9 @@ on:
     # Run every Thursday at 21:00 UTC
     - cron: '0 21 * * THU'
 
+permissions:
+  contents: write 
+
 jobs:
   update_target_data:
     runs-on: ubuntu-latest
