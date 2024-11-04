@@ -1,0 +1,25 @@
+team_name: "team_name"
+team_abbr: "team_name"
+model_name: "model_name"
+model_abbr: "model_name"
+model_version: "x.0"
+model_contributors: [
+  {
+    "name": "John Doe",
+    "affiliation": "Dunder Mifflin",
+    "email": "johnd@dundermifflin.ca"
+  },
+  {
+    "name": "Jane Doe",
+    "affiliation": "Dunder Mifflin",
+    "email": "janed@dundermifflin.ca"
+  }
+]
+website_url: "https://sites.google.com/site/dunder-mifflin-lab"
+license: "CC-BY-4.0"
+designated_model: true
+methods: "Ensemble"
+data_inputs: "Hospital Bed Occupancy ON"
+methods_long: ""
+ensemble_of_models: True
+ensemble_of_hub_models: True
