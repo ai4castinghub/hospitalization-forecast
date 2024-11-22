@@ -1,8 +1,0 @@
-reference_date,target_end_date,model,WIS,MAE,MSE,region,target,horizon
-2024-09-21,2024-09-21,team_name-model_name,18.864285714285717,20,400,Ontario,wk inc covid hosp,0
-2024-09-21,2024-09-28,team_name-model_name,13.292857142857143,7,49,Ontario,wk inc covid hosp,1
-2024-09-21,2024-10-05,team_name-model_name,12.007142857142856,6,36,Ontario,wk inc covid hosp,2
-2024-09-21,2024-10-12,team_name-model_name,23.150000000000002,30,900,Ontario,wk inc covid hosp,3
-2024-09-21,2024-09-21,UGuelphensemble-GRYPHON,32.00714285714286,50,2500,Ontario,wk inc covid hosp,0
-2024-09-21,2024-09-28,UGuelphensemble-GRYPHON,26.150000000000002,37,1369,Ontario,wk inc covid hosp,1
-2024-09-21,2024-10-05,UGuelphensemble-GRYPHON,20.57857142857143,24,576,Ontario,wk inc covid hosp,2

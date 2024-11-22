@@ -1,37 +1,37 @@
 OGF_ID,PHU_ID,NAME_ENG,OH_Region_,OH_Name,Population_2021
-71877923,2226,Algoma Public Health,5,North East,"1,17,383"
-71878032,2227,Brant County Health Unit,1,West,"1,56,954"
-71877985,2240,Chatham-Kent Public Health,1,West,"1,08,028"
-71878057,2237,City of Hamilton Public Health Services,1,West,"5,87,412"
-71877925,2230,Durham Region Health Department,4,East,"7,28,026"
-71877964,2258,Eastern Ontario Health Unit,4,East,"2,18,777"
-71877970,2233,Grey Bruce Health Unit,1,West,"1,79,462"
-71877945,2234,Haldimand-Norfolk Health Unit,1,West,"1,22,148"
-71877993,2235,"Haliburton, Kawartha, Pine Ridge District Health Unit",4,East,"1,93,564"
-71877935,2236,Halton Region Public Health,2,Central,"6,16,660"
-71877933,2238,Hastings Prince Edward Public Health,4,East,"1,74,577"
-71878005,5183,Huron Perth Public Health,1,West,"1,48,380"
-71877982,2241,"Kingston, Frontenac and Lennox & Addington Public Health",4,East,"2,10,129"
-71878038,2242,Lambton Public Health,1,West,"1,32,552"
-71877950,2243,"Leeds, Grenville & Lanark District Health Unit",4,East,"1,81,877"
-71878026,2244,Middlesex-London Health Unit,1,West,"5,15,999"
+71877923,2226,Algoma Public Health,5,North East,117383
+71878032,2227,Brant County Health Unit,1,West,156954
+71877985,2240,Chatham-Kent Public Health,1,West,108028
+71878057,2237,City of Hamilton Public Health Services,1,West,587412
+71877925,2230,Durham Region Health Department,4,East,728026
+71877964,2258,Eastern Ontario Health Unit,4,East,218777
+71877970,2233,Grey Bruce Health Unit,1,West,179462
+71877945,2234,Haldimand-Norfolk Health Unit,1,West,122148
+71877993,2235,"Haliburton, Kawartha, Pine Ridge District Health Unit",4,East,193564
+71877935,2236,Halton Region Public Health,2,Central,616660
+71877933,2238,Hastings Prince Edward Public Health,4,East,174577
+71878005,5183,Huron Perth Public Health,1,West,148380
+71877982,2241,"Kingston, Frontenac and Lennox & Addington Public Health",4,East,210129
+71878038,2242,Lambton Public Health,1,West,132552
+71877950,2243,"Leeds, Grenville & Lanark District Health Unit",4,East,181877
+71878026,2244,Middlesex-London Health Unit,1,West,515999
 -1,-1,NA,-1,NA,0
-71877988,2246,Niagara Region Public Health,1,West,"4,86,570"
-71877960,2247,North Bay Parry Sound District Health Unit,5,North East,"1,31,118"
+71877988,2246,Niagara Region Public Health,1,West,486570
+71877960,2247,North Bay Parry Sound District Health Unit,5,North East,131118
 71878002,2249,Northwestern Health Unit,6,North West,"81,870"
-0,0,Ontario,0,Ontario,"1,48,09,257"
-71877952,2251,Ottawa Public Health,4,East,"10,52,526"
-71878041,2253,Peel Public Health,2,Central,"15,67,000"
-71877972,2255,Peterborough Public Health,4,East,"1,48,450"
+0,0,Ontario,0,Ontario,14809257
+71877952,2251,Ottawa Public Health,4,East,1052526
+71878041,2253,Peel Public Health,2,Central,1567000
+71877972,2255,Peterborough Public Health,4,East,148450
 71877915,2256,Porcupine Health Unit,5,North East,"84,704"
-71878023,2261,Public Health Sudbury & Districts,5,North East,"2,05,797"
-71878059,2265,Region of Waterloo Public Health and Emergency Services,1,West,"6,11,177"
-71877941,2257,Renfrew County and District Health Unit,5,North East,"1,09,783"
-71877929,2260,Simcoe Muskoka District Health Unit,2,Central,"6,18,137"
-71878029,4913,Southwestern Public Health,1,West,"2,23,541"
-71878051,2262,Thunder Bay District Health Unit,6,North West,"1,55,938"
+71878023,2261,Public Health Sudbury & Districts,5,North East,205797
+71878059,2265,Region of Waterloo Public Health and Emergency Services,1,West,611177
+71877941,2257,Renfrew County and District Health Unit,5,North East,109783
+71877929,2260,Simcoe Muskoka District Health Unit,2,Central,618137
+71878029,4913,Southwestern Public Health,1,West,223541
+71878051,2262,Thunder Bay District Health Unit,6,North West,155938
 71878009,2263,Timiskaming Health Unit,5,North East,"34,248"
-71877938,3895,Toronto Public Health,3,Toronto,"29,55,862"
-71878035,2266,Wellington-Dufferin-Guelph Public Health,2,Central,"3,16,466"
-71877975,2268,Windsor-Essex County Health Unit,1,West,"4,26,142"
-71878062,2270,York Region Public Health,2,Central,"12,08,000"
+71877938,3895,Toronto Public Health,3,Toronto,2955862
+71878035,2266,Wellington-Dufferin-Guelph Public Health,2,Central,316466
+71877975,2268,Windsor-Essex County Health Unit,1,West,426142
+71878062,2270,York Region Public Health,2,Central,1208000

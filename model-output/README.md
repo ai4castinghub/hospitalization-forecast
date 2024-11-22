@@ -126,8 +126,9 @@ Teams must provide the following 7 quantiles:
 
 ### `value`
 
-Values in the `value` column are non-negative numbers indicating the "quantile" prediction for this row. For a "quantile" prediction, `value` is the inverse of the cumulative distribution function (CDF) for the target, location, and quantile associated with that row. For example, the 2.5 and 97.5 quantiles for a given target and location should capture 95% of the predicted values and correspond to the central 95% Prediction Interval. 
+Values in the `value` column are non-negative integer numbers indicating the "quantile" prediction for this row. For a "quantile" prediction, `value` is the inverse of the cumulative distribution function (CDF) for the target, location, and quantile associated with that row. For example, the 2.5 and 97.5 quantiles for a given target and location should capture 95% of the predicted values and correspond to the central 95% Prediction Interval.
 
+For predicted hospital bed occupancy (count), forecast `value` for quantiles less than 0.5 should be rounded down, `value` for quantiles greater than 0.5 should be rounded up, and `value` for the 0.5 quantile should be rounded normally. This rounding procedure will ensure that teams are not penalized for missing the prediction interval by less than one hospital bed occupancy. 
 
 
 ### Example tables
@@ -224,7 +225,7 @@ The validation checks produced some failures/errors reported above.
 
 ## Policy on late or updated submissions 
 
-In order to ensure that forecasting is done in real-time, all forecasts are required to be submitted to this repository by 11PM America/Toronto on Tuesdays each week. We do not accept late forecasts.
+In order to ensure that forecasting is done in real-time, all forecasts are required to be submitted to this repository by 11PM America/Toronto on Fridays each week. We do not accept late forecasts.
 
 ## Evaluation criteria
 Forecasts will be evaluated using `Weighted Interval Score (WIS)`, `Absolute Error (AE)` and `Mean Squared Error (MSE)`. The CMU [Delphi group's Forecast Evaluation Dashboard](https://delphi.cmu.edu/forecast-eval/) and the COVID-19 Forecast Hub periodic [Forecast Evaluation Reports](https://covid19forecasthub.org/eval-reports/) provide examples of evaluations using these criteria.
