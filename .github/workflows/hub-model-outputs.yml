@@ -1,0 +1,48 @@
+name: Hub Model Forecast Workflow
+
+on:
+  schedule:
+    # Sunday at 2:00 AM
+    - cron: '0 2 * * 0'
+  workflow_dispatch:
+
+jobs:
+  run-r-script:
+    runs-on: self-hosted
+    #runs-on: ubuntu-22.04
+    env:
+      GITHUB_PAT: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      # - name: Set up R
+      #   uses: r-lib/actions/setup-r@v2
+      #   with:
+      #     use-public-rspm: true
+
+      # - name: Install R packages
+      #   run: |
+      #     Rscript -e "install.packages(c('lubridate', 'dplyr', 'tidyr', 'readr', 'epipredict', 'hubEnsembles', 'epiprocess'))"
+
+      - name: Run hub-model-outputs.R script
+        run: |
+          Rscript scripts/hub-model-outputs.R
+
+      - name: Add new files
+        run: git add model-output/
+
+      - name: Commit results
+        run: |
+          git config --local user.name "$GITHUB_ACTOR"
+          git config --local user.email "$GITHUB_ACTOR@users.noreply.github.com"
+          git commit -am 'Add hub hospitalization forecast outputs' || echo "No changes to commit"
+
+      - name: Push changes with personal token
+        env:
+          GITHUB_PAT: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
+        run: |
+          git push https://${{ secrets.PERSONAL_GITHUB_TOKEN }}@github.com/ai4castinghub/hospitalization-forecast.git HEAD:main || echo "No changes to commit"

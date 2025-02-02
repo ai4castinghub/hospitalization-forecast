@@ -3,7 +3,7 @@ name: Generate Weekly Forecast Reports
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 21 * * SUN'
+    - cron: '0 6 * * MON'
 
 jobs:
   build:
