@@ -1,0 +1,736 @@
+reference_date,target,horizon,location,target_end_date,output_type,output_type_id,value
+2025-04-05,wk inc covid hosp,-1,Central,2025-03-29,quantile,0.025,0
+2025-04-05,wk inc covid hosp,-1,Central,2025-03-29,quantile,0.1,0
+2025-04-05,wk inc covid hosp,-1,Central,2025-03-29,quantile,0.25,0
+2025-04-05,wk inc covid hosp,-1,Central,2025-03-29,quantile,0.5,39
+2025-04-05,wk inc covid hosp,-1,Central,2025-03-29,quantile,0.75,143
+2025-04-05,wk inc covid hosp,-1,Central,2025-03-29,quantile,0.9,195
+2025-04-05,wk inc covid hosp,-1,Central,2025-03-29,quantile,0.975,216
+2025-04-05,wk inc covid hosp,0,Central,2025-04-05,quantile,0.025,0
+2025-04-05,wk inc covid hosp,0,Central,2025-04-05,quantile,0.1,0
+2025-04-05,wk inc covid hosp,0,Central,2025-04-05,quantile,0.25,0
+2025-04-05,wk inc covid hosp,0,Central,2025-04-05,quantile,0.5,51
+2025-04-05,wk inc covid hosp,0,Central,2025-04-05,quantile,0.75,156
+2025-04-05,wk inc covid hosp,0,Central,2025-04-05,quantile,0.9,208
+2025-04-05,wk inc covid hosp,0,Central,2025-04-05,quantile,0.975,230
+2025-04-05,wk inc covid hosp,1,Central,2025-04-12,quantile,0.025,0
+2025-04-05,wk inc covid hosp,1,Central,2025-04-12,quantile,0.1,0
+2025-04-05,wk inc covid hosp,1,Central,2025-04-12,quantile,0.25,0
+2025-04-05,wk inc covid hosp,1,Central,2025-04-12,quantile,0.5,84
+2025-04-05,wk inc covid hosp,1,Central,2025-04-12,quantile,0.75,184
+2025-04-05,wk inc covid hosp,1,Central,2025-04-12,quantile,0.9,234
+2025-04-05,wk inc covid hosp,1,Central,2025-04-12,quantile,0.975,255
+2025-04-05,wk inc covid hosp,2,Central,2025-04-19,quantile,0.025,0
+2025-04-05,wk inc covid hosp,2,Central,2025-04-19,quantile,0.1,0
+2025-04-05,wk inc covid hosp,2,Central,2025-04-19,quantile,0.25,10
+2025-04-05,wk inc covid hosp,2,Central,2025-04-19,quantile,0.5,105
+2025-04-05,wk inc covid hosp,2,Central,2025-04-19,quantile,0.75,201
+2025-04-05,wk inc covid hosp,2,Central,2025-04-19,quantile,0.9,249
+2025-04-05,wk inc covid hosp,2,Central,2025-04-19,quantile,0.975,269
+2025-04-05,wk inc covid hosp,3,Central,2025-04-26,quantile,0.025,0
+2025-04-05,wk inc covid hosp,3,Central,2025-04-26,quantile,0.1,0
+2025-04-05,wk inc covid hosp,3,Central,2025-04-26,quantile,0.25,23
+2025-04-05,wk inc covid hosp,3,Central,2025-04-26,quantile,0.5,119
+2025-04-05,wk inc covid hosp,3,Central,2025-04-26,quantile,0.75,216
+2025-04-05,wk inc covid hosp,3,Central,2025-04-26,quantile,0.9,264
+2025-04-05,wk inc covid hosp,3,Central,2025-04-26,quantile,0.975,284
+2025-04-05,wk inc flu hosp,-1,Central,2025-03-29,quantile,0.025,1
+2025-04-05,wk inc flu hosp,-1,Central,2025-03-29,quantile,0.1,9
+2025-04-05,wk inc flu hosp,-1,Central,2025-03-29,quantile,0.25,27
+2025-04-05,wk inc flu hosp,-1,Central,2025-03-29,quantile,0.5,63
+2025-04-05,wk inc flu hosp,-1,Central,2025-03-29,quantile,0.75,100
+2025-04-05,wk inc flu hosp,-1,Central,2025-03-29,quantile,0.9,118
+2025-04-05,wk inc flu hosp,-1,Central,2025-03-29,quantile,0.975,126
+2025-04-05,wk inc flu hosp,0,Central,2025-04-05,quantile,0.025,0
+2025-04-05,wk inc flu hosp,0,Central,2025-04-05,quantile,0.1,0
+2025-04-05,wk inc flu hosp,0,Central,2025-04-05,quantile,0.25,16
+2025-04-05,wk inc flu hosp,0,Central,2025-04-05,quantile,0.5,55
+2025-04-05,wk inc flu hosp,0,Central,2025-04-05,quantile,0.75,93
+2025-04-05,wk inc flu hosp,0,Central,2025-04-05,quantile,0.9,113
+2025-04-05,wk inc flu hosp,0,Central,2025-04-05,quantile,0.975,121
+2025-04-05,wk inc flu hosp,1,Central,2025-04-12,quantile,0.025,0
+2025-04-05,wk inc flu hosp,1,Central,2025-04-12,quantile,0.1,0
+2025-04-05,wk inc flu hosp,1,Central,2025-04-12,quantile,0.25,9
+2025-04-05,wk inc flu hosp,1,Central,2025-04-12,quantile,0.5,48
+2025-04-05,wk inc flu hosp,1,Central,2025-04-12,quantile,0.75,87
+2025-04-05,wk inc flu hosp,1,Central,2025-04-12,quantile,0.9,107
+2025-04-05,wk inc flu hosp,1,Central,2025-04-12,quantile,0.975,115
+2025-04-05,wk inc flu hosp,2,Central,2025-04-19,quantile,0.025,0
+2025-04-05,wk inc flu hosp,2,Central,2025-04-19,quantile,0.1,0
+2025-04-05,wk inc flu hosp,2,Central,2025-04-19,quantile,0.25,11
+2025-04-05,wk inc flu hosp,2,Central,2025-04-19,quantile,0.5,49
+2025-04-05,wk inc flu hosp,2,Central,2025-04-19,quantile,0.75,87
+2025-04-05,wk inc flu hosp,2,Central,2025-04-19,quantile,0.9,106
+2025-04-05,wk inc flu hosp,2,Central,2025-04-19,quantile,0.975,114
+2025-04-05,wk inc flu hosp,3,Central,2025-04-26,quantile,0.025,0
+2025-04-05,wk inc flu hosp,3,Central,2025-04-26,quantile,0.1,0
+2025-04-05,wk inc flu hosp,3,Central,2025-04-26,quantile,0.25,9
+2025-04-05,wk inc flu hosp,3,Central,2025-04-26,quantile,0.5,48
+2025-04-05,wk inc flu hosp,3,Central,2025-04-26,quantile,0.75,88
+2025-04-05,wk inc flu hosp,3,Central,2025-04-26,quantile,0.9,108
+2025-04-05,wk inc flu hosp,3,Central,2025-04-26,quantile,0.975,116
+2025-04-05,wk inc rsv hosp,-1,Central,2025-03-29,quantile,0.025,0
+2025-04-05,wk inc rsv hosp,-1,Central,2025-03-29,quantile,0.1,0
+2025-04-05,wk inc rsv hosp,-1,Central,2025-03-29,quantile,0.25,0
+2025-04-05,wk inc rsv hosp,-1,Central,2025-03-29,quantile,0.5,6
+2025-04-05,wk inc rsv hosp,-1,Central,2025-03-29,quantile,0.75,22
+2025-04-05,wk inc rsv hosp,-1,Central,2025-03-29,quantile,0.9,30
+2025-04-05,wk inc rsv hosp,-1,Central,2025-03-29,quantile,0.975,33
+2025-04-05,wk inc rsv hosp,0,Central,2025-04-05,quantile,0.025,0
+2025-04-05,wk inc rsv hosp,0,Central,2025-04-05,quantile,0.1,0
+2025-04-05,wk inc rsv hosp,0,Central,2025-04-05,quantile,0.25,0
+2025-04-05,wk inc rsv hosp,0,Central,2025-04-05,quantile,0.5,6
+2025-04-05,wk inc rsv hosp,0,Central,2025-04-05,quantile,0.75,22
+2025-04-05,wk inc rsv hosp,0,Central,2025-04-05,quantile,0.9,30
+2025-04-05,wk inc rsv hosp,0,Central,2025-04-05,quantile,0.975,33
+2025-04-05,wk inc rsv hosp,1,Central,2025-04-12,quantile,0.025,0
+2025-04-05,wk inc rsv hosp,1,Central,2025-04-12,quantile,0.1,0
+2025-04-05,wk inc rsv hosp,1,Central,2025-04-12,quantile,0.25,0
+2025-04-05,wk inc rsv hosp,1,Central,2025-04-12,quantile,0.5,5
+2025-04-05,wk inc rsv hosp,1,Central,2025-04-12,quantile,0.75,21
+2025-04-05,wk inc rsv hosp,1,Central,2025-04-12,quantile,0.9,30
+2025-04-05,wk inc rsv hosp,1,Central,2025-04-12,quantile,0.975,33
+2025-04-05,wk inc rsv hosp,2,Central,2025-04-19,quantile,0.025,0
+2025-04-05,wk inc rsv hosp,2,Central,2025-04-19,quantile,0.1,0
+2025-04-05,wk inc rsv hosp,2,Central,2025-04-19,quantile,0.25,0
+2025-04-05,wk inc rsv hosp,2,Central,2025-04-19,quantile,0.5,3
+2025-04-05,wk inc rsv hosp,2,Central,2025-04-19,quantile,0.75,19
+2025-04-05,wk inc rsv hosp,2,Central,2025-04-19,quantile,0.9,27
+2025-04-05,wk inc rsv hosp,2,Central,2025-04-19,quantile,0.975,31
+2025-04-05,wk inc rsv hosp,3,Central,2025-04-26,quantile,0.025,0
+2025-04-05,wk inc rsv hosp,3,Central,2025-04-26,quantile,0.1,0
+2025-04-05,wk inc rsv hosp,3,Central,2025-04-26,quantile,0.25,0
+2025-04-05,wk inc rsv hosp,3,Central,2025-04-26,quantile,0.5,4
+2025-04-05,wk inc rsv hosp,3,Central,2025-04-26,quantile,0.75,20
+2025-04-05,wk inc rsv hosp,3,Central,2025-04-26,quantile,0.9,28
+2025-04-05,wk inc rsv hosp,3,Central,2025-04-26,quantile,0.975,32
+2025-04-05,wk inc covid hosp,-1,East,2025-03-29,quantile,0.025,0
+2025-04-05,wk inc covid hosp,-1,East,2025-03-29,quantile,0.1,0
+2025-04-05,wk inc covid hosp,-1,East,2025-03-29,quantile,0.25,0
+2025-04-05,wk inc covid hosp,-1,East,2025-03-29,quantile,0.5,38
+2025-04-05,wk inc covid hosp,-1,East,2025-03-29,quantile,0.75,130
+2025-04-05,wk inc covid hosp,-1,East,2025-03-29,quantile,0.9,176
+2025-04-05,wk inc covid hosp,-1,East,2025-03-29,quantile,0.975,196
+2025-04-05,wk inc covid hosp,0,East,2025-04-05,quantile,0.025,0
+2025-04-05,wk inc covid hosp,0,East,2025-04-05,quantile,0.1,0
+2025-04-05,wk inc covid hosp,0,East,2025-04-05,quantile,0.25,0
+2025-04-05,wk inc covid hosp,0,East,2025-04-05,quantile,0.5,56
+2025-04-05,wk inc covid hosp,0,East,2025-04-05,quantile,0.75,142
+2025-04-05,wk inc covid hosp,0,East,2025-04-05,quantile,0.9,185
+2025-04-05,wk inc covid hosp,0,East,2025-04-05,quantile,0.975,203
+2025-04-05,wk inc covid hosp,1,East,2025-04-12,quantile,0.025,0
+2025-04-05,wk inc covid hosp,1,East,2025-04-12,quantile,0.1,0
+2025-04-05,wk inc covid hosp,1,East,2025-04-12,quantile,0.25,0
+2025-04-05,wk inc covid hosp,1,East,2025-04-12,quantile,0.5,80
+2025-04-05,wk inc covid hosp,1,East,2025-04-12,quantile,0.75,170
+2025-04-05,wk inc covid hosp,1,East,2025-04-12,quantile,0.9,215
+2025-04-05,wk inc covid hosp,1,East,2025-04-12,quantile,0.975,234
+2025-04-05,wk inc covid hosp,2,East,2025-04-19,quantile,0.025,0
+2025-04-05,wk inc covid hosp,2,East,2025-04-19,quantile,0.1,0
+2025-04-05,wk inc covid hosp,2,East,2025-04-19,quantile,0.25,1
+2025-04-05,wk inc covid hosp,2,East,2025-04-19,quantile,0.5,98
+2025-04-05,wk inc covid hosp,2,East,2025-04-19,quantile,0.75,196
+2025-04-05,wk inc covid hosp,2,East,2025-04-19,quantile,0.9,244
+2025-04-05,wk inc covid hosp,2,East,2025-04-19,quantile,0.975,265
+2025-04-05,wk inc covid hosp,3,East,2025-04-26,quantile,0.025,0
+2025-04-05,wk inc covid hosp,3,East,2025-04-26,quantile,0.1,0
+2025-04-05,wk inc covid hosp,3,East,2025-04-26,quantile,0.25,0
+2025-04-05,wk inc covid hosp,3,East,2025-04-26,quantile,0.5,92
+2025-04-05,wk inc covid hosp,3,East,2025-04-26,quantile,0.75,187
+2025-04-05,wk inc covid hosp,3,East,2025-04-26,quantile,0.9,234
+2025-04-05,wk inc covid hosp,3,East,2025-04-26,quantile,0.975,254
+2025-04-05,wk inc flu hosp,-1,East,2025-03-29,quantile,0.025,0
+2025-04-05,wk inc flu hosp,-1,East,2025-03-29,quantile,0.1,1
+2025-04-05,wk inc flu hosp,-1,East,2025-03-29,quantile,0.25,26
+2025-04-05,wk inc flu hosp,-1,East,2025-03-29,quantile,0.5,76
+2025-04-05,wk inc flu hosp,-1,East,2025-03-29,quantile,0.75,125
+2025-04-05,wk inc flu hosp,-1,East,2025-03-29,quantile,0.9,150
+2025-04-05,wk inc flu hosp,-1,East,2025-03-29,quantile,0.975,161
+2025-04-05,wk inc flu hosp,0,East,2025-04-05,quantile,0.025,0
+2025-04-05,wk inc flu hosp,0,East,2025-04-05,quantile,0.1,0
+2025-04-05,wk inc flu hosp,0,East,2025-04-05,quantile,0.25,18
+2025-04-05,wk inc flu hosp,0,East,2025-04-05,quantile,0.5,69
+2025-04-05,wk inc flu hosp,0,East,2025-04-05,quantile,0.75,121
+2025-04-05,wk inc flu hosp,0,East,2025-04-05,quantile,0.9,146
+2025-04-05,wk inc flu hosp,0,East,2025-04-05,quantile,0.975,157
+2025-04-05,wk inc flu hosp,1,East,2025-04-12,quantile,0.025,0
+2025-04-05,wk inc flu hosp,1,East,2025-04-12,quantile,0.1,0
+2025-04-05,wk inc flu hosp,1,East,2025-04-12,quantile,0.25,8
+2025-04-05,wk inc flu hosp,1,East,2025-04-12,quantile,0.5,61
+2025-04-05,wk inc flu hosp,1,East,2025-04-12,quantile,0.75,115
+2025-04-05,wk inc flu hosp,1,East,2025-04-12,quantile,0.9,142
+2025-04-05,wk inc flu hosp,1,East,2025-04-12,quantile,0.975,153
+2025-04-05,wk inc flu hosp,2,East,2025-04-19,quantile,0.025,0
+2025-04-05,wk inc flu hosp,2,East,2025-04-19,quantile,0.1,0
+2025-04-05,wk inc flu hosp,2,East,2025-04-19,quantile,0.25,12
+2025-04-05,wk inc flu hosp,2,East,2025-04-19,quantile,0.5,65
+2025-04-05,wk inc flu hosp,2,East,2025-04-19,quantile,0.75,119
+2025-04-05,wk inc flu hosp,2,East,2025-04-19,quantile,0.9,145
+2025-04-05,wk inc flu hosp,2,East,2025-04-19,quantile,0.975,157
+2025-04-05,wk inc flu hosp,3,East,2025-04-26,quantile,0.025,0
+2025-04-05,wk inc flu hosp,3,East,2025-04-26,quantile,0.1,0
+2025-04-05,wk inc flu hosp,3,East,2025-04-26,quantile,0.25,2
+2025-04-05,wk inc flu hosp,3,East,2025-04-26,quantile,0.5,56
+2025-04-05,wk inc flu hosp,3,East,2025-04-26,quantile,0.75,110
+2025-04-05,wk inc flu hosp,3,East,2025-04-26,quantile,0.9,137
+2025-04-05,wk inc flu hosp,3,East,2025-04-26,quantile,0.975,148
+2025-04-05,wk inc rsv hosp,-1,East,2025-03-29,quantile,0.025,0
+2025-04-05,wk inc rsv hosp,-1,East,2025-03-29,quantile,0.1,0
+2025-04-05,wk inc rsv hosp,-1,East,2025-03-29,quantile,0.25,0
+2025-04-05,wk inc rsv hosp,-1,East,2025-03-29,quantile,0.5,13
+2025-04-05,wk inc rsv hosp,-1,East,2025-03-29,quantile,0.75,28
+2025-04-05,wk inc rsv hosp,-1,East,2025-03-29,quantile,0.9,35
+2025-04-05,wk inc rsv hosp,-1,East,2025-03-29,quantile,0.975,37
+2025-04-05,wk inc rsv hosp,0,East,2025-04-05,quantile,0.025,0
+2025-04-05,wk inc rsv hosp,0,East,2025-04-05,quantile,0.1,0
+2025-04-05,wk inc rsv hosp,0,East,2025-04-05,quantile,0.25,0
+2025-04-05,wk inc rsv hosp,0,East,2025-04-05,quantile,0.5,13
+2025-04-05,wk inc rsv hosp,0,East,2025-04-05,quantile,0.75,27
+2025-04-05,wk inc rsv hosp,0,East,2025-04-05,quantile,0.9,34
+2025-04-05,wk inc rsv hosp,0,East,2025-04-05,quantile,0.975,37
+2025-04-05,wk inc rsv hosp,1,East,2025-04-12,quantile,0.025,0
+2025-04-05,wk inc rsv hosp,1,East,2025-04-12,quantile,0.1,0
+2025-04-05,wk inc rsv hosp,1,East,2025-04-12,quantile,0.25,0
+2025-04-05,wk inc rsv hosp,1,East,2025-04-12,quantile,0.5,13
+2025-04-05,wk inc rsv hosp,1,East,2025-04-12,quantile,0.75,28
+2025-04-05,wk inc rsv hosp,1,East,2025-04-12,quantile,0.9,35
+2025-04-05,wk inc rsv hosp,1,East,2025-04-12,quantile,0.975,39
+2025-04-05,wk inc rsv hosp,2,East,2025-04-19,quantile,0.025,0
+2025-04-05,wk inc rsv hosp,2,East,2025-04-19,quantile,0.1,0
+2025-04-05,wk inc rsv hosp,2,East,2025-04-19,quantile,0.25,1
+2025-04-05,wk inc rsv hosp,2,East,2025-04-19,quantile,0.5,15
+2025-04-05,wk inc rsv hosp,2,East,2025-04-19,quantile,0.75,29
+2025-04-05,wk inc rsv hosp,2,East,2025-04-19,quantile,0.9,36
+2025-04-05,wk inc rsv hosp,2,East,2025-04-19,quantile,0.975,39
+2025-04-05,wk inc rsv hosp,3,East,2025-04-26,quantile,0.025,0
+2025-04-05,wk inc rsv hosp,3,East,2025-04-26,quantile,0.1,0
+2025-04-05,wk inc rsv hosp,3,East,2025-04-26,quantile,0.25,1
+2025-04-05,wk inc rsv hosp,3,East,2025-04-26,quantile,0.5,16
+2025-04-05,wk inc rsv hosp,3,East,2025-04-26,quantile,0.75,30
+2025-04-05,wk inc rsv hosp,3,East,2025-04-26,quantile,0.9,37
+2025-04-05,wk inc rsv hosp,3,East,2025-04-26,quantile,0.975,40
+2025-04-05,wk inc covid hosp,-1,North East,2025-03-29,quantile,0.025,0
+2025-04-05,wk inc covid hosp,-1,North East,2025-03-29,quantile,0.1,0
+2025-04-05,wk inc covid hosp,-1,North East,2025-03-29,quantile,0.25,0
+2025-04-05,wk inc covid hosp,-1,North East,2025-03-29,quantile,0.5,7
+2025-04-05,wk inc covid hosp,-1,North East,2025-03-29,quantile,0.75,29
+2025-04-05,wk inc covid hosp,-1,North East,2025-03-29,quantile,0.9,40
+2025-04-05,wk inc covid hosp,-1,North East,2025-03-29,quantile,0.975,45
+2025-04-05,wk inc covid hosp,0,North East,2025-04-05,quantile,0.025,0
+2025-04-05,wk inc covid hosp,0,North East,2025-04-05,quantile,0.1,0
+2025-04-05,wk inc covid hosp,0,North East,2025-04-05,quantile,0.25,0
+2025-04-05,wk inc covid hosp,0,North East,2025-04-05,quantile,0.5,11
+2025-04-05,wk inc covid hosp,0,North East,2025-04-05,quantile,0.75,33
+2025-04-05,wk inc covid hosp,0,North East,2025-04-05,quantile,0.9,44
+2025-04-05,wk inc covid hosp,0,North East,2025-04-05,quantile,0.975,49
+2025-04-05,wk inc covid hosp,1,North East,2025-04-12,quantile,0.025,0
+2025-04-05,wk inc covid hosp,1,North East,2025-04-12,quantile,0.1,0
+2025-04-05,wk inc covid hosp,1,North East,2025-04-12,quantile,0.25,0
+2025-04-05,wk inc covid hosp,1,North East,2025-04-12,quantile,0.5,11
+2025-04-05,wk inc covid hosp,1,North East,2025-04-12,quantile,0.75,35
+2025-04-05,wk inc covid hosp,1,North East,2025-04-12,quantile,0.9,47
+2025-04-05,wk inc covid hosp,1,North East,2025-04-12,quantile,0.975,52
+2025-04-05,wk inc covid hosp,2,North East,2025-04-19,quantile,0.025,0
+2025-04-05,wk inc covid hosp,2,North East,2025-04-19,quantile,0.1,0
+2025-04-05,wk inc covid hosp,2,North East,2025-04-19,quantile,0.25,0
+2025-04-05,wk inc covid hosp,2,North East,2025-04-19,quantile,0.5,15
+2025-04-05,wk inc covid hosp,2,North East,2025-04-19,quantile,0.75,39
+2025-04-05,wk inc covid hosp,2,North East,2025-04-19,quantile,0.9,50
+2025-04-05,wk inc covid hosp,2,North East,2025-04-19,quantile,0.975,55
+2025-04-05,wk inc covid hosp,3,North East,2025-04-26,quantile,0.025,0
+2025-04-05,wk inc covid hosp,3,North East,2025-04-26,quantile,0.1,0
+2025-04-05,wk inc covid hosp,3,North East,2025-04-26,quantile,0.25,0
+2025-04-05,wk inc covid hosp,3,North East,2025-04-26,quantile,0.5,17
+2025-04-05,wk inc covid hosp,3,North East,2025-04-26,quantile,0.75,39
+2025-04-05,wk inc covid hosp,3,North East,2025-04-26,quantile,0.9,50
+2025-04-05,wk inc covid hosp,3,North East,2025-04-26,quantile,0.975,55
+2025-04-05,wk inc flu hosp,-1,North East,2025-03-29,quantile,0.025,0
+2025-04-05,wk inc flu hosp,-1,North East,2025-03-29,quantile,0.1,0
+2025-04-05,wk inc flu hosp,-1,North East,2025-03-29,quantile,0.25,0
+2025-04-05,wk inc flu hosp,-1,North East,2025-03-29,quantile,0.5,14
+2025-04-05,wk inc flu hosp,-1,North East,2025-03-29,quantile,0.75,29
+2025-04-05,wk inc flu hosp,-1,North East,2025-03-29,quantile,0.9,36
+2025-04-05,wk inc flu hosp,-1,North East,2025-03-29,quantile,0.975,39
+2025-04-05,wk inc flu hosp,0,North East,2025-04-05,quantile,0.025,0
+2025-04-05,wk inc flu hosp,0,North East,2025-04-05,quantile,0.1,0
+2025-04-05,wk inc flu hosp,0,North East,2025-04-05,quantile,0.25,0
+2025-04-05,wk inc flu hosp,0,North East,2025-04-05,quantile,0.5,10
+2025-04-05,wk inc flu hosp,0,North East,2025-04-05,quantile,0.75,24
+2025-04-05,wk inc flu hosp,0,North East,2025-04-05,quantile,0.9,30
+2025-04-05,wk inc flu hosp,0,North East,2025-04-05,quantile,0.975,33
+2025-04-05,wk inc flu hosp,1,North East,2025-04-12,quantile,0.025,0
+2025-04-05,wk inc flu hosp,1,North East,2025-04-12,quantile,0.1,0
+2025-04-05,wk inc flu hosp,1,North East,2025-04-12,quantile,0.25,0
+2025-04-05,wk inc flu hosp,1,North East,2025-04-12,quantile,0.5,7
+2025-04-05,wk inc flu hosp,1,North East,2025-04-12,quantile,0.75,22
+2025-04-05,wk inc flu hosp,1,North East,2025-04-12,quantile,0.9,30
+2025-04-05,wk inc flu hosp,1,North East,2025-04-12,quantile,0.975,33
+2025-04-05,wk inc flu hosp,2,North East,2025-04-19,quantile,0.025,0
+2025-04-05,wk inc flu hosp,2,North East,2025-04-19,quantile,0.1,0
+2025-04-05,wk inc flu hosp,2,North East,2025-04-19,quantile,0.25,0
+2025-04-05,wk inc flu hosp,2,North East,2025-04-19,quantile,0.5,8
+2025-04-05,wk inc flu hosp,2,North East,2025-04-19,quantile,0.75,22
+2025-04-05,wk inc flu hosp,2,North East,2025-04-19,quantile,0.9,29
+2025-04-05,wk inc flu hosp,2,North East,2025-04-19,quantile,0.975,32
+2025-04-05,wk inc flu hosp,3,North East,2025-04-26,quantile,0.025,0
+2025-04-05,wk inc flu hosp,3,North East,2025-04-26,quantile,0.1,0
+2025-04-05,wk inc flu hosp,3,North East,2025-04-26,quantile,0.25,0
+2025-04-05,wk inc flu hosp,3,North East,2025-04-26,quantile,0.5,10
+2025-04-05,wk inc flu hosp,3,North East,2025-04-26,quantile,0.75,24
+2025-04-05,wk inc flu hosp,3,North East,2025-04-26,quantile,0.9,32
+2025-04-05,wk inc flu hosp,3,North East,2025-04-26,quantile,0.975,35
+2025-04-05,wk inc rsv hosp,-1,North East,2025-03-29,quantile,0.025,0
+2025-04-05,wk inc rsv hosp,-1,North East,2025-03-29,quantile,0.1,0
+2025-04-05,wk inc rsv hosp,-1,North East,2025-03-29,quantile,0.25,0
+2025-04-05,wk inc rsv hosp,-1,North East,2025-03-29,quantile,0.5,2
+2025-04-05,wk inc rsv hosp,-1,North East,2025-03-29,quantile,0.75,9
+2025-04-05,wk inc rsv hosp,-1,North East,2025-03-29,quantile,0.9,13
+2025-04-05,wk inc rsv hosp,-1,North East,2025-03-29,quantile,0.975,14
+2025-04-05,wk inc rsv hosp,0,North East,2025-04-05,quantile,0.025,0
+2025-04-05,wk inc rsv hosp,0,North East,2025-04-05,quantile,0.1,0
+2025-04-05,wk inc rsv hosp,0,North East,2025-04-05,quantile,0.25,0
+2025-04-05,wk inc rsv hosp,0,North East,2025-04-05,quantile,0.5,3
+2025-04-05,wk inc rsv hosp,0,North East,2025-04-05,quantile,0.75,10
+2025-04-05,wk inc rsv hosp,0,North East,2025-04-05,quantile,0.9,13
+2025-04-05,wk inc rsv hosp,0,North East,2025-04-05,quantile,0.975,15
+2025-04-05,wk inc rsv hosp,1,North East,2025-04-12,quantile,0.025,0
+2025-04-05,wk inc rsv hosp,1,North East,2025-04-12,quantile,0.1,0
+2025-04-05,wk inc rsv hosp,1,North East,2025-04-12,quantile,0.25,0
+2025-04-05,wk inc rsv hosp,1,North East,2025-04-12,quantile,0.5,1
+2025-04-05,wk inc rsv hosp,1,North East,2025-04-12,quantile,0.75,8
+2025-04-05,wk inc rsv hosp,1,North East,2025-04-12,quantile,0.9,11
+2025-04-05,wk inc rsv hosp,1,North East,2025-04-12,quantile,0.975,13
+2025-04-05,wk inc rsv hosp,2,North East,2025-04-19,quantile,0.025,0
+2025-04-05,wk inc rsv hosp,2,North East,2025-04-19,quantile,0.1,0
+2025-04-05,wk inc rsv hosp,2,North East,2025-04-19,quantile,0.25,0
+2025-04-05,wk inc rsv hosp,2,North East,2025-04-19,quantile,0.5,0
+2025-04-05,wk inc rsv hosp,2,North East,2025-04-19,quantile,0.75,6
+2025-04-05,wk inc rsv hosp,2,North East,2025-04-19,quantile,0.9,9
+2025-04-05,wk inc rsv hosp,2,North East,2025-04-19,quantile,0.975,11
+2025-04-05,wk inc rsv hosp,3,North East,2025-04-26,quantile,0.025,0
+2025-04-05,wk inc rsv hosp,3,North East,2025-04-26,quantile,0.1,0
+2025-04-05,wk inc rsv hosp,3,North East,2025-04-26,quantile,0.25,0
+2025-04-05,wk inc rsv hosp,3,North East,2025-04-26,quantile,0.5,0
+2025-04-05,wk inc rsv hosp,3,North East,2025-04-26,quantile,0.75,5
+2025-04-05,wk inc rsv hosp,3,North East,2025-04-26,quantile,0.9,9
+2025-04-05,wk inc rsv hosp,3,North East,2025-04-26,quantile,0.975,10
+2025-04-05,wk inc covid hosp,-1,North West,2025-03-29,quantile,0.025,0
+2025-04-05,wk inc covid hosp,-1,North West,2025-03-29,quantile,0.1,0
+2025-04-05,wk inc covid hosp,-1,North West,2025-03-29,quantile,0.25,0
+2025-04-05,wk inc covid hosp,-1,North West,2025-03-29,quantile,0.5,0
+2025-04-05,wk inc covid hosp,-1,North West,2025-03-29,quantile,0.75,0
+2025-04-05,wk inc covid hosp,-1,North West,2025-03-29,quantile,0.9,0
+2025-04-05,wk inc covid hosp,-1,North West,2025-03-29,quantile,0.975,0
+2025-04-05,wk inc covid hosp,0,North West,2025-04-05,quantile,0.025,0
+2025-04-05,wk inc covid hosp,0,North West,2025-04-05,quantile,0.1,0
+2025-04-05,wk inc covid hosp,0,North West,2025-04-05,quantile,0.25,0
+2025-04-05,wk inc covid hosp,0,North West,2025-04-05,quantile,0.5,0
+2025-04-05,wk inc covid hosp,0,North West,2025-04-05,quantile,0.75,0
+2025-04-05,wk inc covid hosp,0,North West,2025-04-05,quantile,0.9,0
+2025-04-05,wk inc covid hosp,0,North West,2025-04-05,quantile,0.975,0
+2025-04-05,wk inc covid hosp,1,North West,2025-04-12,quantile,0.025,0
+2025-04-05,wk inc covid hosp,1,North West,2025-04-12,quantile,0.1,0
+2025-04-05,wk inc covid hosp,1,North West,2025-04-12,quantile,0.25,0
+2025-04-05,wk inc covid hosp,1,North West,2025-04-12,quantile,0.5,0
+2025-04-05,wk inc covid hosp,1,North West,2025-04-12,quantile,0.75,0
+2025-04-05,wk inc covid hosp,1,North West,2025-04-12,quantile,0.9,0
+2025-04-05,wk inc covid hosp,1,North West,2025-04-12,quantile,0.975,0
+2025-04-05,wk inc covid hosp,2,North West,2025-04-19,quantile,0.025,0
+2025-04-05,wk inc covid hosp,2,North West,2025-04-19,quantile,0.1,0
+2025-04-05,wk inc covid hosp,2,North West,2025-04-19,quantile,0.25,0
+2025-04-05,wk inc covid hosp,2,North West,2025-04-19,quantile,0.5,0
+2025-04-05,wk inc covid hosp,2,North West,2025-04-19,quantile,0.75,0
+2025-04-05,wk inc covid hosp,2,North West,2025-04-19,quantile,0.9,0
+2025-04-05,wk inc covid hosp,2,North West,2025-04-19,quantile,0.975,0
+2025-04-05,wk inc covid hosp,3,North West,2025-04-26,quantile,0.025,0
+2025-04-05,wk inc covid hosp,3,North West,2025-04-26,quantile,0.1,0
+2025-04-05,wk inc covid hosp,3,North West,2025-04-26,quantile,0.25,0
+2025-04-05,wk inc covid hosp,3,North West,2025-04-26,quantile,0.5,0
+2025-04-05,wk inc covid hosp,3,North West,2025-04-26,quantile,0.75,0
+2025-04-05,wk inc covid hosp,3,North West,2025-04-26,quantile,0.9,0
+2025-04-05,wk inc covid hosp,3,North West,2025-04-26,quantile,0.975,0
+2025-04-05,wk inc flu hosp,-1,North West,2025-03-29,quantile,0.025,0
+2025-04-05,wk inc flu hosp,-1,North West,2025-03-29,quantile,0.1,0
+2025-04-05,wk inc flu hosp,-1,North West,2025-03-29,quantile,0.25,0
+2025-04-05,wk inc flu hosp,-1,North West,2025-03-29,quantile,0.5,11
+2025-04-05,wk inc flu hosp,-1,North West,2025-03-29,quantile,0.75,21
+2025-04-05,wk inc flu hosp,-1,North West,2025-03-29,quantile,0.9,26
+2025-04-05,wk inc flu hosp,-1,North West,2025-03-29,quantile,0.975,28
+2025-04-05,wk inc flu hosp,0,North West,2025-04-05,quantile,0.025,0
+2025-04-05,wk inc flu hosp,0,North West,2025-04-05,quantile,0.1,0
+2025-04-05,wk inc flu hosp,0,North West,2025-04-05,quantile,0.25,1
+2025-04-05,wk inc flu hosp,0,North West,2025-04-05,quantile,0.5,11
+2025-04-05,wk inc flu hosp,0,North West,2025-04-05,quantile,0.75,21
+2025-04-05,wk inc flu hosp,0,North West,2025-04-05,quantile,0.9,26
+2025-04-05,wk inc flu hosp,0,North West,2025-04-05,quantile,0.975,28
+2025-04-05,wk inc flu hosp,1,North West,2025-04-12,quantile,0.025,0
+2025-04-05,wk inc flu hosp,1,North West,2025-04-12,quantile,0.1,0
+2025-04-05,wk inc flu hosp,1,North West,2025-04-12,quantile,0.25,3
+2025-04-05,wk inc flu hosp,1,North West,2025-04-12,quantile,0.5,14
+2025-04-05,wk inc flu hosp,1,North West,2025-04-12,quantile,0.75,24
+2025-04-05,wk inc flu hosp,1,North West,2025-04-12,quantile,0.9,29
+2025-04-05,wk inc flu hosp,1,North West,2025-04-12,quantile,0.975,31
+2025-04-05,wk inc flu hosp,2,North West,2025-04-19,quantile,0.025,0
+2025-04-05,wk inc flu hosp,2,North West,2025-04-19,quantile,0.1,0
+2025-04-05,wk inc flu hosp,2,North West,2025-04-19,quantile,0.25,4
+2025-04-05,wk inc flu hosp,2,North West,2025-04-19,quantile,0.5,14
+2025-04-05,wk inc flu hosp,2,North West,2025-04-19,quantile,0.75,24
+2025-04-05,wk inc flu hosp,2,North West,2025-04-19,quantile,0.9,29
+2025-04-05,wk inc flu hosp,2,North West,2025-04-19,quantile,0.975,31
+2025-04-05,wk inc flu hosp,3,North West,2025-04-26,quantile,0.025,0
+2025-04-05,wk inc flu hosp,3,North West,2025-04-26,quantile,0.1,0
+2025-04-05,wk inc flu hosp,3,North West,2025-04-26,quantile,0.25,3
+2025-04-05,wk inc flu hosp,3,North West,2025-04-26,quantile,0.5,14
+2025-04-05,wk inc flu hosp,3,North West,2025-04-26,quantile,0.75,24
+2025-04-05,wk inc flu hosp,3,North West,2025-04-26,quantile,0.9,29
+2025-04-05,wk inc flu hosp,3,North West,2025-04-26,quantile,0.975,32
+2025-04-05,wk inc rsv hosp,-1,North West,2025-03-29,quantile,0.025,0
+2025-04-05,wk inc rsv hosp,-1,North West,2025-03-29,quantile,0.1,0
+2025-04-05,wk inc rsv hosp,-1,North West,2025-03-29,quantile,0.25,0
+2025-04-05,wk inc rsv hosp,-1,North West,2025-03-29,quantile,0.5,5
+2025-04-05,wk inc rsv hosp,-1,North West,2025-03-29,quantile,0.75,16
+2025-04-05,wk inc rsv hosp,-1,North West,2025-03-29,quantile,0.9,21
+2025-04-05,wk inc rsv hosp,-1,North West,2025-03-29,quantile,0.975,24
+2025-04-05,wk inc rsv hosp,0,North West,2025-04-05,quantile,0.025,0
+2025-04-05,wk inc rsv hosp,0,North West,2025-04-05,quantile,0.1,0
+2025-04-05,wk inc rsv hosp,0,North West,2025-04-05,quantile,0.25,0
+2025-04-05,wk inc rsv hosp,0,North West,2025-04-05,quantile,0.5,2
+2025-04-05,wk inc rsv hosp,0,North West,2025-04-05,quantile,0.75,13
+2025-04-05,wk inc rsv hosp,0,North West,2025-04-05,quantile,0.9,18
+2025-04-05,wk inc rsv hosp,0,North West,2025-04-05,quantile,0.975,21
+2025-04-05,wk inc rsv hosp,1,North West,2025-04-12,quantile,0.025,0
+2025-04-05,wk inc rsv hosp,1,North West,2025-04-12,quantile,0.1,0
+2025-04-05,wk inc rsv hosp,1,North West,2025-04-12,quantile,0.25,0
+2025-04-05,wk inc rsv hosp,1,North West,2025-04-12,quantile,0.5,1
+2025-04-05,wk inc rsv hosp,1,North West,2025-04-12,quantile,0.75,12
+2025-04-05,wk inc rsv hosp,1,North West,2025-04-12,quantile,0.9,17
+2025-04-05,wk inc rsv hosp,1,North West,2025-04-12,quantile,0.975,20
+2025-04-05,wk inc rsv hosp,2,North West,2025-04-19,quantile,0.025,0
+2025-04-05,wk inc rsv hosp,2,North West,2025-04-19,quantile,0.1,0
+2025-04-05,wk inc rsv hosp,2,North West,2025-04-19,quantile,0.25,0
+2025-04-05,wk inc rsv hosp,2,North West,2025-04-19,quantile,0.5,0
+2025-04-05,wk inc rsv hosp,2,North West,2025-04-19,quantile,0.75,12
+2025-04-05,wk inc rsv hosp,2,North West,2025-04-19,quantile,0.9,18
+2025-04-05,wk inc rsv hosp,2,North West,2025-04-19,quantile,0.975,20
+2025-04-05,wk inc rsv hosp,3,North West,2025-04-26,quantile,0.025,0
+2025-04-05,wk inc rsv hosp,3,North West,2025-04-26,quantile,0.1,0
+2025-04-05,wk inc rsv hosp,3,North West,2025-04-26,quantile,0.25,0
+2025-04-05,wk inc rsv hosp,3,North West,2025-04-26,quantile,0.5,0
+2025-04-05,wk inc rsv hosp,3,North West,2025-04-26,quantile,0.75,12
+2025-04-05,wk inc rsv hosp,3,North West,2025-04-26,quantile,0.9,17
+2025-04-05,wk inc rsv hosp,3,North West,2025-04-26,quantile,0.975,19
+2025-04-05,wk inc covid hosp,-1,Ontario,2025-03-29,quantile,0.025,0
+2025-04-05,wk inc covid hosp,-1,Ontario,2025-03-29,quantile,0.1,0
+2025-04-05,wk inc covid hosp,-1,Ontario,2025-03-29,quantile,0.25,0
+2025-04-05,wk inc covid hosp,-1,Ontario,2025-03-29,quantile,0.5,166
+2025-04-05,wk inc covid hosp,-1,Ontario,2025-03-29,quantile,0.75,626
+2025-04-05,wk inc covid hosp,-1,Ontario,2025-03-29,quantile,0.9,856
+2025-04-05,wk inc covid hosp,-1,Ontario,2025-03-29,quantile,0.975,953
+2025-04-05,wk inc covid hosp,0,Ontario,2025-04-05,quantile,0.025,0
+2025-04-05,wk inc covid hosp,0,Ontario,2025-04-05,quantile,0.1,0
+2025-04-05,wk inc covid hosp,0,Ontario,2025-04-05,quantile,0.25,0
+2025-04-05,wk inc covid hosp,0,Ontario,2025-04-05,quantile,0.5,204
+2025-04-05,wk inc covid hosp,0,Ontario,2025-04-05,quantile,0.75,625
+2025-04-05,wk inc covid hosp,0,Ontario,2025-04-05,quantile,0.9,835
+2025-04-05,wk inc covid hosp,0,Ontario,2025-04-05,quantile,0.975,923
+2025-04-05,wk inc covid hosp,1,Ontario,2025-04-12,quantile,0.025,0
+2025-04-05,wk inc covid hosp,1,Ontario,2025-04-12,quantile,0.1,0
+2025-04-05,wk inc covid hosp,1,Ontario,2025-04-12,quantile,0.25,0
+2025-04-05,wk inc covid hosp,1,Ontario,2025-04-12,quantile,0.5,334
+2025-04-05,wk inc covid hosp,1,Ontario,2025-04-12,quantile,0.75,751
+2025-04-05,wk inc covid hosp,1,Ontario,2025-04-12,quantile,0.9,959
+2025-04-05,wk inc covid hosp,1,Ontario,2025-04-12,quantile,0.975,1046
+2025-04-05,wk inc covid hosp,2,Ontario,2025-04-19,quantile,0.025,0
+2025-04-05,wk inc covid hosp,2,Ontario,2025-04-19,quantile,0.1,0
+2025-04-05,wk inc covid hosp,2,Ontario,2025-04-19,quantile,0.25,0
+2025-04-05,wk inc covid hosp,2,Ontario,2025-04-19,quantile,0.5,367
+2025-04-05,wk inc covid hosp,2,Ontario,2025-04-19,quantile,0.75,810
+2025-04-05,wk inc covid hosp,2,Ontario,2025-04-19,quantile,0.9,1031
+2025-04-05,wk inc covid hosp,2,Ontario,2025-04-19,quantile,0.975,1124
+2025-04-05,wk inc covid hosp,3,Ontario,2025-04-26,quantile,0.025,0
+2025-04-05,wk inc covid hosp,3,Ontario,2025-04-26,quantile,0.1,0
+2025-04-05,wk inc covid hosp,3,Ontario,2025-04-26,quantile,0.25,9
+2025-04-05,wk inc covid hosp,3,Ontario,2025-04-26,quantile,0.5,453
+2025-04-05,wk inc covid hosp,3,Ontario,2025-04-26,quantile,0.75,897
+2025-04-05,wk inc covid hosp,3,Ontario,2025-04-26,quantile,0.9,1119
+2025-04-05,wk inc covid hosp,3,Ontario,2025-04-26,quantile,0.975,1212
+2025-04-05,wk inc flu hosp,-1,Ontario,2025-03-29,quantile,0.025,0
+2025-04-05,wk inc flu hosp,-1,Ontario,2025-03-29,quantile,0.1,0
+2025-04-05,wk inc flu hosp,-1,Ontario,2025-03-29,quantile,0.25,89
+2025-04-05,wk inc flu hosp,-1,Ontario,2025-03-29,quantile,0.5,279
+2025-04-05,wk inc flu hosp,-1,Ontario,2025-03-29,quantile,0.75,470
+2025-04-05,wk inc flu hosp,-1,Ontario,2025-03-29,quantile,0.9,566
+2025-04-05,wk inc flu hosp,-1,Ontario,2025-03-29,quantile,0.975,606
+2025-04-05,wk inc flu hosp,0,Ontario,2025-04-05,quantile,0.025,0
+2025-04-05,wk inc flu hosp,0,Ontario,2025-04-05,quantile,0.1,0
+2025-04-05,wk inc flu hosp,0,Ontario,2025-04-05,quantile,0.25,32
+2025-04-05,wk inc flu hosp,0,Ontario,2025-04-05,quantile,0.5,237
+2025-04-05,wk inc flu hosp,0,Ontario,2025-04-05,quantile,0.75,441
+2025-04-05,wk inc flu hosp,0,Ontario,2025-04-05,quantile,0.9,543
+2025-04-05,wk inc flu hosp,0,Ontario,2025-04-05,quantile,0.975,586
+2025-04-05,wk inc flu hosp,1,Ontario,2025-04-12,quantile,0.025,0
+2025-04-05,wk inc flu hosp,1,Ontario,2025-04-12,quantile,0.1,0
+2025-04-05,wk inc flu hosp,1,Ontario,2025-04-12,quantile,0.25,15
+2025-04-05,wk inc flu hosp,1,Ontario,2025-04-12,quantile,0.5,216
+2025-04-05,wk inc flu hosp,1,Ontario,2025-04-12,quantile,0.75,418
+2025-04-05,wk inc flu hosp,1,Ontario,2025-04-12,quantile,0.9,519
+2025-04-05,wk inc flu hosp,1,Ontario,2025-04-12,quantile,0.975,561
+2025-04-05,wk inc flu hosp,2,Ontario,2025-04-19,quantile,0.025,0
+2025-04-05,wk inc flu hosp,2,Ontario,2025-04-19,quantile,0.1,0
+2025-04-05,wk inc flu hosp,2,Ontario,2025-04-19,quantile,0.25,12
+2025-04-05,wk inc flu hosp,2,Ontario,2025-04-19,quantile,0.5,221
+2025-04-05,wk inc flu hosp,2,Ontario,2025-04-19,quantile,0.75,430
+2025-04-05,wk inc flu hosp,2,Ontario,2025-04-19,quantile,0.9,534
+2025-04-05,wk inc flu hosp,2,Ontario,2025-04-19,quantile,0.975,578
+2025-04-05,wk inc flu hosp,3,Ontario,2025-04-26,quantile,0.025,0
+2025-04-05,wk inc flu hosp,3,Ontario,2025-04-26,quantile,0.1,0
+2025-04-05,wk inc flu hosp,3,Ontario,2025-04-26,quantile,0.25,47
+2025-04-05,wk inc flu hosp,3,Ontario,2025-04-26,quantile,0.5,253
+2025-04-05,wk inc flu hosp,3,Ontario,2025-04-26,quantile,0.75,458
+2025-04-05,wk inc flu hosp,3,Ontario,2025-04-26,quantile,0.9,560
+2025-04-05,wk inc flu hosp,3,Ontario,2025-04-26,quantile,0.975,603
+2025-04-05,wk inc rsv hosp,-1,Ontario,2025-03-29,quantile,0.025,0
+2025-04-05,wk inc rsv hosp,-1,Ontario,2025-03-29,quantile,0.1,0
+2025-04-05,wk inc rsv hosp,-1,Ontario,2025-03-29,quantile,0.25,7
+2025-04-05,wk inc rsv hosp,-1,Ontario,2025-03-29,quantile,0.5,74
+2025-04-05,wk inc rsv hosp,-1,Ontario,2025-03-29,quantile,0.75,142
+2025-04-05,wk inc rsv hosp,-1,Ontario,2025-03-29,quantile,0.9,175
+2025-04-05,wk inc rsv hosp,-1,Ontario,2025-03-29,quantile,0.975,189
+2025-04-05,wk inc rsv hosp,0,Ontario,2025-04-05,quantile,0.025,0
+2025-04-05,wk inc rsv hosp,0,Ontario,2025-04-05,quantile,0.1,0
+2025-04-05,wk inc rsv hosp,0,Ontario,2025-04-05,quantile,0.25,0
+2025-04-05,wk inc rsv hosp,0,Ontario,2025-04-05,quantile,0.5,66
+2025-04-05,wk inc rsv hosp,0,Ontario,2025-04-05,quantile,0.75,134
+2025-04-05,wk inc rsv hosp,0,Ontario,2025-04-05,quantile,0.9,168
+2025-04-05,wk inc rsv hosp,0,Ontario,2025-04-05,quantile,0.975,182
+2025-04-05,wk inc rsv hosp,1,Ontario,2025-04-12,quantile,0.025,0
+2025-04-05,wk inc rsv hosp,1,Ontario,2025-04-12,quantile,0.1,0
+2025-04-05,wk inc rsv hosp,1,Ontario,2025-04-12,quantile,0.25,0
+2025-04-05,wk inc rsv hosp,1,Ontario,2025-04-12,quantile,0.5,60
+2025-04-05,wk inc rsv hosp,1,Ontario,2025-04-12,quantile,0.75,129
+2025-04-05,wk inc rsv hosp,1,Ontario,2025-04-12,quantile,0.9,163
+2025-04-05,wk inc rsv hosp,1,Ontario,2025-04-12,quantile,0.975,178
+2025-04-05,wk inc rsv hosp,2,Ontario,2025-04-19,quantile,0.025,0
+2025-04-05,wk inc rsv hosp,2,Ontario,2025-04-19,quantile,0.1,0
+2025-04-05,wk inc rsv hosp,2,Ontario,2025-04-19,quantile,0.25,0
+2025-04-05,wk inc rsv hosp,2,Ontario,2025-04-19,quantile,0.5,61
+2025-04-05,wk inc rsv hosp,2,Ontario,2025-04-19,quantile,0.75,130
+2025-04-05,wk inc rsv hosp,2,Ontario,2025-04-19,quantile,0.9,164
+2025-04-05,wk inc rsv hosp,2,Ontario,2025-04-19,quantile,0.975,178
+2025-04-05,wk inc rsv hosp,3,Ontario,2025-04-26,quantile,0.025,0
+2025-04-05,wk inc rsv hosp,3,Ontario,2025-04-26,quantile,0.1,0
+2025-04-05,wk inc rsv hosp,3,Ontario,2025-04-26,quantile,0.25,0
+2025-04-05,wk inc rsv hosp,3,Ontario,2025-04-26,quantile,0.5,54
+2025-04-05,wk inc rsv hosp,3,Ontario,2025-04-26,quantile,0.75,127
+2025-04-05,wk inc rsv hosp,3,Ontario,2025-04-26,quantile,0.9,163
+2025-04-05,wk inc rsv hosp,3,Ontario,2025-04-26,quantile,0.975,178
+2025-04-05,wk inc covid hosp,-1,Toronto,2025-03-29,quantile,0.025,0
+2025-04-05,wk inc covid hosp,-1,Toronto,2025-03-29,quantile,0.1,0
+2025-04-05,wk inc covid hosp,-1,Toronto,2025-03-29,quantile,0.25,0
+2025-04-05,wk inc covid hosp,-1,Toronto,2025-03-29,quantile,0.5,36
+2025-04-05,wk inc covid hosp,-1,Toronto,2025-03-29,quantile,0.75,221
+2025-04-05,wk inc covid hosp,-1,Toronto,2025-03-29,quantile,0.9,314
+2025-04-05,wk inc covid hosp,-1,Toronto,2025-03-29,quantile,0.975,353
+2025-04-05,wk inc covid hosp,0,Toronto,2025-04-05,quantile,0.025,0
+2025-04-05,wk inc covid hosp,0,Toronto,2025-04-05,quantile,0.1,0
+2025-04-05,wk inc covid hosp,0,Toronto,2025-04-05,quantile,0.25,0
+2025-04-05,wk inc covid hosp,0,Toronto,2025-04-05,quantile,0.5,65
+2025-04-05,wk inc covid hosp,0,Toronto,2025-04-05,quantile,0.75,235
+2025-04-05,wk inc covid hosp,0,Toronto,2025-04-05,quantile,0.9,320
+2025-04-05,wk inc covid hosp,0,Toronto,2025-04-05,quantile,0.975,356
+2025-04-05,wk inc covid hosp,1,Toronto,2025-04-12,quantile,0.025,0
+2025-04-05,wk inc covid hosp,1,Toronto,2025-04-12,quantile,0.1,0
+2025-04-05,wk inc covid hosp,1,Toronto,2025-04-12,quantile,0.25,0
+2025-04-05,wk inc covid hosp,1,Toronto,2025-04-12,quantile,0.5,96
+2025-04-05,wk inc covid hosp,1,Toronto,2025-04-12,quantile,0.75,268
+2025-04-05,wk inc covid hosp,1,Toronto,2025-04-12,quantile,0.9,353
+2025-04-05,wk inc covid hosp,1,Toronto,2025-04-12,quantile,0.975,389
+2025-04-05,wk inc covid hosp,2,Toronto,2025-04-19,quantile,0.025,0
+2025-04-05,wk inc covid hosp,2,Toronto,2025-04-19,quantile,0.1,0
+2025-04-05,wk inc covid hosp,2,Toronto,2025-04-19,quantile,0.25,0
+2025-04-05,wk inc covid hosp,2,Toronto,2025-04-19,quantile,0.5,156
+2025-04-05,wk inc covid hosp,2,Toronto,2025-04-19,quantile,0.75,330
+2025-04-05,wk inc covid hosp,2,Toronto,2025-04-19,quantile,0.9,416
+2025-04-05,wk inc covid hosp,2,Toronto,2025-04-19,quantile,0.975,453
+2025-04-05,wk inc covid hosp,3,Toronto,2025-04-26,quantile,0.025,0
+2025-04-05,wk inc covid hosp,3,Toronto,2025-04-26,quantile,0.1,0
+2025-04-05,wk inc covid hosp,3,Toronto,2025-04-26,quantile,0.25,0
+2025-04-05,wk inc covid hosp,3,Toronto,2025-04-26,quantile,0.5,175
+2025-04-05,wk inc covid hosp,3,Toronto,2025-04-26,quantile,0.75,354
+2025-04-05,wk inc covid hosp,3,Toronto,2025-04-26,quantile,0.9,442
+2025-04-05,wk inc covid hosp,3,Toronto,2025-04-26,quantile,0.975,480
+2025-04-05,wk inc flu hosp,-1,Toronto,2025-03-29,quantile,0.025,0
+2025-04-05,wk inc flu hosp,-1,Toronto,2025-03-29,quantile,0.1,0
+2025-04-05,wk inc flu hosp,-1,Toronto,2025-03-29,quantile,0.25,12
+2025-04-05,wk inc flu hosp,-1,Toronto,2025-03-29,quantile,0.5,50
+2025-04-05,wk inc flu hosp,-1,Toronto,2025-03-29,quantile,0.75,89
+2025-04-05,wk inc flu hosp,-1,Toronto,2025-03-29,quantile,0.9,109
+2025-04-05,wk inc flu hosp,-1,Toronto,2025-03-29,quantile,0.975,117
+2025-04-05,wk inc flu hosp,0,Toronto,2025-04-05,quantile,0.025,0
+2025-04-05,wk inc flu hosp,0,Toronto,2025-04-05,quantile,0.1,0
+2025-04-05,wk inc flu hosp,0,Toronto,2025-04-05,quantile,0.25,2
+2025-04-05,wk inc flu hosp,0,Toronto,2025-04-05,quantile,0.5,42
+2025-04-05,wk inc flu hosp,0,Toronto,2025-04-05,quantile,0.75,82
+2025-04-05,wk inc flu hosp,0,Toronto,2025-04-05,quantile,0.9,101
+2025-04-05,wk inc flu hosp,0,Toronto,2025-04-05,quantile,0.975,110
+2025-04-05,wk inc flu hosp,1,Toronto,2025-04-12,quantile,0.025,0
+2025-04-05,wk inc flu hosp,1,Toronto,2025-04-12,quantile,0.1,0
+2025-04-05,wk inc flu hosp,1,Toronto,2025-04-12,quantile,0.25,1
+2025-04-05,wk inc flu hosp,1,Toronto,2025-04-12,quantile,0.5,42
+2025-04-05,wk inc flu hosp,1,Toronto,2025-04-12,quantile,0.75,82
+2025-04-05,wk inc flu hosp,1,Toronto,2025-04-12,quantile,0.9,103
+2025-04-05,wk inc flu hosp,1,Toronto,2025-04-12,quantile,0.975,111
+2025-04-05,wk inc flu hosp,2,Toronto,2025-04-19,quantile,0.025,0
+2025-04-05,wk inc flu hosp,2,Toronto,2025-04-19,quantile,0.1,0
+2025-04-05,wk inc flu hosp,2,Toronto,2025-04-19,quantile,0.25,9
+2025-04-05,wk inc flu hosp,2,Toronto,2025-04-19,quantile,0.5,46
+2025-04-05,wk inc flu hosp,2,Toronto,2025-04-19,quantile,0.75,84
+2025-04-05,wk inc flu hosp,2,Toronto,2025-04-19,quantile,0.9,103
+2025-04-05,wk inc flu hosp,2,Toronto,2025-04-19,quantile,0.975,111
+2025-04-05,wk inc flu hosp,3,Toronto,2025-04-26,quantile,0.025,0
+2025-04-05,wk inc flu hosp,3,Toronto,2025-04-26,quantile,0.1,0
+2025-04-05,wk inc flu hosp,3,Toronto,2025-04-26,quantile,0.25,9
+2025-04-05,wk inc flu hosp,3,Toronto,2025-04-26,quantile,0.5,50
+2025-04-05,wk inc flu hosp,3,Toronto,2025-04-26,quantile,0.75,91
+2025-04-05,wk inc flu hosp,3,Toronto,2025-04-26,quantile,0.9,111
+2025-04-05,wk inc flu hosp,3,Toronto,2025-04-26,quantile,0.975,119
+2025-04-05,wk inc rsv hosp,-1,Toronto,2025-03-29,quantile,0.025,2
+2025-04-05,wk inc rsv hosp,-1,Toronto,2025-03-29,quantile,0.1,6
+2025-04-05,wk inc rsv hosp,-1,Toronto,2025-03-29,quantile,0.25,14
+2025-04-05,wk inc rsv hosp,-1,Toronto,2025-03-29,quantile,0.5,31
+2025-04-05,wk inc rsv hosp,-1,Toronto,2025-03-29,quantile,0.75,49
+2025-04-05,wk inc rsv hosp,-1,Toronto,2025-03-29,quantile,0.9,57
+2025-04-05,wk inc rsv hosp,-1,Toronto,2025-03-29,quantile,0.975,61
+2025-04-05,wk inc rsv hosp,0,Toronto,2025-04-05,quantile,0.025,0
+2025-04-05,wk inc rsv hosp,0,Toronto,2025-04-05,quantile,0.1,4
+2025-04-05,wk inc rsv hosp,0,Toronto,2025-04-05,quantile,0.25,13
+2025-04-05,wk inc rsv hosp,0,Toronto,2025-04-05,quantile,0.5,31
+2025-04-05,wk inc rsv hosp,0,Toronto,2025-04-05,quantile,0.75,50
+2025-04-05,wk inc rsv hosp,0,Toronto,2025-04-05,quantile,0.9,59
+2025-04-05,wk inc rsv hosp,0,Toronto,2025-04-05,quantile,0.975,63
+2025-04-05,wk inc rsv hosp,1,Toronto,2025-04-12,quantile,0.025,0
+2025-04-05,wk inc rsv hosp,1,Toronto,2025-04-12,quantile,0.1,3
+2025-04-05,wk inc rsv hosp,1,Toronto,2025-04-12,quantile,0.25,12
+2025-04-05,wk inc rsv hosp,1,Toronto,2025-04-12,quantile,0.5,30
+2025-04-05,wk inc rsv hosp,1,Toronto,2025-04-12,quantile,0.75,49
+2025-04-05,wk inc rsv hosp,1,Toronto,2025-04-12,quantile,0.9,58
+2025-04-05,wk inc rsv hosp,1,Toronto,2025-04-12,quantile,0.975,61
+2025-04-05,wk inc rsv hosp,2,Toronto,2025-04-19,quantile,0.025,0
+2025-04-05,wk inc rsv hosp,2,Toronto,2025-04-19,quantile,0.1,3
+2025-04-05,wk inc rsv hosp,2,Toronto,2025-04-19,quantile,0.25,12
+2025-04-05,wk inc rsv hosp,2,Toronto,2025-04-19,quantile,0.5,30
+2025-04-05,wk inc rsv hosp,2,Toronto,2025-04-19,quantile,0.75,48
+2025-04-05,wk inc rsv hosp,2,Toronto,2025-04-19,quantile,0.9,57
+2025-04-05,wk inc rsv hosp,2,Toronto,2025-04-19,quantile,0.975,61
+2025-04-05,wk inc rsv hosp,3,Toronto,2025-04-26,quantile,0.025,0
+2025-04-05,wk inc rsv hosp,3,Toronto,2025-04-26,quantile,0.1,3
+2025-04-05,wk inc rsv hosp,3,Toronto,2025-04-26,quantile,0.25,12
+2025-04-05,wk inc rsv hosp,3,Toronto,2025-04-26,quantile,0.5,30
+2025-04-05,wk inc rsv hosp,3,Toronto,2025-04-26,quantile,0.75,48
+2025-04-05,wk inc rsv hosp,3,Toronto,2025-04-26,quantile,0.9,56
+2025-04-05,wk inc rsv hosp,3,Toronto,2025-04-26,quantile,0.975,60
+2025-04-05,wk inc covid hosp,-1,West,2025-03-29,quantile,0.025,0
+2025-04-05,wk inc covid hosp,-1,West,2025-03-29,quantile,0.1,0
+2025-04-05,wk inc covid hosp,-1,West,2025-03-29,quantile,0.25,0
+2025-04-05,wk inc covid hosp,-1,West,2025-03-29,quantile,0.5,43
+2025-04-05,wk inc covid hosp,-1,West,2025-03-29,quantile,0.75,137
+2025-04-05,wk inc covid hosp,-1,West,2025-03-29,quantile,0.9,184
+2025-04-05,wk inc covid hosp,-1,West,2025-03-29,quantile,0.975,204
+2025-04-05,wk inc covid hosp,0,West,2025-04-05,quantile,0.025,0
+2025-04-05,wk inc covid hosp,0,West,2025-04-05,quantile,0.1,0
+2025-04-05,wk inc covid hosp,0,West,2025-04-05,quantile,0.25,0
+2025-04-05,wk inc covid hosp,0,West,2025-04-05,quantile,0.5,58
+2025-04-05,wk inc covid hosp,0,West,2025-04-05,quantile,0.75,151
+2025-04-05,wk inc covid hosp,0,West,2025-04-05,quantile,0.9,197
+2025-04-05,wk inc covid hosp,0,West,2025-04-05,quantile,0.975,217
+2025-04-05,wk inc covid hosp,1,West,2025-04-12,quantile,0.025,0
+2025-04-05,wk inc covid hosp,1,West,2025-04-12,quantile,0.1,0
+2025-04-05,wk inc covid hosp,1,West,2025-04-12,quantile,0.25,0
+2025-04-05,wk inc covid hosp,1,West,2025-04-12,quantile,0.5,90
+2025-04-05,wk inc covid hosp,1,West,2025-04-12,quantile,0.75,189
+2025-04-05,wk inc covid hosp,1,West,2025-04-12,quantile,0.9,238
+2025-04-05,wk inc covid hosp,1,West,2025-04-12,quantile,0.975,258
+2025-04-05,wk inc covid hosp,2,West,2025-04-19,quantile,0.025,0
+2025-04-05,wk inc covid hosp,2,West,2025-04-19,quantile,0.1,0
+2025-04-05,wk inc covid hosp,2,West,2025-04-19,quantile,0.25,2
+2025-04-05,wk inc covid hosp,2,West,2025-04-19,quantile,0.5,96
+2025-04-05,wk inc covid hosp,2,West,2025-04-19,quantile,0.75,191
+2025-04-05,wk inc covid hosp,2,West,2025-04-19,quantile,0.9,238
+2025-04-05,wk inc covid hosp,2,West,2025-04-19,quantile,0.975,258
+2025-04-05,wk inc covid hosp,3,West,2025-04-26,quantile,0.025,0
+2025-04-05,wk inc covid hosp,3,West,2025-04-26,quantile,0.1,0
+2025-04-05,wk inc covid hosp,3,West,2025-04-26,quantile,0.25,28
+2025-04-05,wk inc covid hosp,3,West,2025-04-26,quantile,0.5,122
+2025-04-05,wk inc covid hosp,3,West,2025-04-26,quantile,0.75,215
+2025-04-05,wk inc covid hosp,3,West,2025-04-26,quantile,0.9,262
+2025-04-05,wk inc covid hosp,3,West,2025-04-26,quantile,0.975,282
+2025-04-05,wk inc flu hosp,-1,West,2025-03-29,quantile,0.025,0
+2025-04-05,wk inc flu hosp,-1,West,2025-03-29,quantile,0.1,0
+2025-04-05,wk inc flu hosp,-1,West,2025-03-29,quantile,0.25,0
+2025-04-05,wk inc flu hosp,-1,West,2025-03-29,quantile,0.5,63
+2025-04-05,wk inc flu hosp,-1,West,2025-03-29,quantile,0.75,144
+2025-04-05,wk inc flu hosp,-1,West,2025-03-29,quantile,0.9,184
+2025-04-05,wk inc flu hosp,-1,West,2025-03-29,quantile,0.975,201
+2025-04-05,wk inc flu hosp,0,West,2025-04-05,quantile,0.025,0
+2025-04-05,wk inc flu hosp,0,West,2025-04-05,quantile,0.1,0
+2025-04-05,wk inc flu hosp,0,West,2025-04-05,quantile,0.25,0
+2025-04-05,wk inc flu hosp,0,West,2025-04-05,quantile,0.5,59
+2025-04-05,wk inc flu hosp,0,West,2025-04-05,quantile,0.75,141
+2025-04-05,wk inc flu hosp,0,West,2025-04-05,quantile,0.9,182
+2025-04-05,wk inc flu hosp,0,West,2025-04-05,quantile,0.975,199
+2025-04-05,wk inc flu hosp,1,West,2025-04-12,quantile,0.025,0
+2025-04-05,wk inc flu hosp,1,West,2025-04-12,quantile,0.1,0
+2025-04-05,wk inc flu hosp,1,West,2025-04-12,quantile,0.25,0
+2025-04-05,wk inc flu hosp,1,West,2025-04-12,quantile,0.5,52
+2025-04-05,wk inc flu hosp,1,West,2025-04-12,quantile,0.75,135
+2025-04-05,wk inc flu hosp,1,West,2025-04-12,quantile,0.9,176
+2025-04-05,wk inc flu hosp,1,West,2025-04-12,quantile,0.975,193
+2025-04-05,wk inc flu hosp,2,West,2025-04-19,quantile,0.025,0
+2025-04-05,wk inc flu hosp,2,West,2025-04-19,quantile,0.1,0
+2025-04-05,wk inc flu hosp,2,West,2025-04-19,quantile,0.25,0
+2025-04-05,wk inc flu hosp,2,West,2025-04-19,quantile,0.5,53
+2025-04-05,wk inc flu hosp,2,West,2025-04-19,quantile,0.75,136
+2025-04-05,wk inc flu hosp,2,West,2025-04-19,quantile,0.9,178
+2025-04-05,wk inc flu hosp,2,West,2025-04-19,quantile,0.975,195
+2025-04-05,wk inc flu hosp,3,West,2025-04-26,quantile,0.025,0
+2025-04-05,wk inc flu hosp,3,West,2025-04-26,quantile,0.1,0
+2025-04-05,wk inc flu hosp,3,West,2025-04-26,quantile,0.25,0
+2025-04-05,wk inc flu hosp,3,West,2025-04-26,quantile,0.5,58
+2025-04-05,wk inc flu hosp,3,West,2025-04-26,quantile,0.75,144
+2025-04-05,wk inc flu hosp,3,West,2025-04-26,quantile,0.9,187
+2025-04-05,wk inc flu hosp,3,West,2025-04-26,quantile,0.975,205
+2025-04-05,wk inc rsv hosp,-1,West,2025-03-29,quantile,0.025,0
+2025-04-05,wk inc rsv hosp,-1,West,2025-03-29,quantile,0.1,0
+2025-04-05,wk inc rsv hosp,-1,West,2025-03-29,quantile,0.25,0
+2025-04-05,wk inc rsv hosp,-1,West,2025-03-29,quantile,0.5,13
+2025-04-05,wk inc rsv hosp,-1,West,2025-03-29,quantile,0.75,72
+2025-04-05,wk inc rsv hosp,-1,West,2025-03-29,quantile,0.9,101
+2025-04-05,wk inc rsv hosp,-1,West,2025-03-29,quantile,0.975,113
+2025-04-05,wk inc rsv hosp,0,West,2025-04-05,quantile,0.025,0
+2025-04-05,wk inc rsv hosp,0,West,2025-04-05,quantile,0.1,0
+2025-04-05,wk inc rsv hosp,0,West,2025-04-05,quantile,0.25,0
+2025-04-05,wk inc rsv hosp,0,West,2025-04-05,quantile,0.5,0
+2025-04-05,wk inc rsv hosp,0,West,2025-04-05,quantile,0.75,59
+2025-04-05,wk inc rsv hosp,0,West,2025-04-05,quantile,0.9,90
+2025-04-05,wk inc rsv hosp,0,West,2025-04-05,quantile,0.975,103
+2025-04-05,wk inc rsv hosp,1,West,2025-04-12,quantile,0.025,0
+2025-04-05,wk inc rsv hosp,1,West,2025-04-12,quantile,0.1,0
+2025-04-05,wk inc rsv hosp,1,West,2025-04-12,quantile,0.25,0
+2025-04-05,wk inc rsv hosp,1,West,2025-04-12,quantile,0.5,0
+2025-04-05,wk inc rsv hosp,1,West,2025-04-12,quantile,0.75,50
+2025-04-05,wk inc rsv hosp,1,West,2025-04-12,quantile,0.9,82
+2025-04-05,wk inc rsv hosp,1,West,2025-04-12,quantile,0.975,96
+2025-04-05,wk inc rsv hosp,2,West,2025-04-19,quantile,0.025,0
+2025-04-05,wk inc rsv hosp,2,West,2025-04-19,quantile,0.1,0
+2025-04-05,wk inc rsv hosp,2,West,2025-04-19,quantile,0.25,0
+2025-04-05,wk inc rsv hosp,2,West,2025-04-19,quantile,0.5,0
+2025-04-05,wk inc rsv hosp,2,West,2025-04-19,quantile,0.75,51
+2025-04-05,wk inc rsv hosp,2,West,2025-04-19,quantile,0.9,88
+2025-04-05,wk inc rsv hosp,2,West,2025-04-19,quantile,0.975,103
+2025-04-05,wk inc rsv hosp,3,West,2025-04-26,quantile,0.025,0
+2025-04-05,wk inc rsv hosp,3,West,2025-04-26,quantile,0.1,0
+2025-04-05,wk inc rsv hosp,3,West,2025-04-26,quantile,0.25,0
+2025-04-05,wk inc rsv hosp,3,West,2025-04-26,quantile,0.5,0
+2025-04-05,wk inc rsv hosp,3,West,2025-04-26,quantile,0.75,55
+2025-04-05,wk inc rsv hosp,3,West,2025-04-26,quantile,0.9,92
+2025-04-05,wk inc rsv hosp,3,West,2025-04-26,quantile,0.975,107
