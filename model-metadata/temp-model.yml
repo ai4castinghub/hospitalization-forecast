@@ -10,7 +10,7 @@ model_contributors: [
     "email": "temp"
   }
 ]
-website_url: "temp"
+website_url: "temp.com"
 license: "CC-BY-4.0"
 designated_model: true
 methods: "temp"
