@@ -1,0 +1,20 @@
+team_name: "temp"
+team_abbr: "temp"
+model_name: "temp-mod"
+model_abbr: "model"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "temp",
+    "affiliation": "temp",
+    "email": "temp"
+  }
+]
+website_url: "temp"
+license: "CC-BY-4.0"
+designated_model: true
+methods: "temp"
+data_inputs: "temo"
+methods_long: "temp"
+ensemble_of_models: False
+ensemble_of_hub_models: False
