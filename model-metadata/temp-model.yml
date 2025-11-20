@@ -10,7 +10,7 @@ model_contributors: [
     "email": "temp@temp.com"
   }
 ]
-website_url: "temp.com"
+website_url: "https://4castinghub.uoguelph.ca"
 license: "CC-BY-4.0"
 designated_model: true
 methods: "temp"
