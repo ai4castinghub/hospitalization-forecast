@@ -84,13 +84,13 @@ model_op <- read.csv('auxiliary-data/concatenated_model_output.csv')
 colnames(model_op)[colnames(model_op) == "model"] <- "model_id"
 
 # Filter and create ensemble
-ref_date <- lubridate::ceiling_date(Sys.Date(), "week") - days(1) - weeks(1)
+ref_date <- as.Date("2026-04-04") #lubridate::ceiling_date(Sys.Date(), "week") - days(1) - weeks(1)
 
 ref_date
 
 model_outputs <- model_op |>
   filter(reference_date == ref_date) |>
-  filter(model_id != 'AI4Casting_Hub-Quantile_Baseline') |>
+  #filter(model_id != 'AI4Casting_Hub-Quantile_Baseline') |>
   filter(model_id != 'AI4Casting_Hub-Ensemble_v1') |>
   filter(model_id != 'AI4Casting_Hub-Weighted_Ensemble') |>
   filter(model_id != 'AI4Casting_Hub-GPT_4o')
