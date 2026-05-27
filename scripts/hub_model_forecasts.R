@@ -8,6 +8,7 @@ library(hubValidations)
 
 # fixed forecast date used for all models
 #forecast_date <- lubridate::ceiling_date(Sys.Date(), "week") - days(1)
+
 forecast_date <- as.Date("2026-04-04")
 
 print(forecast_date)
