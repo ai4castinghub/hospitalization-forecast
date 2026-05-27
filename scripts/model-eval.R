@@ -17,7 +17,7 @@ model_output_dir <- "hospitalization/model-output"
 model_names <- list.dirs(model_output_dir, full.names = FALSE, recursive = FALSE)
 print(model_names)
 
-current_reference_date <- floor_date(Sys.Date(), unit = "week") + days(6)
+current_reference_date <- as_date("2026-05-16") # floor_date(Sys.Date(), unit = "week") + days(6)
 start_reference_date <- as_date("2025-11-22")
 all_ref_dates <- seq(start_reference_date, current_reference_date, by = "7 days")
 
@@ -94,7 +94,7 @@ for (reference_date in all_ref_dates) {
   
   # Removing 2024-12-28 and 2025-04-19 dates from evaluations
 
-  if (reference_date == as_date('2024-12-28') || reference_date == as_date('2025-04-19')) {
+  if (reference_date == as_date('2025-12-30') || reference_date == as_date('2025-12-23') || reference_date == as_date('2026-04-04')) {
     next
   }
   

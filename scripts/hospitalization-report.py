@@ -17,8 +17,8 @@ model_data['output_type_id'] = pd.to_numeric(model_data['output_type_id'], error
 
 # Calculate reference date
 current_date = datetime.now().date()
-ref_date = current_date + timedelta(days=(6 - current_date.weekday())) - timedelta(days=1)#, weeks=1)
-
+ref_date = current_date + timedelta(days=(6 - current_date.weekday())) - timedelta(weeks =1, days=1)#, weeks=1)
+print(ref_date)
 # Filter model data for the reference date
 model_data = model_data[model_data['reference_date'] == ref_date]
 
