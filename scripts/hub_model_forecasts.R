@@ -8,7 +8,7 @@ library(hubValidations)
 
 # fixed forecast date used for all models
 #forecast_date <- lubridate::ceiling_date(Sys.Date(), "week") - days(1)
-forecast_date <- as.Date("2025-11-29")
+forecast_date <- as.Date("2026-04-04")
 
 print(forecast_date)
 
@@ -32,7 +32,7 @@ process_disease_flatline_forecaster <- function(disease, data) {
   
   # restrict data to information available at forecast date
   data_hist <- data |>
-    filter(time_value <= forecast_date)
+    filter(time_value < forecast_date)
   
   weekly_canned_results <- lapply(
     ahead_seq,
@@ -87,7 +87,7 @@ process_disease_arx_forecaster <- function(disease, data) {
   
   # restrict data to information available at forecast date
   data_hist <- data |>
-    filter(time_value <= forecast_date)
+    filter(time_value < forecast_date)
   
   weekly_canned_results <- lapply(
     ahead_seq,
@@ -142,7 +142,7 @@ process_disease_rf_arx_forecaster <- function(disease, data) {
   
   # restrict data to information available at forecast date
   data_hist <- data |>
-    filter(time_value <= forecast_date)
+    filter(time_value < forecast_date)
   
   weekly_canned_results <- lapply(
     ahead_seq,
@@ -199,12 +199,13 @@ process_disease_cdc_baseline_forecaster <- function(disease, data) {
   
   # restrict data to information available at forecast date
   data_hist <- data |>
-    filter(time_value <= forecast_date)
+    filter(time_value < forecast_date)
   
   # cdc baseline forecaster with multiple aheads on daily data
   cdc_results <- cdc_baseline_forecaster(
     epi_data = data_hist,
-    outcome  = disease
+    outcome  = disease#,
+    #aheads = ahead_seq
   )
   
   disease_label  <- paste("wk inc", disease, "hosp")
@@ -312,7 +313,7 @@ files = list(all_preds_dir, all_preds_arx_dir, rf_preds_dir, cdc_baseline_preds_
 validate_one <- function(file_path) {
   tryCatch({
     v <- hubValidations::validate_submission(
-      hub_path = "C:/Users/Siddhesh/Desktop/ai4castinghub/hospitalization-forecast",
+      hub_path = "C:/Users/skadam/Desktop/4casting/hospitalization-forecast",
       file_path = file_path
     )
     
@@ -336,6 +337,7 @@ validate_one <- function(file_path) {
 
 #validation for all files
 results <- lapply(files, validate_one)
+
 
 # Print results
 print(results)
