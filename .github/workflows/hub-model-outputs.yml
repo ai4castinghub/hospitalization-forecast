@@ -20,16 +20,21 @@ concurrency:
 
 jobs:
   forecast:
-    runs-on: self-hosted
+    if: ${{ github.repository_owner == 'ai4castinghub' }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
     env:
       FORECAST_DATE: ${{ inputs.date }}
 
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
           token: ${{ secrets.PERSONAL_GITHUB_TOKEN || github.token }}
+
+      - name: Set up cached forecast dependencies
+        uses: ./.github/actions/setup-forecast-r
 
       - name: Generate all hub forecasts
         shell: bash
