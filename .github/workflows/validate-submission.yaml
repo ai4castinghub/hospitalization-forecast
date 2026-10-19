@@ -69,6 +69,10 @@ jobs:
             echo "All changes are within allowed directories."
           fi
 
+      - name: Check 2026-2027 Saturday 11:30 p.m. submission deadline
+        if: github.event_name == 'pull_request'
+        run: python3 scripts/check-submission-deadline.py "$GITHUB_EVENT_PATH" changed_files.txt
+
       # ---------- validations  ----------
 
       - name: Run validations
