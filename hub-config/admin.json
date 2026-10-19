@@ -1,5 +1,5 @@
 {
-    "schema_version": "https://raw.githubusercontent.com/hubverse-org/schemas/main/v5.0.0/admin-schema.json",
+    "schema_version": "https://raw.githubusercontent.com/hubverse-org/schemas/main/v6.0.0/admin-schema.json",
     "name": "AI4Casting Hub",
     "maintainer": "AI4Casting Hub Admin",
     "contact": {
@@ -8,12 +8,11 @@
     },
     "repository": {
         "host": "github",
-        "url": "https://github.com/ai4castinghub/hospitalization-forecast",
+        "owner": "ai4castinghub",
         "name": "hospitalization-forecast"
     },
     "file_format": ["csv"],
     "timezone": "America/Toronto",
-    "model_output_dir": "model-output",
     "cloud": {
         "enabled": false
     }
