@@ -1,53 +1,73 @@
-name: Update Target Data
+name: Update PHO target data
 
 on:
-  push:
-    paths:
-      - 'auxiliary-data/**'
-
-  workflow_dispatch:  # Allows manual triggering
-  #schedule:
-   # - cron: '0 21 * * THU'  # Runs every Thursday at 21:00 UTC
+  workflow_dispatch:
+  schedule:
+    # Run every Friday at 12:30 PM Toronto time.
+    - cron: "30 12 * * 5"
+      timezone: America/Toronto
 
 permissions:
-  contents: write  # Explicitly grant write access
+  contents: write
+
+concurrency:
+  group: update-pho-target-data
+  cancel-in-progress: false
 
 jobs:
-  update_target_data:
-    runs-on:  ubuntu-22.04 # R not supported for ubuntu-latest
-    env:
-      GITHUB_PAT: ${{ secrets.PERSONAL_GITHUB_TOKEN }}  # Use the personal token
+  update-target-data:
+    if: ${{ github.repository_owner == 'ai4castinghub' }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
 
-    steps:    
-      - name: Check out code
-        uses: actions/checkout@v3
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
-          
-      - name: Set up R 
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dashboard retrieval dependency
+        run: npm ci
+
+      - name: Download PHO Outcomes data
+        run: npm run fetch:pho-outcomes
+
+      - name: Set up R
         uses: r-lib/actions/setup-r@v2
         with:
           use-public-rspm: true
-          
-      - name: Install R Dependencies
+
+      - name: Install R dependencies
+        uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages: |
+            any::dplyr
+            any::lubridate
+            any::readr
+            any::tidyr
+
+      - name: Process PHO data into target data
+        run: Rscript scripts/get_target_data.R
+
+      - name: Commit changed source and target data
+        shell: bash
         run: |
-          install.packages(c("dplyr", "lubridate", "readxl", "tidyr", "readr"))
-        shell: Rscript {0}
-        
-      - name: Generate target CSV files
-        run: Rscript scripts/get_target_data.R  
-        
-      - name: Add new files
-        run: git add target-data/ 
-          
-      - name: Commit results
-        run: |
-          git config --local user.name "$GITHUB_ACTOR"
-          git config --local user.email "$GITHUB_ACTOR@users.noreply.github.com"
-          git commit -am 'update target data' || echo "No changes to commit"
-      
-      - name: Push changes with personal token
-        env:
-          GITHUB_PAT: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
-        run: |
-          git push https://${{ secrets.PERSONAL_GITHUB_TOKEN }}@github.com/ai4castinghub/hospitalization-forecast.git HEAD:main || echo "No changes to commit"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add auxiliary-data/pho-outcomes.csv \
+            auxiliary-data/target-data-archive/ \
+            target-data/
+
+          if git diff --cached --quiet; then
+            echo "PHO data has not changed."
+            exit 0
+          fi
+
+          git commit -m "Update PHO target data"
+          git push
