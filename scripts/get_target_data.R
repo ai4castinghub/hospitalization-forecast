@@ -1,129 +1,196 @@
 library(dplyr)
-library(readxl)
-library(tidyr)
 library(lubridate)
 library(readr)
+library(tidyr)
 
-# ---- File paths ----
-hospital_bed_occupancy_file <- "./auxiliary-data/data.xlsx"
-phu_region_mapping_file     <- "./auxiliary-data/phu_region_mapping.csv"
+# The Power BI export is deliberately retained as the raw source artifact.
+pho_outcomes_file <- "./auxiliary-data/pho-outcomes.csv"
+phu_region_mapping_file <- "./auxiliary-data/phu_region_mapping.csv"
+target_dir <- "./target-data"
+archive_dir <- "./auxiliary-data/target-data-archive"
 
-stopifnot(file.exists(hospital_bed_occupancy_file),
-          file.exists(phu_region_mapping_file))
+required_outcomes <- c(
+  covid = "COVID-19 hospital bed occupancy (total)",
+  flu = "Influenza hospital bed occupancy (total)",
+  rsv = "RSV hospital bed occupancy (total)"
+)
+required_headers <- c(
+  "Public health unit", "Outcome", "Respiratory season",
+  "Surveillance week", "Week end date", "Number"
+)
 
-# ---- Read data ----
-hospital_bed_occupancy_raw <- read_excel(hospital_bed_occupancy_file)
+stopifnot(
+  file.exists(pho_outcomes_file),
+  file.exists(phu_region_mapping_file)
+)
 
-phu_region_mapping <- read_csv(phu_region_mapping_file, show_col_types = FALSE)
+# ---- Read and validate the raw Power BI export ----
+hospital_bed_occupancy_raw <- read_csv(
+  pho_outcomes_file,
+  show_col_types = FALSE,
+  na = c("", "NA")
+)
 
-# ---- Process hospital bed occupancy ----
-# Expected columns - "Public health unit", "Outcome", "Surveillance week", "Week end date", "Number", ...
-hospital_bed_occupancy <- hospital_bed_occupancy_raw %>%
-  replace_na(list(`Public health unit` = "NA")) %>%
-  filter(`Public health unit` != "NA") %>%
+# Power BI occasionally adds a UTF-8 BOM or whitespace to exported headers.
+names(hospital_bed_occupancy_raw) <- trimws(
+  sub("^\\ufeff", "", names(hospital_bed_occupancy_raw))
+)
+
+missing_headers <- setdiff(required_headers, names(hospital_bed_occupancy_raw))
+if (length(missing_headers) > 0) {
+  stop(
+    "PHO export is missing required headers: ",
+    paste(missing_headers, collapse = ", ")
+  )
+}
+
+phu_region_mapping <- read_csv(
+  phu_region_mapping_file,
+  show_col_types = FALSE,
+  col_types = cols(.default = col_character())
+)
+
+season_values <- hospital_bed_occupancy_raw |>
+  transmute(season = trimws(as.character(`Respiratory season`))) |>
+  filter(grepl("^[0-9]{4}-[0-9]{2}$", season)) |>
+  distinct() |>
+  pull(season)
+
+if (length(season_values) != 1) {
+  stop(
+    "Expected exactly one respiratory season in the PHO export; found: ",
+    paste(season_values, collapse = ", ")
+  )
+}
+
+current_season <- season_values[[1]]
+current_start_year <- as.integer(substr(current_season, 1, 4))
+current_end_year <- current_start_year + 1L
+current_season_dir_name <- sprintf(
+  "season_%d_%d", current_start_year, current_end_year
+)
+
+target_rows <- hospital_bed_occupancy_raw |>
+  transmute(
+    `Public health unit` = trimws(as.character(`Public health unit`)),
+    Outcome = trimws(as.character(Outcome)),
+    time = as.Date(parse_date_time(
+      as.character(`Week end date`),
+      orders = c("ymd HMS", "ymd"),
+      quiet = TRUE
+    )),
+    Number = suppressWarnings(as.numeric(Number))
+  ) |>
+  filter(
+    !is.na(`Public health unit`),
+    `Public health unit` != "",
+    Outcome %in% unname(required_outcomes)
+  )
+
+if (nrow(target_rows) == 0) {
+  stop("The PHO export contains no usable bed-occupancy target rows.")
+}
+if (any(is.na(target_rows$time))) {
+  stop("One or more PHO 'Week end date' values could not be parsed.")
+}
+
+missing_outcomes <- setdiff(unname(required_outcomes), unique(target_rows$Outcome))
+if (length(missing_outcomes) > 0) {
+  stop(
+    "PHO export is missing required outcomes: ",
+    paste(missing_outcomes, collapse = ", ")
+  )
+}
+
+unmapped_phus <- target_rows |>
+  anti_join(phu_region_mapping, by = c("Public health unit" = "NAME_ENG")) |>
+  distinct(`Public health unit`) |>
+  pull(`Public health unit`)
+if (length(unmapped_phus) > 0) {
+  stop(
+    "PHO export contains public health units absent from the mapping: ",
+    paste(unmapped_phus, collapse = ", ")
+  )
+}
+
+# Preserve a missing aggregate if every contributing PHU is missing; otherwise
+# add the reported PHU values for the Ontario Health Region.
+sum_or_na <- function(values) {
+  if (all(is.na(values))) NA_real_ else sum(values, na.rm = TRUE)
+}
+
+hospital_bed_occupancy <- target_rows |>
   left_join(
     phu_region_mapping,
     by = c("Public health unit" = "NAME_ENG")
-  ) %>%
-
-  select(
-    `Public health unit`, Outcome, `Surveillance week`, `Week end date`,
-    Number, OH_Name, Population_2021
-  ) %>%
-  # filter the three outcomes of interest
-  filter(Outcome %in% c(
-    "COVID-19 hospital bed occupancy (total)",
-    "Influenza hospital bed occupancy (total)",
-    "RSV hospital bed occupancy (total)"
-  )) %>%
-
-  mutate(Number = ceiling(as.numeric(Number))) %>%
-  pivot_wider(names_from = Outcome, values_from = Number) %>%
-  mutate(
-    geo_type = if_else(OH_Name == "Ontario", "Province", "OH Region")
-  ) %>%
-  select(
-    `Surveillance week`, `Week end date`, OH_Name, geo_type,
-    `COVID-19 hospital bed occupancy (total)`,
-    `Influenza hospital bed occupancy (total)`,
-    `RSV hospital bed occupancy (total)`,
-    Population_2021
-  ) %>%
+  ) |>
+  select(time, OH_Name, Outcome, Number) |>
+  group_by(time, OH_Name, Outcome) |>
+  summarise(Number = sum_or_na(Number), .groups = "drop") |>
+  pivot_wider(names_from = Outcome, values_from = Number) |>
   rename(
-    week_reported = `Surveillance week`,
-    time         = `Week end date`,
-    geo_value    = OH_Name,
-    covid        = `COVID-19 hospital bed occupancy (total)`,
-    flu          = `Influenza hospital bed occupancy (total)`,
-    rsv          = `RSV hospital bed occupancy (total)`,
-    population   = Population_2021
-  ) %>%
-  arrange(as.Date(time)) %>%
+    geo_value = OH_Name,
+    covid = all_of(required_outcomes[["covid"]]),
+    flu = all_of(required_outcomes[["flu"]]),
+    rsv = all_of(required_outcomes[["rsv"]])
+  ) |>
   mutate(
-    year = year(time),
-    week = isoweek(time)  
-  ) %>%
-  group_by(time, geo_value, geo_type, year, week) %>%
-  summarise(
-    covid = sum(covid, na.rm = TRUE),
-    rsv   = sum(rsv,   na.rm = TRUE),
-    flu   = sum(flu,   na.rm = TRUE),
-    .groups = "drop"
-  ) %>%
-  mutate(year = as.integer(year))
+    geo_type = if_else(geo_value == "Ontario", "Province", "OH Region"),
+    across(c(covid, flu, rsv), ~ as.integer(ceiling(.x)))
+  ) |>
+  select(time, geo_value, geo_type, covid, flu, rsv) |>
+  arrange(desc(time), geo_value)
 
-# ---- Season slicing params ----
-start_week <- 35
-end_week   <- 34
-years      <- 2019:2025        # starting years of seasons to export
-current_start_year <- 2025     # the active (non-archived) season
-
-# ---- Target dirs ----
-target_dir  <- "./target-data"
-archive_dir <- "./auxiliary-data/target-data-archive"
-
-if (!dir.exists(target_dir))  dir.create(target_dir,  recursive = TRUE)
-if (!dir.exists(archive_dir)) dir.create(archive_dir, recursive = TRUE)
-
-# build season dir path (current season -> target, others -> archive)
-season_dir <- function(start_year) {
-  end_year <- start_year + 1
-  base <- if (start_year == current_start_year) target_dir else archive_dir
-  file.path(base, sprintf("season_%d_%d", start_year, end_year))
+expected_geographies <- sort(unique(phu_region_mapping$OH_Name))
+actual_geographies <- sort(unique(hospital_bed_occupancy$geo_value))
+if (!identical(expected_geographies, actual_geographies)) {
+  stop(
+    "Processed target geographies do not match the PHU mapping. Expected: ",
+    paste(expected_geographies, collapse = ", "),
+    "; found: ",
+    paste(actual_geographies, collapse = ", ")
+  )
 }
 
-# ---- Export logic ----
-# if archives are missing the most recent archived season, rebuild all; otherwise only export the current season.
-most_recent_archived <- sprintf("season_%d_%d", 2024, 2025)
-rebuild_all <- !dir.exists(file.path(archive_dir, most_recent_archived))
+duplicate_keys <- hospital_bed_occupancy |>
+  count(time, geo_value) |>
+  filter(n != 1)
+if (nrow(duplicate_keys) > 0) {
+  stop("Processed target data contains duplicate time/geography keys.")
+}
 
-export_season <- function(start_year) {
-  end_year <- start_year + 1
-  
-  # season filter: week 35..52/53 in start_year OR week 1..34 in end_year
-  filtered_data <- hospital_bed_occupancy %>%
-    filter((year == start_year & week >= start_week) |
-             (year == end_year   & week <= end_week)) %>%
-    select(time, geo_value, geo_type, covid, flu, rsv)
-  
-  # For pre-2022, drop flu/RSV if those series are not available/desired
-  if (start_year < 2022) {
-    filtered_data <- filtered_data %>% select(time, geo_value, geo_type, covid)
+# ---- Rotate the previous current season into the archive ----
+dir.create(target_dir, recursive = TRUE, showWarnings = FALSE)
+dir.create(archive_dir, recursive = TRUE, showWarnings = FALSE)
+
+current_target_dir <- file.path(target_dir, current_season_dir_name)
+other_target_seasons <- list.dirs(target_dir, recursive = FALSE, full.names = TRUE)
+other_target_seasons <- other_target_seasons[
+  grepl("^season_[0-9]{4}_[0-9]{4}$", basename(other_target_seasons)) &
+    basename(other_target_seasons) != current_season_dir_name
+]
+
+for (old_dir in other_target_seasons) {
+  archive_destination <- file.path(archive_dir, basename(old_dir))
+  if (dir.exists(archive_destination)) {
+    stop("Cannot archive target season because it already exists: ", archive_destination)
   }
-  
-  dir_name  <- season_dir(start_year)
-  if (!dir.exists(dir_name)) dir.create(dir_name, showWarnings = FALSE, recursive = TRUE)
-  
-  file_path <- file.path(dir_name, "hospitalization-data.csv")
-  filtered_data <- filtered_data %>% 
-    mutate(time = as.Date(time)) %>%
-    arrange(desc(time))          
-  write_csv(filtered_data, file_path)
-  message(sprintf("Data saved for season: %d-%d -> %s", start_year, end_year, file_path))
+  if (!file.rename(old_dir, archive_destination)) {
+    stop("Failed to archive old target season: ", old_dir)
+  }
+  message("Archived previous target season: ", archive_destination)
 }
 
-if (rebuild_all) {
-  purrr::walk(years, export_season)
-} else {
-  export_season(current_start_year)
-}
+dir.create(current_target_dir, recursive = TRUE, showWarnings = FALSE)
+target_file <- file.path(current_target_dir, "hospitalization-data.csv")
+write_csv(hospital_bed_occupancy, target_file, na = "NA")
+
+message(sprintf(
+  "Processed %d PHO rows into %d target rows for %s (%s through %s): %s",
+  nrow(target_rows),
+  nrow(hospital_bed_occupancy),
+  current_season,
+  min(hospital_bed_occupancy$time),
+  max(hospital_bed_occupancy$time),
+  target_file
+))
