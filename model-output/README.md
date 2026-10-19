@@ -40,7 +40,7 @@ Where:
 - `team` is the team name
 - `model` is the model name
 
-Both `team` and `model` should be under 15 characters and not contain special characters, except for underscores (`_`). Each team-model combination must be unique.
+The `team` abbreviation may have up to 16 characters and the `model` abbreviation up to 17, as specified in `hub-config/model-metadata-schema.json`. Use letters, digits, underscores (`_`), or plus signs (`+`). Each team-model combination must be unique.
 
 ### Metadata
 
@@ -63,7 +63,7 @@ Where:
 - `team` is the team name
 - `model` is the model name
 
-The `YYYY-MM-DD` date should be the Saturday following the submission date and match the `reference_date` inside the file. The `team` and `model` in the filename must match the subdirectory names.
+The `YYYY-MM-DD` date should be the Saturday of the submission round, whether the file is submitted on Friday or Saturday, and match the `reference_date` inside the file. The `team` and `model` in the filename must match the subdirectory names.
 
 ## Forecast File Format
 
@@ -84,7 +84,7 @@ Each row in the file represents a quantile prediction for a specific location, d
 
 ### `reference_date`
 
-This date (in `YYYY-MM-DD` format) indicates when the forecast is made. It should always be the Saturday following the submission date.
+This date (in `YYYY-MM-DD` format) identifies the Saturday forecast round. For a Friday or Saturday submission, use that Saturday's date. The 2026-2027 rounds run from October 24, 2026 through May 29, 2027.
 
 ### `target`
 
@@ -225,7 +225,7 @@ The validation checks produced some failures/errors reported above.
 
 ## Policy on late or updated submissions 
 
-In order to ensure that forecasting is done in real-time, all forecasts are required to be submitted to this repository by 11PM America/Toronto on Saturdays each week. We do not accept late forecasts.
+PHO updates its dashboard on Friday morning. Teams may submit forecasts for that week's Saturday reference date from Friday through 11:30 p.m. America/Toronto time on Saturday. For 2026-2027, the first deadline is October 24, 2026 and the last is May 29, 2027. The deadline uses Toronto local time, including daylight saving time. A new or updated forecast file must be included in a pull request update by the deadline; late forecasts are not accepted.
 
 ## Evaluation criteria
 Forecasts will be evaluated using `Weighted Interval Score (WIS)`, `Absolute Error (AE)` and `Mean Squared Error (MSE)`. The CMU [Delphi group's Forecast Evaluation Dashboard](https://delphi.cmu.edu/forecast-eval/) and the COVID-19 Forecast Hub periodic [Forecast Evaluation Reports](https://covid19forecasthub.org/eval-reports/) provide examples of evaluations using these criteria.

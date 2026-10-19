@@ -1,10 +1,10 @@
-# [AI4Casting Hub – Hospital Bed Occupancy Data for Ontario Respiratory Virus Activity (2025-2026)](https://sites.uoguelph.ca/4castinghub/hospitalization/)
-Welcome to the AI4Casting Hub's repository for the 2025-2026 Hospital Bed Occupancy Forecasting Challenge, focused on respiratory virus activity in Ontario, including COVID-19, Influenza, and RSV. This repository is dedicated to collecting weekly forecast data for hospital bed occupancy across the Ontario province, aiding in real-time decision-making and resource allocation.
+# [AI4Casting Hub – Hospital Bed Occupancy Data for Ontario Respiratory Virus Activity (2026-2027)](https://sites.uoguelph.ca/4castinghub/hospitalization/)
+Welcome to the AI4Casting Hub's repository for the 2026-2027 Hospital Bed Occupancy Forecasting Challenge, focused on respiratory virus activity in Ontario, including COVID-19, Influenza, and RSV. This repository collects weekly forecasts of hospital bed occupancy across Ontario to support real-time decision-making and resource allocation.
 
 [**Link to AI4Casting Hub's Ontario Hospital Bed Occupancy Forecasting Official Page**](https://4castinghub.uoguelph.ca/hospitalization/)
 
 ### Challenge Overview
-AI4Casting Hub is organizing a collaborative nowcasting and forecasting challenge for confirmed hospital bed occupancy during the 2025-2026 influenza season, starting on November 20, 2025. The challenge will run until May 16, 2026. During this period, participating teams are asked to provide weekly probabilistic interval hindcasts, nowcasts and forecasts for hospital bed occupancy at both the provincial level (Ontario) and for each of the 6 Public Health Regions.
+AI4Casting Hub is organizing a collaborative nowcasting and forecasting challenge for confirmed hospital bed occupancy during the 2026-2027 respiratory virus season. PHO data updates run from Friday, October 23, 2026 through Friday, May 28, 2027. Participating teams are asked to provide weekly probabilistic interval hindcasts, nowcasts and forecasts for hospital bed occupancy at both the provincial level (Ontario) and for each of the 6 Public Health Regions.
 
 These predictions will cover three major respiratory viruses:
 * COVID-19 Hospital Bed Occupancy Count (wk inc covid hosp)
@@ -19,14 +19,16 @@ Teams will submit predictions for the number of hospital beds occupied during:
 Predictions will be compared against confirmed hospital bed occupancy data released by Public Health Ontario's Ontario Respiratory Virus Tool. For detailed information regarding the forecasting targets refer [model-output/README.md](https://github.com/ai4castinghub/hospitalization-forecast/blob/main/model-output/README.md) file.
 
 ### Key Dates
-* Challenge Start Date: November 20, 2025
-* Challenge End Date: May 16, 2026
-* Weekly Submission Deadline: Saturdays at 11 PM Eastern Standard Time (referred to as the "Forecast Due Date"). Submissions should cover the reference week ending on the Saturday i.e. the Forecast Due Date.
+* First PHO update of the challenge: Friday, October 23, 2026
+* Last PHO update of the challenge: Friday, May 28, 2027
+* Forecast rounds: Saturdays from October 24, 2026 through May 29, 2027 (32 rounds).
+
+* Weekly submission deadline: Saturday at 11:30 p.m. America/Toronto time. Use that Saturday as the forecast `reference_date` and in the file name.
 
 The reference week is defined by the epidemiological week (EW) running from Sunday to Saturday. Submissions are expected to provide forecasts for the end of the reference week and the subsequent three weeks. Teams are encouraged to submit predictions for all forecast horizons, but it is not mandatory to cover every time period or location. Similarly, while teams are encouraged to forecast for all three targets, submitting predictions for all of them is not required. Predictions for the previous week's hospital bed occupancy (horizon -1) are optional and will not be scored in summary evaluations but may assist with calibration.
 
 ### Important Notes
-Data for hospital bed occupancy from the preceding week will be available by the Friday deadline.
+PHO updates its dashboard on Friday morning. The hub retrieves the updated data on Friday, and teams may submit forecasts from Friday through Saturday at 11:30 p.m. America/Toronto time. The Friday data describe the preceding week, ending on the previous Saturday.
 Forecasts for the previous week (horizon -1) will not be included in official evaluations but are encouraged.
 
 If you have any questions regarding this challenge or the development of prediction targets, please contact Siddhesh S. Kadam at 4castinghub@uoguelph.ca.

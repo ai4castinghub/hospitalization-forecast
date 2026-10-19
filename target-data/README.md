@@ -7,6 +7,10 @@ stored under `auxiliary-data/target-data-archive/`.
 The weekly `Update PHO target data` GitHub Actions workflow retrieves the
 public Outcomes data table from Public Health Ontario's
 [Ontario Respiratory Virus Tool](https://www.publichealthontario.ca/en/Data-and-Analysis/Infectious-Disease/Respiratory-Virus-Tool).
+PHO updates the dashboard on Friday morning. The hub's scheduled retrieval runs
+Friday at 12:30 p.m. America/Toronto time, providing the preceding week's
+observations for the Saturday forecast round. For the 2026-2027 season, the
+Friday updates run from October 23, 2026 through May 28, 2027.
 It saves the unmodified Power BI CSV export as
 `auxiliary-data/pho-outcomes.csv` before running
 `scripts/get_target_data.R`.
