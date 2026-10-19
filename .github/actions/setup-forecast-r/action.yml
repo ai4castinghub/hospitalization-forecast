@@ -1,0 +1,34 @@
+name: Set up forecast R dependencies
+description: Install and cache the R packages used by the hub's own forecasts
+
+runs:
+  using: composite
+  steps:
+    - name: Set up R
+      uses: r-lib/actions/setup-r@v2
+      with:
+        r-version: release
+        use-public-rspm: true
+        extra-repositories: https://hubverse-org.r-universe.dev
+
+    - name: Install and cache forecast packages
+      uses: r-lib/actions/setup-r-dependencies@v2
+      env:
+        GITHUB_PAT: ${{ github.token }}
+      with:
+        cache: true
+        cache-version: 1
+        packages: |
+          any::dplyr
+          any::hubEnsembles
+          any::parsnip
+          any::ranger
+          any::readr
+          any::tidyr
+          github::cmu-delphi/epiprocess@main
+          github::cmu-delphi/epipredict@main
+
+    - name: Verify forecast packages
+      shell: bash
+      run: |
+        Rscript -e 'packages <- c("dplyr", "epipredict", "epiprocess", "hubEnsembles", "parsnip", "ranger", "readr", "tidyr"); missing <- packages[!vapply(packages, requireNamespace, logical(1), quietly = TRUE)]; if (length(missing)) stop("Missing R packages: ", paste(missing, collapse = ", ")); cat("Forecast R packages are ready.\n")'
