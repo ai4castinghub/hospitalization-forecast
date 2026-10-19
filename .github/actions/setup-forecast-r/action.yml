@@ -17,7 +17,8 @@ runs:
         GITHUB_PAT: ${{ github.token }}
       with:
         cache: true
-        cache-version: 1
+        cache-version: 2
+        dependencies: '"hard"'
         packages: |
           any::dplyr
           any::hubEnsembles
@@ -25,8 +26,8 @@ runs:
           any::ranger
           any::readr
           any::tidyr
-          github::cmu-delphi/epiprocess@main
-          github::cmu-delphi/epipredict@main
+          github::cmu-delphi/epiprocess
+          github::cmu-delphi/epipredict
 
     - name: Verify forecast packages
       shell: bash
