@@ -3,6 +3,7 @@
 import { createRequire } from "node:module";
 import { mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 
 const require = createRequire(import.meta.url);
 const { chromium } = require("playwright-core");
@@ -13,10 +14,13 @@ const inspectOnly = process.argv.includes("--inspect");
 const outputArgument = process.argv.find((argument) =>
   argument.startsWith("--output="),
 );
-const outputPath = path.resolve(
-  outputArgument?.slice("--output=".length) ??
-    "auxiliary-data/pho-outcomes.csv",
-);
+const outputPath = outputArgument
+  ? path.resolve(outputArgument.slice("--output=".length))
+  : path.resolve(
+      path.dirname(fileURLToPath(import.meta.url)),
+      "..",
+      "auxiliary-data/pho-outcomes.csv",
+    );
 
 const browser = await chromium.launch({
   channel: process.env.PLAYWRIGHT_BROWSER_CHANNEL ?? "chrome",

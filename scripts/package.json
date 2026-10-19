@@ -2,7 +2,7 @@
   "name": "ai4casting-hospitalization-forecast",
   "private": true,
   "scripts": {
-    "fetch:pho-outcomes": "node scripts/fetch-pho-outcomes.mjs"
+    "fetch:pho-outcomes": "node fetch-pho-outcomes.mjs"
   },
   "dependencies": {
     "playwright-core": "1.62.1"

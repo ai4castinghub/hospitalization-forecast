@@ -14,6 +14,8 @@ Friday updates run from October 23, 2026 through May 28, 2027.
 It saves the unmodified Power BI CSV export as
 `auxiliary-data/pho-outcomes.csv` before running
 `scripts/get_target_data.R`.
+To retrieve the PHO data locally, change to `scripts/`, run `npm ci`, then run
+`npm run fetch:pho-outcomes`. The CSV is still written to `auxiliary-data/`.
 
 The processing script:
 
