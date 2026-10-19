@@ -33,29 +33,5 @@ Forecasts for the previous week (horizon -1) will not be included in official ev
 
 If you have any questions regarding this challenge or the development of prediction targets, please contact Siddhesh S. Kadam at 4castinghub@uoguelph.ca.
 
-### Hub model forecasts
-
-Run `Rscript scripts/hub-model-forecasts.R` from the repository root to create
-the Flatline, Quantile AR, Random Forest Quantile AR, and CDC Quantile Baseline
-files for the Saturday after the newest observed target week.
-Use `--date=YYYY-MM-DD` for one Saturday or `--from=YYYY-MM-DD
---to=YYYY-MM-DD` for a weekly backfill. The manual **Hub model forecasts**
-GitHub Action accepts an optional single date.
-
-The model script reads the season files under `target-data/` and
-`auxiliary-data/target-data-archive/`. After its workflow commits the four model
-files, a separate **Hub ensemble forecasts** workflow runs
-`scripts/hub-ensemble-forecasts.R` for the same Saturday. It combines those
-four files with any other eligible same-date model outputs, and commits only
-the Ensemble v1 file. The ensemble workflow can also be run manually with an
-optional Saturday date; without one it uses the newest date with all four hub
-model files. Both jobs install and cache their own R dependencies on
-GitHub-hosted runners. The cache-warming workflow runs on Sundays at 9:30 AM
-Toronto time and can also be started manually. The task dates in
-`hub-config/tasks.json` must include a date before its output can pass Hubverse
-submission validation. The scheduled action runs every Monday at 10:30 AM
-Toronto time for the preceding Saturday, and stops if PHO target data for the
-Saturday before that have not been updated.
-
 ### Acknowledgments
 This repository follows the guidelines and standards outlined by the hubverse, which provides a set of data formats and open source tools for modeling hubs.
