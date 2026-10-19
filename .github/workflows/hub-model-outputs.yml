@@ -1,48 +1,57 @@
-name: Hub Model Forecast Workflow
+name: Hub model forecasts
 
 on:
   schedule:
-    # Sunday at 2:00 AM
-    #- cron: '0 2 * * 0'
+    - cron: "30 10 * * 1"
+      timezone: America/Toronto
   workflow_dispatch:
+    inputs:
+      date:
+        description: "Optional Saturday reference date (YYYY-MM-DD); defaults to the week after the newest target data"
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hub-model-forecasts
+  cancel-in-progress: false
 
 jobs:
-  run-r-script:
+  forecast:
     runs-on: self-hosted
-    #runs-on: ubuntu-22.04
     env:
-      GITHUB_PAT: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
+      FORECAST_DATE: ${{ inputs.date }}
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - name: Check out repository
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          token: ${{ secrets.PERSONAL_GITHUB_TOKEN || github.token }}
 
-      # - name: Set up R
-      #   uses: r-lib/actions/setup-r@v2
-      #   with:
-      #     use-public-rspm: true
-
-      # - name: Install R packages
-      #   run: |
-      #     Rscript -e "install.packages(c('lubridate', 'dplyr', 'tidyr', 'readr', 'epipredict', 'hubEnsembles', 'epiprocess'))"
-
-      - name: Run hub-model-outputs.R script
+      - name: Generate all hub forecasts
+        shell: bash
         run: |
-          Rscript scripts/hub-model-outputs.R
+          if [ "$GITHUB_EVENT_NAME" = "schedule" ]; then
+            Rscript scripts/hub-model-forecasts.R --scheduled
+          elif [ -n "$FORECAST_DATE" ]; then
+            Rscript scripts/hub-model-forecasts.R "--date=$FORECAST_DATE"
+          else
+            Rscript scripts/hub-model-forecasts.R
+          fi
 
-      - name: Add new files
-        run: git add model-output/
-
-      - name: Commit results
+      - name: Commit forecast files
+        shell: bash
         run: |
-          git config --local user.name "$GITHUB_ACTOR"
-          git config --local user.email "$GITHUB_ACTOR@users.noreply.github.com"
-          git commit -am 'Add hub hospitalization forecast outputs' || echo "No changes to commit"
+          git add model-output/
+          if git diff --cached --quiet; then
+            echo "No forecast changes to commit."
+            exit 0
+          fi
 
-      - name: Push changes with personal token
-        env:
-          GITHUB_PAT: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
-        run: |
-          git push https://${{ secrets.PERSONAL_GITHUB_TOKEN }}@github.com/ai4castinghub/hospitalization-forecast.git HEAD:main || echo "No changes to commit"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Update hub model forecasts"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
