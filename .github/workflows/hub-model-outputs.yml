@@ -1,8 +1,8 @@
-name: Hub model forecasts
+name: Monday hub forecast pipeline
 
 on:
   schedule:
-    - cron: "30 10 * * 1"
+    - cron: "0 10 * * 1"
       timezone: America/Toronto
   workflow_dispatch:
     inputs:
@@ -15,11 +15,19 @@ permissions:
   contents: write
 
 concurrency:
-  group: hub-model-forecasts
+  group: monday-hub-forecast-pipeline-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
+  concatenate-before:
+    uses: ./.github/workflows/concat-data.yml
+    with:
+      mode: all
+    permissions:
+      contents: write
+
   forecast:
+    needs: concatenate-before
     if: ${{ github.repository_owner == 'ai4castinghub' }}
     runs-on: ubuntu-24.04
     timeout-minutes: 90
@@ -32,6 +40,7 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v6
         with:
+          ref: ${{ github.ref_name }}
           fetch-depth: 0
 
       - name: Set up cached forecast dependencies
@@ -66,8 +75,17 @@ jobs:
           git commit -m "Update hub model forecasts"
           git push origin "HEAD:${GITHUB_REF_NAME}"
 
-  ensemble:
+  concatenate-after:
     needs: forecast
+    if: ${{ needs.forecast.outputs.reference_date != '' }}
+    uses: ./.github/workflows/concat-data.yml
+    with:
+      mode: models
+    permissions:
+      contents: write
+
+  ensemble:
+    needs: [forecast, concatenate-after]
     if: ${{ needs.forecast.outputs.reference_date != '' }}
     uses: ./.github/workflows/hub-ensemble-forecasts.yml
     with:

@@ -31,6 +31,10 @@ The reference week is defined by the epidemiological week (EW) running from Sund
 PHO updates its dashboard on Friday morning. The hub retrieves the updated data on Friday, and teams may submit forecasts from Friday through Saturday at 11:30 p.m. America/Toronto time. The Friday data describe the preceding week, ending on the previous Saturday.
 Forecasts for the previous week (horizon -1) will not be included in official evaluations but are encouraged.
 
+The Monday pipeline starts at 10:00 a.m. America/Toronto time. It first saves
+concatenated target and model data, then generates the four hub forecasts,
+refreshes the concatenated model data, and finally generates the hub ensemble.
+
 If you have any questions regarding this challenge or the development of prediction targets, please contact Siddhesh S. Kadam at 4castinghub@uoguelph.ca.
 
 ### Acknowledgments
