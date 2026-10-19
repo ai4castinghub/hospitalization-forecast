@@ -6,8 +6,10 @@ on:
     branches: [main]
     paths:
       - '.github/actions/setup-forecast-r/action.yml'
+      - '.github/actions/setup-ensemble-r/action.yml'
       - '.github/workflows/cache-deps.yaml'
       - '.github/workflows/hub-model-outputs.yml'
+      - '.github/workflows/hub-ensemble-forecasts.yml'
   schedule:
     # Refresh the forecast cache before the Monday forecast run.
     - cron: "30 9 * * 0"
@@ -28,3 +30,14 @@ jobs:
 
       - name: Set up cached forecast dependencies
         uses: ./.github/actions/setup-forecast-r
+
+  warm-ensemble-cache:
+    if: ${{ github.repository_owner == 'ai4castinghub' }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up cached ensemble dependencies
+        uses: ./.github/actions/setup-ensemble-r

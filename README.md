@@ -34,20 +34,22 @@ If you have any questions regarding this challenge or the development of predict
 ### Hub model forecasts
 
 Run `Rscript scripts/hub-model-forecasts.R` from the repository root to create
-the Flatline, Quantile AR, Random Forest Quantile AR, CDC Quantile Baseline,
-and Ensemble v1 files for the Saturday after the newest observed target week.
+the Flatline, Quantile AR, Random Forest Quantile AR, and CDC Quantile Baseline
+files for the Saturday after the newest observed target week.
 Use `--date=YYYY-MM-DD` for one Saturday or `--from=YYYY-MM-DD
 --to=YYYY-MM-DD` for a weekly backfill. The manual **Hub model forecasts**
 GitHub Action accepts an optional single date.
 
-The script reads the season files under `target-data/` and
-`auxiliary-data/target-data-archive/`. It builds the ensemble from the new hub
-forecasts and any other eligible model output files for the same date. It needs
-the R packages `dplyr`, `epipredict`, `epiprocess`, `hubEnsembles`, `parsnip`,
-`ranger`, `readr`, and `tidyr`. The GitHub-hosted forecast job installs and
-caches these automatically using `.github/actions/setup-forecast-r/action.yml`;
-the cache-warming workflow runs on Sundays at 9:30 AM Toronto time and can
-also be started manually. The task dates in
+The model script reads the season files under `target-data/` and
+`auxiliary-data/target-data-archive/`. After its workflow commits the four model
+files, a separate **Hub ensemble forecasts** workflow runs
+`scripts/hub-ensemble-forecasts.R` for the same Saturday. It combines those
+four files with any other eligible same-date model outputs, and commits only
+the Ensemble v1 file. The ensemble workflow can also be run manually with an
+optional Saturday date; without one it uses the newest date with all four hub
+model files. Both jobs install and cache their own R dependencies on
+GitHub-hosted runners. The cache-warming workflow runs on Sundays at 9:30 AM
+Toronto time and can also be started manually. The task dates in
 `hub-config/tasks.json` must include a date before its output can pass Hubverse
 submission validation. The scheduled action runs every Monday at 10:30 AM
 Toronto time for the preceding Saturday, and stops if PHO target data for the

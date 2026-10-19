@@ -1,10 +1,10 @@
-# Generate the four epipredict hub models and the simple hub ensemble.
+# Generate the four epipredict hub models.
 # Run from the repository root. By default, forecast the Saturday after the
 # newest observed target week. The scheduled run uses the preceding Saturday
 # and requires the previous week's PHO observations to be present.
 
 required_packages <- c(
-  "dplyr", "epipredict", "epiprocess", "hubEnsembles", "parsnip",
+  "dplyr", "epipredict", "epiprocess", "parsnip",
   "ranger", "readr", "tidyr"
 )
 missing_packages <- required_packages[
@@ -24,10 +24,6 @@ model_ids <- c(
   arx = "AI4Casting_Hub-Quantile_AR",
   rf_arx = "AI4Casting_Hub-RF_Quantile_AR",
   cdc = "AI4Casting_Hub-Quantile_Baseline"
-)
-ensemble_id <- "AI4Casting_Hub-Ensemble_v1"
-excluded_from_ensemble <- c(
-  ensemble_id, "AI4Casting_Hub-Weighted_Ensemble", "AI4Casting_Hub-GPT_4o"
 )
 hub_columns <- c(
   "location", "reference_date", "target_end_date", "target", "horizon",
@@ -220,47 +216,6 @@ output_path <- function(model_id, reference_date) {
             sprintf("%s-%s.csv", reference_date, model_id))
 }
 
-read_ensemble_components <- function(reference_date, generated) {
-  paths <- list.files("model-output", pattern = "\\.csv$",
-                      recursive = TRUE, full.names = TRUE)
-  prefix <- paste0(reference_date, "-")
-  paths <- paths[startsWith(basename(paths), prefix)]
-  model_names <- basename(dirname(paths))
-  paths <- paths[!model_names %in% c(excluded_from_ensemble, unname(model_ids))]
-  model_names <- basename(dirname(paths))
-  if (anyDuplicated(model_names)) {
-    stop("Multiple component files exist for a model on ", reference_date)
-  }
-  other_models <- lapply(seq_along(paths), function(i) {
-    piece <- readr::read_csv(paths[[i]], show_col_types = FALSE)
-    if (!all(hub_columns %in% names(piece))) {
-      stop("Missing hub columns in ensemble component: ", paths[[i]])
-    }
-    piece |>
-      dplyr::filter(.data$output_type == "quantile",
-                    as.Date(.data$reference_date) == reference_date) |>
-      dplyr::select(dplyr::all_of(hub_columns)) |>
-      dplyr::mutate(
-        reference_date = as.Date(.data$reference_date),
-        target_end_date = as.Date(.data$target_end_date),
-        output_type_id = as.character(.data$output_type_id),
-        value = as.numeric(.data$value),
-        model_id = model_names[[i]]
-      ) |>
-      dplyr::filter(
-        .data$location %in% locations,
-        .data$target %in% paste("wk inc", diseases, "hosp"),
-        .data$horizon %in% horizons,
-        .data$output_type_id %in% as.character(quantile_levels),
-        .data$target_end_date == reference_date + 7L * .data$horizon
-      )
-  })
-  own_models <- lapply(names(generated), function(model_id) {
-    dplyr::mutate(generated[[model_id]], model_id = model_id)
-  })
-  dplyr::bind_rows(c(own_models, other_models))
-}
-
 run_for_date <- function(reference_date, history) {
   check_reference_date(reference_date, history)
   message("Forecasting ", reference_date)
@@ -274,24 +229,6 @@ run_for_date <- function(reference_date, history) {
     data
   })
   names(generated) <- unname(model_ids)
-
-  components <- read_ensemble_components(reference_date, generated)
-  if (nrow(components) == 0) stop("No ensemble components for ", reference_date)
-  ensemble <- hubEnsembles::simple_ensemble(
-    components, agg_fun = mean, model_id = ensemble_id
-  ) |>
-    dplyr::select(-"model_id") |>
-    dplyr::select(dplyr::all_of(hub_columns)) |>
-    dplyr::mutate(
-      output_type_id = as.character(.data$output_type_id),
-      value = pmax(0, dplyr::case_when(
-        as.numeric(.data$output_type_id) < 0.5 ~ floor(.data$value),
-        as.numeric(.data$output_type_id) > 0.5 ~ ceiling(.data$value),
-        TRUE ~ round(.data$value)
-      ))
-    )
-  validate_model_output(ensemble, reference_date, ensemble_id)
-  generated[[ensemble_id]] <- ensemble
 
   for (model_id in names(generated)) {
     path <- output_path(model_id, reference_date)
@@ -327,3 +264,9 @@ dates <- if ("scheduled" %in% names(options)) {
 }
 
 for (i in seq_along(dates)) run_for_date(dates[i], history)
+
+output_file <- Sys.getenv("GITHUB_OUTPUT")
+if (length(dates) == 1L && nzchar(output_file)) {
+  cat("reference_date=", as.character(dates[[1]]), "\n",
+      file = output_file, append = TRUE, sep = "")
+}

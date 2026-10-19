@@ -21,7 +21,6 @@ runs:
         dependencies: '"hard"'
         packages: |
           any::dplyr
-          any::hubEnsembles
           any::parsnip
           any::ranger
           any::readr
@@ -32,4 +31,4 @@ runs:
     - name: Verify forecast packages
       shell: bash
       run: |
-        Rscript -e 'packages <- c("dplyr", "epipredict", "epiprocess", "hubEnsembles", "parsnip", "ranger", "readr", "tidyr"); missing <- packages[!vapply(packages, requireNamespace, logical(1), quietly = TRUE)]; if (length(missing)) stop("Missing R packages: ", paste(missing, collapse = ", ")); cat("Forecast R packages are ready.\n")'
+        Rscript -e 'packages <- c("dplyr", "epipredict", "epiprocess", "parsnip", "ranger", "readr", "tidyr"); missing <- packages[!vapply(packages, requireNamespace, logical(1), quietly = TRUE)]; if (length(missing)) stop("Missing R packages: ", paste(missing, collapse = ", ")); cat("Forecast R packages are ready.\n")'
