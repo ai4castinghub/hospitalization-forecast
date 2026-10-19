@@ -20,7 +20,7 @@ Predictions will be compared against confirmed hospital bed occupancy data relea
 
 ### Key Dates
 * First PHO update of the challenge: Friday, October 23, 2026
-* Last PHO update of the challenge: Friday, May 28, 2027
+* Last PHO update of the challenge: Saturday, May 29, 2027
 * Forecast rounds: Saturdays from October 24, 2026 through May 29, 2027 (32 rounds).
 
 * Weekly submission deadline: Saturday at 11:30 p.m. America/Toronto time. Use that Saturday as the forecast `reference_date` and in the file name.
