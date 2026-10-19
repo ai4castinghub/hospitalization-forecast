@@ -5,48 +5,43 @@ library(lubridate)
 library(purrr)
 withr::local_options(list(readr.show_col_types = FALSE))
 
-# concatenate hospitalization data
-
-seasons <- 2019:2025
-archive_base <- "auxiliary-data/target-data-archive"
-current_season_label <- "2025-2026"
-current_season_path  <- file.path("target-data", "season_2025_2026", "hospitalization-data.csv")
-
-# candidate file list (archive + current), then keep only existing paths
-files_tbl <- bind_rows(
-  tibble(
-    start_year   = seasons,
-    season_label = sprintf("%d-%d", seasons, seasons + 1),
-    path         = file.path(archive_base, sprintf("season_%d_%d", seasons, seasons + 1), "hospitalization-data.csv")
-  ),
-  tibble(
-    start_year   = 2025L,
-    season_label = current_season_label,
-    path         = current_season_path
-  )
-) %>%
-  filter(file.exists(path)) %>%
-  distinct(path, .keep_all = TRUE)
-
-read_hosp <- function(path, season_label) {
-  read_csv(
-    path,
-    col_types = cols(.default = col_guess(), time = col_date())
-  ) %>%
-    mutate(Season = season_label)
+args <- commandArgs(trailingOnly = TRUE)
+if (length(args) > 1L || (length(args) == 1L && args[[1]] != "--models-only")) {
+  stop("Usage: Rscript scripts/build_concatenated_hospitalization_target_and_forecast.R [--models-only]")
 }
+models_only <- length(args) == 1L
 
-final_data <- if (nrow(files_tbl) == 0) {
-  warning("No hospitalization-data.csv files found in archive or current season directories.")
-  tibble()
-} else {
-  map2_dfr(files_tbl$path, files_tbl$season_label, read_hosp) %>%
-    mutate(time = as_date(time)) %>%   # ensure plain Date
-    arrange(desc(time))                # newest first
+if (!models_only) {
+  # Include every archived season and the current target-data season.
+  target_roots <- c("auxiliary-data/target-data-archive", "target-data")
+  target_files <- unlist(lapply(target_roots, function(root) {
+    if (!dir.exists(root)) return(character())
+    list.files(root, pattern = "^hospitalization-data\\.csv$",
+               recursive = TRUE, full.names = TRUE)
+  }), use.names = FALSE)
+  target_files <- target_files[
+    grepl("[/\\\\]season_[0-9]{4}_[0-9]{4}[/\\\\]hospitalization-data\\.csv$",
+          target_files)
+  ]
+  if (length(target_files) == 0L) stop("No season target data files found.")
+
+  season_dirs <- basename(dirname(target_files))
+  season_labels <- sub("^season_([0-9]{4})_([0-9]{4})$", "\\1-\\2", season_dirs)
+  if (anyDuplicated(season_labels)) {
+    stop("A target season is present in both the archive and target-data.")
+  }
+
+  final_data <- purrr::map2_dfr(target_files, season_labels, function(file, season) {
+    readr::read_csv(file, col_types = readr::cols(.default = readr::col_guess(),
+                                                 time = readr::col_date())) %>%
+      dplyr::mutate(Season = season)
+  }) %>%
+    dplyr::mutate(time = lubridate::as_date(time)) %>%
+    dplyr::arrange(dplyr::desc(time))
+
+  readr::write_csv(final_data, "auxiliary-data/concatenated_hospitalization_data.csv")
+  message("Wrote: auxiliary-data/concatenated_hospitalization_data.csv")
 }
-
-write_csv(final_data, "auxiliary-data/concatenated_hospitalization_data.csv")
-message("Wrote: auxiliary-data/concatenated_hospitalization_data.csv")
 
 # concatenate model outputs (robust date parsing, filename-date filter)
 
@@ -111,12 +106,5 @@ if (length(all_csvs) == 0) {
   }
 }
 
-all_model_data
-
-if (nrow(all_model_data) > 0) {
-  write_csv(all_model_data, "auxiliary-data/concatenated_model_output.csv")
-  message("Wrote: auxiliary-data/concatenated_model_output.csv")
-} else {
-  message("No model data to write.")
-  write_csv(all_model_data, "auxiliary-data/concatenated_model_output.csv")
-}
+readr::write_csv(all_model_data, "auxiliary-data/concatenated_model_output.csv")
+message("Wrote: auxiliary-data/concatenated_model_output.csv")
