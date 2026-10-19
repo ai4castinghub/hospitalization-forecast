@@ -44,7 +44,10 @@ The script reads the season files under `target-data/` and
 `auxiliary-data/target-data-archive/`. It builds the ensemble from the new hub
 forecasts and any other eligible model output files for the same date. It needs
 the R packages `dplyr`, `epipredict`, `epiprocess`, `hubEnsembles`, `parsnip`,
-`ranger`, `readr`, and `tidyr` on the runner. The task dates in
+`ranger`, `readr`, and `tidyr`. The GitHub-hosted forecast job installs and
+caches these automatically using `.github/actions/setup-forecast-r/action.yml`;
+the cache-warming workflow runs on Sundays at 9:30 AM Toronto time and can
+also be started manually. The task dates in
 `hub-config/tasks.json` must include a date before its output can pass Hubverse
 submission validation. The scheduled action runs every Monday at 10:30 AM
 Toronto time for the preceding Saturday, and stops if PHO target data for the
