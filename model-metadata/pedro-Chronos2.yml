@@ -1,0 +1,19 @@
+team_name: "Pedro Pinto"
+team_abbr: "pedro"
+model_name: "Chronos-2 zero-shot"
+model_abbr: "Chronos2"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "Pedro Pinto",
+    "affiliation": "Independent"
+  }
+]
+website_url: "https://github.com/pedro-f20"
+license: "CC-BY-4.0"
+designated_model: true
+methods: "Zero-shot Chronos-2 (amazon/chronos-2) on all of the hub's weekly series, no fitting."
+data_inputs: "Hub target data only"
+methods_long: "Pretrained time-series foundation model Chronos-2, revision 29ec376, run zero-shot each week on the hub's own target data (all past seasons in the hub archive plus the current season), with cross-learning across all locations and pathogens. Quantiles come straight from the model, clipped at zero and rounded for counts. No fitting, tuning or covariates."
+ensemble_of_models: false
+ensemble_of_hub_models: false
