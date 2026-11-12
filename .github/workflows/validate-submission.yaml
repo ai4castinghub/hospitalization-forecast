@@ -67,3 +67,9 @@ jobs:
       - name: Check 2026-2027 Saturday 11:30 p.m. submission deadline
         if: github.event_name == 'pull_request'
         run: python3 scripts/check-submission-deadline.py "$GITHUB_EVENT_PATH" changed_files.txt
+
+      - name: Validate optional influenza peak forecasts
+        if: github.event_name == 'pull_request'
+        run: |
+          mapfile -t files < changed_files.txt
+          python3 scripts/validate_peak_submissions.py "${files[@]}"
