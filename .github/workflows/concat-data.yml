@@ -65,9 +65,7 @@ jobs:
       - name: Commit concatenated data
         shell: bash
         run: |
-          python3 scripts/evaluate_influenza_peaks.py
           git add auxiliary-data/concatenated_model_output.csv
-          git add auxiliary-data/influenza-peak-evaluation.csv
           if [ "$CONCAT_MODE" = "all" ]; then
             git add auxiliary-data/concatenated_hospitalization_data.csv
           fi
