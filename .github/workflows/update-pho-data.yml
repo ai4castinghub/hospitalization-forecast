@@ -58,12 +58,16 @@ jobs:
       - name: Process PHO data into target data
         run: Rscript scripts/get_target_data.R
 
+      - name: Refresh influenza peak evaluation
+        run: python3 scripts/evaluate_influenza_peaks.py
+
       - name: Commit changed source and target data
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add auxiliary-data/pho-outcomes.csv \
+            auxiliary-data/influenza-peak-evaluation.csv \
             auxiliary-data/target-data-archive/ \
             target-data/
 

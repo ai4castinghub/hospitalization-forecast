@@ -1,5 +1,7 @@
 # PHO hospital bed occupancy target data
 
+For the optional 2026–27 influenza admission peak targets, the same PHO export's `Influenza hospital admissions` outcome is processed separately into `season_2026_2027/influenza-admissions.csv`. It contains weekly dates, geography and admissions counts. Ontario is the published Ontario value; regional values sum the mapped PHUs only when every contributing PHU is present and valid. Missing, suppressed, invalid or unmapped values stop the update rather than silently producing partial regional totals. Peak truth covers Saturdays October 17, 2026 through May 29, 2027. Evaluation waits for all weeks and does not score peak week when the maximum is tied. Revisions to the PHO source update this truth and the seasonal evaluation.
+
 The current respiratory season's processed target data is stored in a
 `season_YYYY_YYYY/hospitalization-data.csv` directory. Earlier seasons are
 stored under `auxiliary-data/target-data-archive/`.

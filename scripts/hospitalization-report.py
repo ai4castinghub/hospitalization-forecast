@@ -2,12 +2,17 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_pdf import PdfPages
 from datetime import datetime, timedelta
+from pathlib import Path
 
 # Load the model data
 model_data = pd.read_csv('auxiliary-data/concatenated_model_output.csv')
+model_data = model_data[model_data['target'].isin(['wk inc flu hosp', 'wk inc covid hosp', 'wk inc rsv hosp'])].copy()
 
 # Load the truth data
-truth_data = pd.read_csv('target-data/season_2025_2026/hospitalization-data.csv')
+truth_files = sorted(Path('target-data').glob('season_*/hospitalization-data.csv'))
+if not truth_files:
+    raise FileNotFoundError('No current hospitalization target data found')
+truth_data = pd.read_csv(truth_files[-1])
 truth_data['time'] = pd.to_datetime(truth_data['time'])
 
 # Ensure model data types are correct

@@ -18,6 +18,8 @@ Teams will submit predictions for the number of hospital beds occupied during:
 
 Predictions will be compared against confirmed hospital bed occupancy data released by Public Health Ontario's Ontario Respiratory Virus Tool. For detailed information regarding the forecasting targets refer [model-output/README.md](https://github.com/ai4castinghub/hospitalization-forecast/blob/main/model-output/README.md) file.
 
+Two additional, independently optional 2026–27 targets forecast the peak week and peak weekly count of **influenza hospital admissions**. These use admissions rather than the weekly occupancy outcome. Forecasts can cover any of the six regions or Ontario. See [submission instructions](model-output/README.md#optional-influenza-admission-peak-targets).
+
 ### Key Dates
 * First PHO update of the challenge: Friday, October 23, 2026
 * Last PHO update of the challenge: Saturday, May 29, 2027

@@ -65,16 +65,18 @@ parse_maybe_date <- function(x) {
 
 process_model_file <- function(file) {
   model_name <- basename(dirname(file))
-  df <- read_csv(file, progress = FALSE)
+  df <- read_csv(file, progress = FALSE, col_types = cols(output_type_id = col_character()))
   
   df %>%
     mutate(
       model = model_name,
       reference_date  = if ("reference_date"  %in% names(.)) parse_maybe_date(reference_date)  else as_date(NA),
       target_end_date = if ("target_end_date" %in% names(.)) parse_maybe_date(target_end_date) else as_date(NA),
-      value = pmax(0, ceiling(suppressWarnings(as.numeric(replace_na(value, 0)))))
+      value = if_else(target %in% c("peak week inc flu hosp", "peak inc flu hosp"),
+                      as.numeric(value), pmax(0, ceiling(suppressWarnings(as.numeric(replace_na(value, 0))))))
     ) %>%
-    filter(!is.na(reference_date), !is.na(target_end_date))
+    filter(!is.na(reference_date), !is.na(target_end_date) |
+             target %in% c("peak week inc flu hosp", "peak inc flu hosp"))
 }
 
 # keep only files whose basename starts with a date >= 2025-08-30 ---

@@ -239,6 +239,7 @@ try {
       "Public health unit",
       "COVID-19 hospital bed occupancy (total)",
       "Influenza hospital bed occupancy (total)",
+      "Influenza hospital admissions",
       "RSV hospital bed occupancy (total)",
     ];
     const missingText = requiredText.filter(

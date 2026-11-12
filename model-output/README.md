@@ -24,6 +24,14 @@ Forecasts are quantitative predictions about data to be observed in the future. 
 
 This project focuses on hospital bed occupancy data for COVID-19, Influenza, and RSV, as reported in the [Ontario Respiratory Virus Tool](https://www.publichealthontario.ca/en/Data-and-Analysis/Infectious-Disease/Respiratory-Virus-Tool). Further details regarding the target-data can be found in the [target-data folder README](../target-data/README.md).
 
+## Optional influenza admission peak targets
+
+The independently optional targets `peak week inc flu hosp` and `peak inc flu hosp` predict the timing and size of the highest weekly **influenza hospital admissions** count between October 17, 2026 and May 29, 2027, inclusive. These are separate from the existing weekly bed-occupancy targets. Submit either target for any of Ontario and the six regions in the same file as other forecasts, or alone. Continue submitting after an apparent peak: future revisions or a later peak remain possible.
+
+Leave `horizon` and `target_end_date` empty for these rows. For peak week set `output_type` to `pmf`; submit one row for every Saturday in the season, using the ISO date as `output_type_id` and a probability in `value`. Probabilities must sum to one for each reference date and location. For peak incidence set `output_type` to `quantile` and submit all seven levels 0.025, 0.1, 0.25, 0.5, 0.75, 0.9 and 0.975 with nonnegative integer counts in increasing order.
+
+For example, a peak-week row is `2026-11-14,peak week inc flu hosp,,,Ontario,pmf,2026-10-17,0` and an incidence row is `2026-11-14,peak inc flu hosp,,,Ontario,quantile,0.5,150`, using the column order below. Each is only one row of the required full distribution. Observations are finalized after all season weeks are available; tied peak weeks are not scored. The seasonal evaluation CSV reports weighted interval scores for incidence and ranked probability scores for week, with lower scores better.
+
 Teams are encouraged to submit predictions for all forecast horizons, but it is not mandatory to cover every time period or location. Similarly, while teams are encouraged to forecast for all three targets, submitting predictions for all of them is not required. Predictions for the previous week's hospital admissions (horizon -1) are optional and will not be scored in summary evaluations.
 
 ## Data Formatting
@@ -92,6 +100,8 @@ This column must contain one of the following target strings:
 - `wk inc flu hosp` (Influenza Hospital Bed Occupancy Count)
 - `wk inc rsv hosp` (RSV Hospital Bed Occupancy Count)
 - `wk inc covid hosp` (COVID-19 Hospital Bed Occupancy Count)
+- `peak week inc flu hosp` (optional influenza admission peak week)
+- `peak inc flu hosp` (optional influenza admission peak count)
 
 ### `horizon`
 
