@@ -6,7 +6,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-11-14,wk inc covid hosp,-1,2026-11-07,Ontario,quantile,0.75,140
 2026-11-14,wk inc covid hosp,-1,2026-11-07,Ontario,quantile,0.9,150
 2026-11-14,wk inc covid hosp,-1,2026-11-07,Ontario,quantile,0.975,160
-2026-11-14,wk inc covid hosp,0,2026-11-14,Ontario,quantile,0.025,100
+2026-11-14,wk inc covid hosp,0,2026-11-14,Ontario,quantile,0.025,101
 2026-11-14,wk inc covid hosp,0,2026-11-14,Ontario,quantile,0.1,110
 2026-11-14,wk inc covid hosp,0,2026-11-14,Ontario,quantile,0.25,120
 2026-11-14,wk inc covid hosp,0,2026-11-14,Ontario,quantile,0.5,130
