@@ -66,6 +66,8 @@ including private vaccine production (which would be excluded by the "cc-by-nc-4
 
 A team-specified boolean indicator (`true` or `false`) for whether the model should be considered eligible for inclusion in a Hub ensemble and public visualization. A team may specify up to two models as a designated_model for inclusion. Models which have a designated_model value of 'False' will still be included in internal forecasting hub evaluations.
 
+For the seasonal influenza peak ensemble, the three hub-produced peak models are an administrative exception to the two-model guidance. Participant model eligibility continues to follow `designated_model`.
+
 ### data_inputs
 
 List or description of the data sources used to inform the model. Particularly those used beyond the target data of confirmed influenza hospital admissions.

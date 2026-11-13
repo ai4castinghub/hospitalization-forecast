@@ -159,39 +159,42 @@ if (nrow(duplicate_keys) > 0) {
   stop("Processed target data contains duplicate time/geography keys.")
 }
 
-admission_rows <- hospital_bed_occupancy_raw |>
-  filter(trimws(as.character(Outcome)) == "Influenza hospital admissions") |>
-  transmute(phu = trimws(as.character(`Public health unit`)),
-            time = as.Date(parse_date_time(as.character(`Week end date`),
-                                            orders = c("ymd HMS", "ymd"), quiet = TRUE)),
-            admissions = suppressWarnings(as.numeric(Number))) |>
-  filter(!is.na(phu), phu != "")
-if (nrow(admission_rows) == 0 || anyNA(admission_rows) ||
-    any(admission_rows$admissions < 0 | admission_rows$admissions %% 1 != 0) ||
-    anyDuplicated(admission_rows[c("time", "phu")])) {
-  stop("Influenza admissions are missing, suppressed, invalid, or duplicated.")
-}
-mapping <- phu_region_mapping |>
-  filter(!is.na(NAME_ENG), !is.na(OH_Name)) |>
-  transmute(phu = NAME_ENG, geo_value = OH_Name)
-if (anyDuplicated(mapping$phu) ||
-    nrow(anti_join(admission_rows, mapping, by = "phu")) > 0) {
-  stop("Influenza admissions contain unmapped or ambiguously mapped PHUs.")
-}
-expected_phus <- sort(mapping$phu)
-for (week in unique(admission_rows$time)) {
-  found <- sort(admission_rows$phu[admission_rows$time == week])
-  if (!identical(found, expected_phus)) {
-    stop("Incomplete influenza admissions PHU coverage for ", as.Date(week, origin = "1970-01-01"))
+admissions_result <- tryCatch({
+  admission_rows <- hospital_bed_occupancy_raw |>
+    filter(trimws(as.character(Outcome)) == "Influenza hospital admissions") |>
+    transmute(phu = trimws(as.character(`Public health unit`)),
+              time = as.Date(parse_date_time(as.character(`Week end date`),
+                                              orders = c("ymd HMS", "ymd"), quiet = TRUE)),
+              admissions = suppressWarnings(as.numeric(Number))) |>
+    filter(!is.na(phu), phu != "")
+  if (nrow(admission_rows) == 0 || anyNA(admission_rows) ||
+      any(admission_rows$admissions < 0 | admission_rows$admissions %% 1 != 0) ||
+      anyDuplicated(admission_rows[c("time", "phu")])) {
+    stop("Influenza admissions are missing, suppressed, invalid, or duplicated.")
   }
-}
-influenza_admissions <- admission_rows |>
-  left_join(mapping, by = "phu") |>
-  group_by(time, geo_value) |>
-  summarise(admissions = sum(admissions), .groups = "drop") |>
-  mutate(geo_type = if_else(geo_value == "Ontario", "Province", "OH Region")) |>
-  select(time, geo_value, geo_type, admissions) |>
-  arrange(desc(time), geo_value)
+  mapping <- phu_region_mapping |>
+    filter(!is.na(NAME_ENG), !is.na(OH_Name)) |>
+    transmute(phu = NAME_ENG, geo_value = OH_Name)
+  if (anyDuplicated(mapping$phu) ||
+      nrow(anti_join(admission_rows, mapping, by = "phu")) > 0) {
+    stop("Influenza admissions contain unmapped or ambiguously mapped PHUs.")
+  }
+  expected_phus <- sort(mapping$phu)
+  for (week in unique(admission_rows$time)) {
+    found <- sort(admission_rows$phu[admission_rows$time == week])
+    if (!identical(found, expected_phus)) {
+      stop("Incomplete influenza admissions PHU coverage for ", as.Date(week, origin = "1970-01-01"))
+    }
+  }
+  influenza_admissions <- admission_rows |>
+    left_join(mapping, by = "phu") |>
+    group_by(time, geo_value) |>
+    summarise(admissions = sum(admissions), .groups = "drop") |>
+    mutate(geo_type = if_else(geo_value == "Ontario", "Province", "OH Region")) |>
+    select(time, geo_value, geo_type, admissions) |>
+    arrange(desc(time), geo_value)
+  list(data = influenza_admissions, error = NULL)
+}, error = function(e) list(data = NULL, error = conditionMessage(e)))
 
 # ---- Rotate the previous current season into the archive ----
 dir.create(target_dir, recursive = TRUE, showWarnings = FALSE)
@@ -218,7 +221,17 @@ for (old_dir in other_target_seasons) {
 dir.create(current_target_dir, recursive = TRUE, showWarnings = FALSE)
 target_file <- file.path(current_target_dir, "hospitalization-data.csv")
 write_csv(hospital_bed_occupancy, target_file, na = "NA")
-write_csv(influenza_admissions, file.path(current_target_dir, "influenza-admissions.csv"), na = "NA")
+if (is.null(admissions_result$error)) {
+  write_csv(admissions_result$data, file.path(current_target_dir, "influenza-admissions.csv"), na = "NA")
+  admissions_status <- tibble(status = "available", reason = "")
+} else {
+  message("WARNING: Influenza admissions were not updated: ", admissions_result$error)
+  if (nzchar(Sys.getenv("GITHUB_ACTIONS"))) {
+    cat("::warning::Influenza admissions were not updated; seasonal peak forecasts will be skipped.\n")
+  }
+  admissions_status <- tibble(status = "unavailable", reason = admissions_result$error)
+}
+write_csv(admissions_status, file.path(current_target_dir, "influenza-admissions-status.csv"), na = "")
 
 message(sprintf(
   "Processed %d PHO rows into %d target rows for %s (%s through %s): %s",
