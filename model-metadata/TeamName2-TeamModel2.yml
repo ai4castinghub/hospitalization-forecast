@@ -1,0 +1,16 @@
+team_name: "team-name-2"
+team_abbr: "TeamName2"
+model_name: "team-model-2"
+model_abbr: "TeamModel2"
+model_version: "1.0"
+model_contributors:
+  - name: "Alex Morgan"
+    affiliation: "Example University"
+    email: "alex.morgan@example.com"
+license: "CC-BY-4.0"
+designated_model: false
+data_inputs: "PHO weekly hospital bed occupancy and influenza admissions through October 31, 2026."
+methods: "Illustrative flatline occupancy forecasts and simple peak distributions; for format demonstration."
+methods_long: "Uses the most recent available occupancy as a constant median with fixed multiplicative quantiles. Peak week is uniform over the season, and peak admissions quantiles are fixed multiples of the observed seasonal maximum. These values are illustrative, do not model spatial correlations, and are not calibrated forecasts."
+ensemble_of_models: false
+ensemble_of_hub_models: false
