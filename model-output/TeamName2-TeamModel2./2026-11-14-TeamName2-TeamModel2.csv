@@ -1,0 +1,1016 @@
+reference_date,target,horizon,target_end_date,location,output_type,output_type_id,value
+2026-11-14,wk inc covid hosp,-1,2026-11-07,Ontario,quantile,0.025,70
+2026-11-14,wk inc covid hosp,-1,2026-11-07,Ontario,quantile,0.1,91
+2026-11-14,wk inc covid hosp,-1,2026-11-07,Ontario,quantile,0.25,112
+2026-11-14,wk inc covid hosp,-1,2026-11-07,Ontario,quantile,0.5,140
+2026-11-14,wk inc covid hosp,-1,2026-11-07,Ontario,quantile,0.75,175
+2026-11-14,wk inc covid hosp,-1,2026-11-07,Ontario,quantile,0.9,210
+2026-11-14,wk inc covid hosp,-1,2026-11-07,Ontario,quantile,0.975,252
+2026-11-14,wk inc covid hosp,0,2026-11-14,Ontario,quantile,0.025,70
+2026-11-14,wk inc covid hosp,0,2026-11-14,Ontario,quantile,0.1,91
+2026-11-14,wk inc covid hosp,0,2026-11-14,Ontario,quantile,0.25,112
+2026-11-14,wk inc covid hosp,0,2026-11-14,Ontario,quantile,0.5,140
+2026-11-14,wk inc covid hosp,0,2026-11-14,Ontario,quantile,0.75,175
+2026-11-14,wk inc covid hosp,0,2026-11-14,Ontario,quantile,0.9,210
+2026-11-14,wk inc covid hosp,0,2026-11-14,Ontario,quantile,0.975,252
+2026-11-14,wk inc covid hosp,1,2026-11-21,Ontario,quantile,0.025,70
+2026-11-14,wk inc covid hosp,1,2026-11-21,Ontario,quantile,0.1,91
+2026-11-14,wk inc covid hosp,1,2026-11-21,Ontario,quantile,0.25,112
+2026-11-14,wk inc covid hosp,1,2026-11-21,Ontario,quantile,0.5,140
+2026-11-14,wk inc covid hosp,1,2026-11-21,Ontario,quantile,0.75,175
+2026-11-14,wk inc covid hosp,1,2026-11-21,Ontario,quantile,0.9,210
+2026-11-14,wk inc covid hosp,1,2026-11-21,Ontario,quantile,0.975,252
+2026-11-14,wk inc covid hosp,2,2026-11-28,Ontario,quantile,0.025,70
+2026-11-14,wk inc covid hosp,2,2026-11-28,Ontario,quantile,0.1,91
+2026-11-14,wk inc covid hosp,2,2026-11-28,Ontario,quantile,0.25,112
+2026-11-14,wk inc covid hosp,2,2026-11-28,Ontario,quantile,0.5,140
+2026-11-14,wk inc covid hosp,2,2026-11-28,Ontario,quantile,0.75,175
+2026-11-14,wk inc covid hosp,2,2026-11-28,Ontario,quantile,0.9,210
+2026-11-14,wk inc covid hosp,2,2026-11-28,Ontario,quantile,0.975,252
+2026-11-14,wk inc covid hosp,3,2026-12-05,Ontario,quantile,0.025,70
+2026-11-14,wk inc covid hosp,3,2026-12-05,Ontario,quantile,0.1,91
+2026-11-14,wk inc covid hosp,3,2026-12-05,Ontario,quantile,0.25,112
+2026-11-14,wk inc covid hosp,3,2026-12-05,Ontario,quantile,0.5,140
+2026-11-14,wk inc covid hosp,3,2026-12-05,Ontario,quantile,0.75,175
+2026-11-14,wk inc covid hosp,3,2026-12-05,Ontario,quantile,0.9,210
+2026-11-14,wk inc covid hosp,3,2026-12-05,Ontario,quantile,0.975,252
+2026-11-14,wk inc flu hosp,-1,2026-11-07,Ontario,quantile,0.025,70
+2026-11-14,wk inc flu hosp,-1,2026-11-07,Ontario,quantile,0.1,91
+2026-11-14,wk inc flu hosp,-1,2026-11-07,Ontario,quantile,0.25,112
+2026-11-14,wk inc flu hosp,-1,2026-11-07,Ontario,quantile,0.5,141
+2026-11-14,wk inc flu hosp,-1,2026-11-07,Ontario,quantile,0.75,177
+2026-11-14,wk inc flu hosp,-1,2026-11-07,Ontario,quantile,0.9,212
+2026-11-14,wk inc flu hosp,-1,2026-11-07,Ontario,quantile,0.975,254
+2026-11-14,wk inc flu hosp,0,2026-11-14,Ontario,quantile,0.025,70
+2026-11-14,wk inc flu hosp,0,2026-11-14,Ontario,quantile,0.1,91
+2026-11-14,wk inc flu hosp,0,2026-11-14,Ontario,quantile,0.25,112
+2026-11-14,wk inc flu hosp,0,2026-11-14,Ontario,quantile,0.5,141
+2026-11-14,wk inc flu hosp,0,2026-11-14,Ontario,quantile,0.75,177
+2026-11-14,wk inc flu hosp,0,2026-11-14,Ontario,quantile,0.9,212
+2026-11-14,wk inc flu hosp,0,2026-11-14,Ontario,quantile,0.975,254
+2026-11-14,wk inc flu hosp,1,2026-11-21,Ontario,quantile,0.025,70
+2026-11-14,wk inc flu hosp,1,2026-11-21,Ontario,quantile,0.1,91
+2026-11-14,wk inc flu hosp,1,2026-11-21,Ontario,quantile,0.25,112
+2026-11-14,wk inc flu hosp,1,2026-11-21,Ontario,quantile,0.5,141
+2026-11-14,wk inc flu hosp,1,2026-11-21,Ontario,quantile,0.75,177
+2026-11-14,wk inc flu hosp,1,2026-11-21,Ontario,quantile,0.9,212
+2026-11-14,wk inc flu hosp,1,2026-11-21,Ontario,quantile,0.975,254
+2026-11-14,wk inc flu hosp,2,2026-11-28,Ontario,quantile,0.025,70
+2026-11-14,wk inc flu hosp,2,2026-11-28,Ontario,quantile,0.1,91
+2026-11-14,wk inc flu hosp,2,2026-11-28,Ontario,quantile,0.25,112
+2026-11-14,wk inc flu hosp,2,2026-11-28,Ontario,quantile,0.5,141
+2026-11-14,wk inc flu hosp,2,2026-11-28,Ontario,quantile,0.75,177
+2026-11-14,wk inc flu hosp,2,2026-11-28,Ontario,quantile,0.9,212
+2026-11-14,wk inc flu hosp,2,2026-11-28,Ontario,quantile,0.975,254
+2026-11-14,wk inc flu hosp,3,2026-12-05,Ontario,quantile,0.025,70
+2026-11-14,wk inc flu hosp,3,2026-12-05,Ontario,quantile,0.1,91
+2026-11-14,wk inc flu hosp,3,2026-12-05,Ontario,quantile,0.25,112
+2026-11-14,wk inc flu hosp,3,2026-12-05,Ontario,quantile,0.5,141
+2026-11-14,wk inc flu hosp,3,2026-12-05,Ontario,quantile,0.75,177
+2026-11-14,wk inc flu hosp,3,2026-12-05,Ontario,quantile,0.9,212
+2026-11-14,wk inc flu hosp,3,2026-12-05,Ontario,quantile,0.975,254
+2026-11-14,wk inc rsv hosp,-1,2026-11-07,Ontario,quantile,0.025,4
+2026-11-14,wk inc rsv hosp,-1,2026-11-07,Ontario,quantile,0.1,5
+2026-11-14,wk inc rsv hosp,-1,2026-11-07,Ontario,quantile,0.25,6
+2026-11-14,wk inc rsv hosp,-1,2026-11-07,Ontario,quantile,0.5,8
+2026-11-14,wk inc rsv hosp,-1,2026-11-07,Ontario,quantile,0.75,10
+2026-11-14,wk inc rsv hosp,-1,2026-11-07,Ontario,quantile,0.9,12
+2026-11-14,wk inc rsv hosp,-1,2026-11-07,Ontario,quantile,0.975,15
+2026-11-14,wk inc rsv hosp,0,2026-11-14,Ontario,quantile,0.025,4
+2026-11-14,wk inc rsv hosp,0,2026-11-14,Ontario,quantile,0.1,5
+2026-11-14,wk inc rsv hosp,0,2026-11-14,Ontario,quantile,0.25,6
+2026-11-14,wk inc rsv hosp,0,2026-11-14,Ontario,quantile,0.5,8
+2026-11-14,wk inc rsv hosp,0,2026-11-14,Ontario,quantile,0.75,10
+2026-11-14,wk inc rsv hosp,0,2026-11-14,Ontario,quantile,0.9,12
+2026-11-14,wk inc rsv hosp,0,2026-11-14,Ontario,quantile,0.975,15
+2026-11-14,wk inc rsv hosp,1,2026-11-21,Ontario,quantile,0.025,4
+2026-11-14,wk inc rsv hosp,1,2026-11-21,Ontario,quantile,0.1,5
+2026-11-14,wk inc rsv hosp,1,2026-11-21,Ontario,quantile,0.25,6
+2026-11-14,wk inc rsv hosp,1,2026-11-21,Ontario,quantile,0.5,8
+2026-11-14,wk inc rsv hosp,1,2026-11-21,Ontario,quantile,0.75,10
+2026-11-14,wk inc rsv hosp,1,2026-11-21,Ontario,quantile,0.9,12
+2026-11-14,wk inc rsv hosp,1,2026-11-21,Ontario,quantile,0.975,15
+2026-11-14,wk inc rsv hosp,2,2026-11-28,Ontario,quantile,0.025,4
+2026-11-14,wk inc rsv hosp,2,2026-11-28,Ontario,quantile,0.1,5
+2026-11-14,wk inc rsv hosp,2,2026-11-28,Ontario,quantile,0.25,6
+2026-11-14,wk inc rsv hosp,2,2026-11-28,Ontario,quantile,0.5,8
+2026-11-14,wk inc rsv hosp,2,2026-11-28,Ontario,quantile,0.75,10
+2026-11-14,wk inc rsv hosp,2,2026-11-28,Ontario,quantile,0.9,12
+2026-11-14,wk inc rsv hosp,2,2026-11-28,Ontario,quantile,0.975,15
+2026-11-14,wk inc rsv hosp,3,2026-12-05,Ontario,quantile,0.025,4
+2026-11-14,wk inc rsv hosp,3,2026-12-05,Ontario,quantile,0.1,5
+2026-11-14,wk inc rsv hosp,3,2026-12-05,Ontario,quantile,0.25,6
+2026-11-14,wk inc rsv hosp,3,2026-12-05,Ontario,quantile,0.5,8
+2026-11-14,wk inc rsv hosp,3,2026-12-05,Ontario,quantile,0.75,10
+2026-11-14,wk inc rsv hosp,3,2026-12-05,Ontario,quantile,0.9,12
+2026-11-14,wk inc rsv hosp,3,2026-12-05,Ontario,quantile,0.975,15
+2026-11-14,peak week inc flu hosp,,,Ontario,pmf,2026-10-17,0.03030303
+2026-11-14,peak week inc flu hosp,,,Ontario,pmf,2026-10-24,0.03030303
+2026-11-14,peak week inc flu hosp,,,Ontario,pmf,2026-10-31,0.03030303
+2026-11-14,peak week inc flu hosp,,,Ontario,pmf,2026-11-07,0.03030303
+2026-11-14,peak week inc flu hosp,,,Ontario,pmf,2026-11-14,0.03030303
+2026-11-14,peak week inc flu hosp,,,Ontario,pmf,2026-11-21,0.03030303
+2026-11-14,peak week inc flu hosp,,,Ontario,pmf,2026-11-28,0.03030303
+2026-11-14,peak week inc flu hosp,,,Ontario,pmf,2026-12-05,0.03030303
+2026-11-14,peak week inc flu hosp,,,Ontario,pmf,2026-12-12,0.03030303
+2026-11-14,peak week inc flu hosp,,,Ontario,pmf,2026-12-19,0.03030303
+2026-11-14,peak week inc flu hosp,,,Ontario,pmf,2026-12-26,0.03030303
+2026-11-14,peak week inc flu hosp,,,Ontario,pmf,2027-01-02,0.03030303
+2026-11-14,peak week inc flu hosp,,,Ontario,pmf,2027-01-09,0.03030303
+2026-11-14,peak week inc flu hosp,,,Ontario,pmf,2027-01-16,0.03030303
+2026-11-14,peak week inc flu hosp,,,Ontario,pmf,2027-01-23,0.03030303
+2026-11-14,peak week inc flu hosp,,,Ontario,pmf,2027-01-30,0.03030303
+2026-11-14,peak week inc flu hosp,,,Ontario,pmf,2027-02-06,0.03030303
+2026-11-14,peak week inc flu hosp,,,Ontario,pmf,2027-02-13,0.03030303
+2026-11-14,peak week inc flu hosp,,,Ontario,pmf,2027-02-20,0.03030303
+2026-11-14,peak week inc flu hosp,,,Ontario,pmf,2027-02-27,0.03030303
+2026-11-14,peak week inc flu hosp,,,Ontario,pmf,2027-03-06,0.03030303
+2026-11-14,peak week inc flu hosp,,,Ontario,pmf,2027-03-13,0.03030303
+2026-11-14,peak week inc flu hosp,,,Ontario,pmf,2027-03-20,0.03030303
+2026-11-14,peak week inc flu hosp,,,Ontario,pmf,2027-03-27,0.03030303
+2026-11-14,peak week inc flu hosp,,,Ontario,pmf,2027-04-03,0.03030303
+2026-11-14,peak week inc flu hosp,,,Ontario,pmf,2027-04-10,0.03030303
+2026-11-14,peak week inc flu hosp,,,Ontario,pmf,2027-04-17,0.03030303
+2026-11-14,peak week inc flu hosp,,,Ontario,pmf,2027-04-24,0.03030303
+2026-11-14,peak week inc flu hosp,,,Ontario,pmf,2027-05-01,0.03030303
+2026-11-14,peak week inc flu hosp,,,Ontario,pmf,2027-05-08,0.03030303
+2026-11-14,peak week inc flu hosp,,,Ontario,pmf,2027-05-15,0.03030303
+2026-11-14,peak week inc flu hosp,,,Ontario,pmf,2027-05-22,0.03030303
+2026-11-14,peak week inc flu hosp,,,Ontario,pmf,2027-05-29,0.03030304
+2026-11-14,peak inc flu hosp,,,Ontario,quantile,0.025,141
+2026-11-14,peak inc flu hosp,,,Ontario,quantile,0.1,156
+2026-11-14,peak inc flu hosp,,,Ontario,quantile,0.25,177
+2026-11-14,peak inc flu hosp,,,Ontario,quantile,0.5,212
+2026-11-14,peak inc flu hosp,,,Ontario,quantile,0.75,282
+2026-11-14,peak inc flu hosp,,,Ontario,quantile,0.9,353
+2026-11-14,peak inc flu hosp,,,Ontario,quantile,0.975,423
+2026-11-14,wk inc covid hosp,-1,2026-11-07,North East,quantile,0.025,1
+2026-11-14,wk inc covid hosp,-1,2026-11-07,North East,quantile,0.1,1
+2026-11-14,wk inc covid hosp,-1,2026-11-07,North East,quantile,0.25,1
+2026-11-14,wk inc covid hosp,-1,2026-11-07,North East,quantile,0.5,2
+2026-11-14,wk inc covid hosp,-1,2026-11-07,North East,quantile,0.75,3
+2026-11-14,wk inc covid hosp,-1,2026-11-07,North East,quantile,0.9,3
+2026-11-14,wk inc covid hosp,-1,2026-11-07,North East,quantile,0.975,4
+2026-11-14,wk inc covid hosp,0,2026-11-14,North East,quantile,0.025,1
+2026-11-14,wk inc covid hosp,0,2026-11-14,North East,quantile,0.1,1
+2026-11-14,wk inc covid hosp,0,2026-11-14,North East,quantile,0.25,1
+2026-11-14,wk inc covid hosp,0,2026-11-14,North East,quantile,0.5,2
+2026-11-14,wk inc covid hosp,0,2026-11-14,North East,quantile,0.75,3
+2026-11-14,wk inc covid hosp,0,2026-11-14,North East,quantile,0.9,3
+2026-11-14,wk inc covid hosp,0,2026-11-14,North East,quantile,0.975,4
+2026-11-14,wk inc covid hosp,1,2026-11-21,North East,quantile,0.025,1
+2026-11-14,wk inc covid hosp,1,2026-11-21,North East,quantile,0.1,1
+2026-11-14,wk inc covid hosp,1,2026-11-21,North East,quantile,0.25,1
+2026-11-14,wk inc covid hosp,1,2026-11-21,North East,quantile,0.5,2
+2026-11-14,wk inc covid hosp,1,2026-11-21,North East,quantile,0.75,3
+2026-11-14,wk inc covid hosp,1,2026-11-21,North East,quantile,0.9,3
+2026-11-14,wk inc covid hosp,1,2026-11-21,North East,quantile,0.975,4
+2026-11-14,wk inc covid hosp,2,2026-11-28,North East,quantile,0.025,1
+2026-11-14,wk inc covid hosp,2,2026-11-28,North East,quantile,0.1,1
+2026-11-14,wk inc covid hosp,2,2026-11-28,North East,quantile,0.25,1
+2026-11-14,wk inc covid hosp,2,2026-11-28,North East,quantile,0.5,2
+2026-11-14,wk inc covid hosp,2,2026-11-28,North East,quantile,0.75,3
+2026-11-14,wk inc covid hosp,2,2026-11-28,North East,quantile,0.9,3
+2026-11-14,wk inc covid hosp,2,2026-11-28,North East,quantile,0.975,4
+2026-11-14,wk inc covid hosp,3,2026-12-05,North East,quantile,0.025,1
+2026-11-14,wk inc covid hosp,3,2026-12-05,North East,quantile,0.1,1
+2026-11-14,wk inc covid hosp,3,2026-12-05,North East,quantile,0.25,1
+2026-11-14,wk inc covid hosp,3,2026-12-05,North East,quantile,0.5,2
+2026-11-14,wk inc covid hosp,3,2026-12-05,North East,quantile,0.75,3
+2026-11-14,wk inc covid hosp,3,2026-12-05,North East,quantile,0.9,3
+2026-11-14,wk inc covid hosp,3,2026-12-05,North East,quantile,0.975,4
+2026-11-14,wk inc flu hosp,-1,2026-11-07,North East,quantile,0.025,1
+2026-11-14,wk inc flu hosp,-1,2026-11-07,North East,quantile,0.1,1
+2026-11-14,wk inc flu hosp,-1,2026-11-07,North East,quantile,0.25,1
+2026-11-14,wk inc flu hosp,-1,2026-11-07,North East,quantile,0.5,2
+2026-11-14,wk inc flu hosp,-1,2026-11-07,North East,quantile,0.75,3
+2026-11-14,wk inc flu hosp,-1,2026-11-07,North East,quantile,0.9,3
+2026-11-14,wk inc flu hosp,-1,2026-11-07,North East,quantile,0.975,4
+2026-11-14,wk inc flu hosp,0,2026-11-14,North East,quantile,0.025,1
+2026-11-14,wk inc flu hosp,0,2026-11-14,North East,quantile,0.1,1
+2026-11-14,wk inc flu hosp,0,2026-11-14,North East,quantile,0.25,1
+2026-11-14,wk inc flu hosp,0,2026-11-14,North East,quantile,0.5,2
+2026-11-14,wk inc flu hosp,0,2026-11-14,North East,quantile,0.75,3
+2026-11-14,wk inc flu hosp,0,2026-11-14,North East,quantile,0.9,3
+2026-11-14,wk inc flu hosp,0,2026-11-14,North East,quantile,0.975,4
+2026-11-14,wk inc flu hosp,1,2026-11-21,North East,quantile,0.025,1
+2026-11-14,wk inc flu hosp,1,2026-11-21,North East,quantile,0.1,1
+2026-11-14,wk inc flu hosp,1,2026-11-21,North East,quantile,0.25,1
+2026-11-14,wk inc flu hosp,1,2026-11-21,North East,quantile,0.5,2
+2026-11-14,wk inc flu hosp,1,2026-11-21,North East,quantile,0.75,3
+2026-11-14,wk inc flu hosp,1,2026-11-21,North East,quantile,0.9,3
+2026-11-14,wk inc flu hosp,1,2026-11-21,North East,quantile,0.975,4
+2026-11-14,wk inc flu hosp,2,2026-11-28,North East,quantile,0.025,1
+2026-11-14,wk inc flu hosp,2,2026-11-28,North East,quantile,0.1,1
+2026-11-14,wk inc flu hosp,2,2026-11-28,North East,quantile,0.25,1
+2026-11-14,wk inc flu hosp,2,2026-11-28,North East,quantile,0.5,2
+2026-11-14,wk inc flu hosp,2,2026-11-28,North East,quantile,0.75,3
+2026-11-14,wk inc flu hosp,2,2026-11-28,North East,quantile,0.9,3
+2026-11-14,wk inc flu hosp,2,2026-11-28,North East,quantile,0.975,4
+2026-11-14,wk inc flu hosp,3,2026-12-05,North East,quantile,0.025,1
+2026-11-14,wk inc flu hosp,3,2026-12-05,North East,quantile,0.1,1
+2026-11-14,wk inc flu hosp,3,2026-12-05,North East,quantile,0.25,1
+2026-11-14,wk inc flu hosp,3,2026-12-05,North East,quantile,0.5,2
+2026-11-14,wk inc flu hosp,3,2026-12-05,North East,quantile,0.75,3
+2026-11-14,wk inc flu hosp,3,2026-12-05,North East,quantile,0.9,3
+2026-11-14,wk inc flu hosp,3,2026-12-05,North East,quantile,0.975,4
+2026-11-14,wk inc rsv hosp,-1,2026-11-07,North East,quantile,0.025,0
+2026-11-14,wk inc rsv hosp,-1,2026-11-07,North East,quantile,0.1,0
+2026-11-14,wk inc rsv hosp,-1,2026-11-07,North East,quantile,0.25,0
+2026-11-14,wk inc rsv hosp,-1,2026-11-07,North East,quantile,0.5,0
+2026-11-14,wk inc rsv hosp,-1,2026-11-07,North East,quantile,0.75,0
+2026-11-14,wk inc rsv hosp,-1,2026-11-07,North East,quantile,0.9,0
+2026-11-14,wk inc rsv hosp,-1,2026-11-07,North East,quantile,0.975,0
+2026-11-14,wk inc rsv hosp,0,2026-11-14,North East,quantile,0.025,0
+2026-11-14,wk inc rsv hosp,0,2026-11-14,North East,quantile,0.1,0
+2026-11-14,wk inc rsv hosp,0,2026-11-14,North East,quantile,0.25,0
+2026-11-14,wk inc rsv hosp,0,2026-11-14,North East,quantile,0.5,0
+2026-11-14,wk inc rsv hosp,0,2026-11-14,North East,quantile,0.75,0
+2026-11-14,wk inc rsv hosp,0,2026-11-14,North East,quantile,0.9,0
+2026-11-14,wk inc rsv hosp,0,2026-11-14,North East,quantile,0.975,0
+2026-11-14,wk inc rsv hosp,1,2026-11-21,North East,quantile,0.025,0
+2026-11-14,wk inc rsv hosp,1,2026-11-21,North East,quantile,0.1,0
+2026-11-14,wk inc rsv hosp,1,2026-11-21,North East,quantile,0.25,0
+2026-11-14,wk inc rsv hosp,1,2026-11-21,North East,quantile,0.5,0
+2026-11-14,wk inc rsv hosp,1,2026-11-21,North East,quantile,0.75,0
+2026-11-14,wk inc rsv hosp,1,2026-11-21,North East,quantile,0.9,0
+2026-11-14,wk inc rsv hosp,1,2026-11-21,North East,quantile,0.975,0
+2026-11-14,wk inc rsv hosp,2,2026-11-28,North East,quantile,0.025,0
+2026-11-14,wk inc rsv hosp,2,2026-11-28,North East,quantile,0.1,0
+2026-11-14,wk inc rsv hosp,2,2026-11-28,North East,quantile,0.25,0
+2026-11-14,wk inc rsv hosp,2,2026-11-28,North East,quantile,0.5,0
+2026-11-14,wk inc rsv hosp,2,2026-11-28,North East,quantile,0.75,0
+2026-11-14,wk inc rsv hosp,2,2026-11-28,North East,quantile,0.9,0
+2026-11-14,wk inc rsv hosp,2,2026-11-28,North East,quantile,0.975,0
+2026-11-14,wk inc rsv hosp,3,2026-12-05,North East,quantile,0.025,0
+2026-11-14,wk inc rsv hosp,3,2026-12-05,North East,quantile,0.1,0
+2026-11-14,wk inc rsv hosp,3,2026-12-05,North East,quantile,0.25,0
+2026-11-14,wk inc rsv hosp,3,2026-12-05,North East,quantile,0.5,0
+2026-11-14,wk inc rsv hosp,3,2026-12-05,North East,quantile,0.75,0
+2026-11-14,wk inc rsv hosp,3,2026-12-05,North East,quantile,0.9,0
+2026-11-14,wk inc rsv hosp,3,2026-12-05,North East,quantile,0.975,0
+2026-11-14,peak week inc flu hosp,,,North East,pmf,2026-10-17,0.03030303
+2026-11-14,peak week inc flu hosp,,,North East,pmf,2026-10-24,0.03030303
+2026-11-14,peak week inc flu hosp,,,North East,pmf,2026-10-31,0.03030303
+2026-11-14,peak week inc flu hosp,,,North East,pmf,2026-11-07,0.03030303
+2026-11-14,peak week inc flu hosp,,,North East,pmf,2026-11-14,0.03030303
+2026-11-14,peak week inc flu hosp,,,North East,pmf,2026-11-21,0.03030303
+2026-11-14,peak week inc flu hosp,,,North East,pmf,2026-11-28,0.03030303
+2026-11-14,peak week inc flu hosp,,,North East,pmf,2026-12-05,0.03030303
+2026-11-14,peak week inc flu hosp,,,North East,pmf,2026-12-12,0.03030303
+2026-11-14,peak week inc flu hosp,,,North East,pmf,2026-12-19,0.03030303
+2026-11-14,peak week inc flu hosp,,,North East,pmf,2026-12-26,0.03030303
+2026-11-14,peak week inc flu hosp,,,North East,pmf,2027-01-02,0.03030303
+2026-11-14,peak week inc flu hosp,,,North East,pmf,2027-01-09,0.03030303
+2026-11-14,peak week inc flu hosp,,,North East,pmf,2027-01-16,0.03030303
+2026-11-14,peak week inc flu hosp,,,North East,pmf,2027-01-23,0.03030303
+2026-11-14,peak week inc flu hosp,,,North East,pmf,2027-01-30,0.03030303
+2026-11-14,peak week inc flu hosp,,,North East,pmf,2027-02-06,0.03030303
+2026-11-14,peak week inc flu hosp,,,North East,pmf,2027-02-13,0.03030303
+2026-11-14,peak week inc flu hosp,,,North East,pmf,2027-02-20,0.03030303
+2026-11-14,peak week inc flu hosp,,,North East,pmf,2027-02-27,0.03030303
+2026-11-14,peak week inc flu hosp,,,North East,pmf,2027-03-06,0.03030303
+2026-11-14,peak week inc flu hosp,,,North East,pmf,2027-03-13,0.03030303
+2026-11-14,peak week inc flu hosp,,,North East,pmf,2027-03-20,0.03030303
+2026-11-14,peak week inc flu hosp,,,North East,pmf,2027-03-27,0.03030303
+2026-11-14,peak week inc flu hosp,,,North East,pmf,2027-04-03,0.03030303
+2026-11-14,peak week inc flu hosp,,,North East,pmf,2027-04-10,0.03030303
+2026-11-14,peak week inc flu hosp,,,North East,pmf,2027-04-17,0.03030303
+2026-11-14,peak week inc flu hosp,,,North East,pmf,2027-04-24,0.03030303
+2026-11-14,peak week inc flu hosp,,,North East,pmf,2027-05-01,0.03030303
+2026-11-14,peak week inc flu hosp,,,North East,pmf,2027-05-08,0.03030303
+2026-11-14,peak week inc flu hosp,,,North East,pmf,2027-05-15,0.03030303
+2026-11-14,peak week inc flu hosp,,,North East,pmf,2027-05-22,0.03030303
+2026-11-14,peak week inc flu hosp,,,North East,pmf,2027-05-29,0.03030304
+2026-11-14,peak inc flu hosp,,,North East,quantile,0.025,6
+2026-11-14,peak inc flu hosp,,,North East,quantile,0.1,7
+2026-11-14,peak inc flu hosp,,,North East,quantile,0.25,8
+2026-11-14,peak inc flu hosp,,,North East,quantile,0.5,9
+2026-11-14,peak inc flu hosp,,,North East,quantile,0.75,12
+2026-11-14,peak inc flu hosp,,,North East,quantile,0.9,15
+2026-11-14,peak inc flu hosp,,,North East,quantile,0.975,18
+2026-11-14,wk inc covid hosp,-1,2026-11-07,West,quantile,0.025,16
+2026-11-14,wk inc covid hosp,-1,2026-11-07,West,quantile,0.1,20
+2026-11-14,wk inc covid hosp,-1,2026-11-07,West,quantile,0.25,25
+2026-11-14,wk inc covid hosp,-1,2026-11-07,West,quantile,0.5,32
+2026-11-14,wk inc covid hosp,-1,2026-11-07,West,quantile,0.75,40
+2026-11-14,wk inc covid hosp,-1,2026-11-07,West,quantile,0.9,48
+2026-11-14,wk inc covid hosp,-1,2026-11-07,West,quantile,0.975,58
+2026-11-14,wk inc covid hosp,0,2026-11-14,West,quantile,0.025,16
+2026-11-14,wk inc covid hosp,0,2026-11-14,West,quantile,0.1,20
+2026-11-14,wk inc covid hosp,0,2026-11-14,West,quantile,0.25,25
+2026-11-14,wk inc covid hosp,0,2026-11-14,West,quantile,0.5,32
+2026-11-14,wk inc covid hosp,0,2026-11-14,West,quantile,0.75,40
+2026-11-14,wk inc covid hosp,0,2026-11-14,West,quantile,0.9,48
+2026-11-14,wk inc covid hosp,0,2026-11-14,West,quantile,0.975,58
+2026-11-14,wk inc covid hosp,1,2026-11-21,West,quantile,0.025,16
+2026-11-14,wk inc covid hosp,1,2026-11-21,West,quantile,0.1,20
+2026-11-14,wk inc covid hosp,1,2026-11-21,West,quantile,0.25,25
+2026-11-14,wk inc covid hosp,1,2026-11-21,West,quantile,0.5,32
+2026-11-14,wk inc covid hosp,1,2026-11-21,West,quantile,0.75,40
+2026-11-14,wk inc covid hosp,1,2026-11-21,West,quantile,0.9,48
+2026-11-14,wk inc covid hosp,1,2026-11-21,West,quantile,0.975,58
+2026-11-14,wk inc covid hosp,2,2026-11-28,West,quantile,0.025,16
+2026-11-14,wk inc covid hosp,2,2026-11-28,West,quantile,0.1,20
+2026-11-14,wk inc covid hosp,2,2026-11-28,West,quantile,0.25,25
+2026-11-14,wk inc covid hosp,2,2026-11-28,West,quantile,0.5,32
+2026-11-14,wk inc covid hosp,2,2026-11-28,West,quantile,0.75,40
+2026-11-14,wk inc covid hosp,2,2026-11-28,West,quantile,0.9,48
+2026-11-14,wk inc covid hosp,2,2026-11-28,West,quantile,0.975,58
+2026-11-14,wk inc covid hosp,3,2026-12-05,West,quantile,0.025,16
+2026-11-14,wk inc covid hosp,3,2026-12-05,West,quantile,0.1,20
+2026-11-14,wk inc covid hosp,3,2026-12-05,West,quantile,0.25,25
+2026-11-14,wk inc covid hosp,3,2026-12-05,West,quantile,0.5,32
+2026-11-14,wk inc covid hosp,3,2026-12-05,West,quantile,0.75,40
+2026-11-14,wk inc covid hosp,3,2026-12-05,West,quantile,0.9,48
+2026-11-14,wk inc covid hosp,3,2026-12-05,West,quantile,0.975,58
+2026-11-14,wk inc flu hosp,-1,2026-11-07,West,quantile,0.025,9
+2026-11-14,wk inc flu hosp,-1,2026-11-07,West,quantile,0.1,11
+2026-11-14,wk inc flu hosp,-1,2026-11-07,West,quantile,0.25,14
+2026-11-14,wk inc flu hosp,-1,2026-11-07,West,quantile,0.5,18
+2026-11-14,wk inc flu hosp,-1,2026-11-07,West,quantile,0.75,23
+2026-11-14,wk inc flu hosp,-1,2026-11-07,West,quantile,0.9,27
+2026-11-14,wk inc flu hosp,-1,2026-11-07,West,quantile,0.975,33
+2026-11-14,wk inc flu hosp,0,2026-11-14,West,quantile,0.025,9
+2026-11-14,wk inc flu hosp,0,2026-11-14,West,quantile,0.1,11
+2026-11-14,wk inc flu hosp,0,2026-11-14,West,quantile,0.25,14
+2026-11-14,wk inc flu hosp,0,2026-11-14,West,quantile,0.5,18
+2026-11-14,wk inc flu hosp,0,2026-11-14,West,quantile,0.75,23
+2026-11-14,wk inc flu hosp,0,2026-11-14,West,quantile,0.9,27
+2026-11-14,wk inc flu hosp,0,2026-11-14,West,quantile,0.975,33
+2026-11-14,wk inc flu hosp,1,2026-11-21,West,quantile,0.025,9
+2026-11-14,wk inc flu hosp,1,2026-11-21,West,quantile,0.1,11
+2026-11-14,wk inc flu hosp,1,2026-11-21,West,quantile,0.25,14
+2026-11-14,wk inc flu hosp,1,2026-11-21,West,quantile,0.5,18
+2026-11-14,wk inc flu hosp,1,2026-11-21,West,quantile,0.75,23
+2026-11-14,wk inc flu hosp,1,2026-11-21,West,quantile,0.9,27
+2026-11-14,wk inc flu hosp,1,2026-11-21,West,quantile,0.975,33
+2026-11-14,wk inc flu hosp,2,2026-11-28,West,quantile,0.025,9
+2026-11-14,wk inc flu hosp,2,2026-11-28,West,quantile,0.1,11
+2026-11-14,wk inc flu hosp,2,2026-11-28,West,quantile,0.25,14
+2026-11-14,wk inc flu hosp,2,2026-11-28,West,quantile,0.5,18
+2026-11-14,wk inc flu hosp,2,2026-11-28,West,quantile,0.75,23
+2026-11-14,wk inc flu hosp,2,2026-11-28,West,quantile,0.9,27
+2026-11-14,wk inc flu hosp,2,2026-11-28,West,quantile,0.975,33
+2026-11-14,wk inc flu hosp,3,2026-12-05,West,quantile,0.025,9
+2026-11-14,wk inc flu hosp,3,2026-12-05,West,quantile,0.1,11
+2026-11-14,wk inc flu hosp,3,2026-12-05,West,quantile,0.25,14
+2026-11-14,wk inc flu hosp,3,2026-12-05,West,quantile,0.5,18
+2026-11-14,wk inc flu hosp,3,2026-12-05,West,quantile,0.75,23
+2026-11-14,wk inc flu hosp,3,2026-12-05,West,quantile,0.9,27
+2026-11-14,wk inc flu hosp,3,2026-12-05,West,quantile,0.975,33
+2026-11-14,wk inc rsv hosp,-1,2026-11-07,West,quantile,0.025,0
+2026-11-14,wk inc rsv hosp,-1,2026-11-07,West,quantile,0.1,0
+2026-11-14,wk inc rsv hosp,-1,2026-11-07,West,quantile,0.25,0
+2026-11-14,wk inc rsv hosp,-1,2026-11-07,West,quantile,0.5,1
+2026-11-14,wk inc rsv hosp,-1,2026-11-07,West,quantile,0.75,2
+2026-11-14,wk inc rsv hosp,-1,2026-11-07,West,quantile,0.9,2
+2026-11-14,wk inc rsv hosp,-1,2026-11-07,West,quantile,0.975,2
+2026-11-14,wk inc rsv hosp,0,2026-11-14,West,quantile,0.025,0
+2026-11-14,wk inc rsv hosp,0,2026-11-14,West,quantile,0.1,0
+2026-11-14,wk inc rsv hosp,0,2026-11-14,West,quantile,0.25,0
+2026-11-14,wk inc rsv hosp,0,2026-11-14,West,quantile,0.5,1
+2026-11-14,wk inc rsv hosp,0,2026-11-14,West,quantile,0.75,2
+2026-11-14,wk inc rsv hosp,0,2026-11-14,West,quantile,0.9,2
+2026-11-14,wk inc rsv hosp,0,2026-11-14,West,quantile,0.975,2
+2026-11-14,wk inc rsv hosp,1,2026-11-21,West,quantile,0.025,0
+2026-11-14,wk inc rsv hosp,1,2026-11-21,West,quantile,0.1,0
+2026-11-14,wk inc rsv hosp,1,2026-11-21,West,quantile,0.25,0
+2026-11-14,wk inc rsv hosp,1,2026-11-21,West,quantile,0.5,1
+2026-11-14,wk inc rsv hosp,1,2026-11-21,West,quantile,0.75,2
+2026-11-14,wk inc rsv hosp,1,2026-11-21,West,quantile,0.9,2
+2026-11-14,wk inc rsv hosp,1,2026-11-21,West,quantile,0.975,2
+2026-11-14,wk inc rsv hosp,2,2026-11-28,West,quantile,0.025,0
+2026-11-14,wk inc rsv hosp,2,2026-11-28,West,quantile,0.1,0
+2026-11-14,wk inc rsv hosp,2,2026-11-28,West,quantile,0.25,0
+2026-11-14,wk inc rsv hosp,2,2026-11-28,West,quantile,0.5,1
+2026-11-14,wk inc rsv hosp,2,2026-11-28,West,quantile,0.75,2
+2026-11-14,wk inc rsv hosp,2,2026-11-28,West,quantile,0.9,2
+2026-11-14,wk inc rsv hosp,2,2026-11-28,West,quantile,0.975,2
+2026-11-14,wk inc rsv hosp,3,2026-12-05,West,quantile,0.025,0
+2026-11-14,wk inc rsv hosp,3,2026-12-05,West,quantile,0.1,0
+2026-11-14,wk inc rsv hosp,3,2026-12-05,West,quantile,0.25,0
+2026-11-14,wk inc rsv hosp,3,2026-12-05,West,quantile,0.5,1
+2026-11-14,wk inc rsv hosp,3,2026-12-05,West,quantile,0.75,2
+2026-11-14,wk inc rsv hosp,3,2026-12-05,West,quantile,0.9,2
+2026-11-14,wk inc rsv hosp,3,2026-12-05,West,quantile,0.975,2
+2026-11-14,peak week inc flu hosp,,,West,pmf,2026-10-17,0.03030303
+2026-11-14,peak week inc flu hosp,,,West,pmf,2026-10-24,0.03030303
+2026-11-14,peak week inc flu hosp,,,West,pmf,2026-10-31,0.03030303
+2026-11-14,peak week inc flu hosp,,,West,pmf,2026-11-07,0.03030303
+2026-11-14,peak week inc flu hosp,,,West,pmf,2026-11-14,0.03030303
+2026-11-14,peak week inc flu hosp,,,West,pmf,2026-11-21,0.03030303
+2026-11-14,peak week inc flu hosp,,,West,pmf,2026-11-28,0.03030303
+2026-11-14,peak week inc flu hosp,,,West,pmf,2026-12-05,0.03030303
+2026-11-14,peak week inc flu hosp,,,West,pmf,2026-12-12,0.03030303
+2026-11-14,peak week inc flu hosp,,,West,pmf,2026-12-19,0.03030303
+2026-11-14,peak week inc flu hosp,,,West,pmf,2026-12-26,0.03030303
+2026-11-14,peak week inc flu hosp,,,West,pmf,2027-01-02,0.03030303
+2026-11-14,peak week inc flu hosp,,,West,pmf,2027-01-09,0.03030303
+2026-11-14,peak week inc flu hosp,,,West,pmf,2027-01-16,0.03030303
+2026-11-14,peak week inc flu hosp,,,West,pmf,2027-01-23,0.03030303
+2026-11-14,peak week inc flu hosp,,,West,pmf,2027-01-30,0.03030303
+2026-11-14,peak week inc flu hosp,,,West,pmf,2027-02-06,0.03030303
+2026-11-14,peak week inc flu hosp,,,West,pmf,2027-02-13,0.03030303
+2026-11-14,peak week inc flu hosp,,,West,pmf,2027-02-20,0.03030303
+2026-11-14,peak week inc flu hosp,,,West,pmf,2027-02-27,0.03030303
+2026-11-14,peak week inc flu hosp,,,West,pmf,2027-03-06,0.03030303
+2026-11-14,peak week inc flu hosp,,,West,pmf,2027-03-13,0.03030303
+2026-11-14,peak week inc flu hosp,,,West,pmf,2027-03-20,0.03030303
+2026-11-14,peak week inc flu hosp,,,West,pmf,2027-03-27,0.03030303
+2026-11-14,peak week inc flu hosp,,,West,pmf,2027-04-03,0.03030303
+2026-11-14,peak week inc flu hosp,,,West,pmf,2027-04-10,0.03030303
+2026-11-14,peak week inc flu hosp,,,West,pmf,2027-04-17,0.03030303
+2026-11-14,peak week inc flu hosp,,,West,pmf,2027-04-24,0.03030303
+2026-11-14,peak week inc flu hosp,,,West,pmf,2027-05-01,0.03030303
+2026-11-14,peak week inc flu hosp,,,West,pmf,2027-05-08,0.03030303
+2026-11-14,peak week inc flu hosp,,,West,pmf,2027-05-15,0.03030303
+2026-11-14,peak week inc flu hosp,,,West,pmf,2027-05-22,0.03030303
+2026-11-14,peak week inc flu hosp,,,West,pmf,2027-05-29,0.03030304
+2026-11-14,peak inc flu hosp,,,West,quantile,0.025,20
+2026-11-14,peak inc flu hosp,,,West,quantile,0.1,22
+2026-11-14,peak inc flu hosp,,,West,quantile,0.25,25
+2026-11-14,peak inc flu hosp,,,West,quantile,0.5,30
+2026-11-14,peak inc flu hosp,,,West,quantile,0.75,40
+2026-11-14,peak inc flu hosp,,,West,quantile,0.9,50
+2026-11-14,peak inc flu hosp,,,West,quantile,0.975,60
+2026-11-14,wk inc covid hosp,-1,2026-11-07,East,quantile,0.025,23
+2026-11-14,wk inc covid hosp,-1,2026-11-07,East,quantile,0.1,29
+2026-11-14,wk inc covid hosp,-1,2026-11-07,East,quantile,0.25,36
+2026-11-14,wk inc covid hosp,-1,2026-11-07,East,quantile,0.5,46
+2026-11-14,wk inc covid hosp,-1,2026-11-07,East,quantile,0.75,58
+2026-11-14,wk inc covid hosp,-1,2026-11-07,East,quantile,0.9,69
+2026-11-14,wk inc covid hosp,-1,2026-11-07,East,quantile,0.975,83
+2026-11-14,wk inc covid hosp,0,2026-11-14,East,quantile,0.025,23
+2026-11-14,wk inc covid hosp,0,2026-11-14,East,quantile,0.1,29
+2026-11-14,wk inc covid hosp,0,2026-11-14,East,quantile,0.25,36
+2026-11-14,wk inc covid hosp,0,2026-11-14,East,quantile,0.5,46
+2026-11-14,wk inc covid hosp,0,2026-11-14,East,quantile,0.75,58
+2026-11-14,wk inc covid hosp,0,2026-11-14,East,quantile,0.9,69
+2026-11-14,wk inc covid hosp,0,2026-11-14,East,quantile,0.975,83
+2026-11-14,wk inc covid hosp,1,2026-11-21,East,quantile,0.025,23
+2026-11-14,wk inc covid hosp,1,2026-11-21,East,quantile,0.1,29
+2026-11-14,wk inc covid hosp,1,2026-11-21,East,quantile,0.25,36
+2026-11-14,wk inc covid hosp,1,2026-11-21,East,quantile,0.5,46
+2026-11-14,wk inc covid hosp,1,2026-11-21,East,quantile,0.75,58
+2026-11-14,wk inc covid hosp,1,2026-11-21,East,quantile,0.9,69
+2026-11-14,wk inc covid hosp,1,2026-11-21,East,quantile,0.975,83
+2026-11-14,wk inc covid hosp,2,2026-11-28,East,quantile,0.025,23
+2026-11-14,wk inc covid hosp,2,2026-11-28,East,quantile,0.1,29
+2026-11-14,wk inc covid hosp,2,2026-11-28,East,quantile,0.25,36
+2026-11-14,wk inc covid hosp,2,2026-11-28,East,quantile,0.5,46
+2026-11-14,wk inc covid hosp,2,2026-11-28,East,quantile,0.75,58
+2026-11-14,wk inc covid hosp,2,2026-11-28,East,quantile,0.9,69
+2026-11-14,wk inc covid hosp,2,2026-11-28,East,quantile,0.975,83
+2026-11-14,wk inc covid hosp,3,2026-12-05,East,quantile,0.025,23
+2026-11-14,wk inc covid hosp,3,2026-12-05,East,quantile,0.1,29
+2026-11-14,wk inc covid hosp,3,2026-12-05,East,quantile,0.25,36
+2026-11-14,wk inc covid hosp,3,2026-12-05,East,quantile,0.5,46
+2026-11-14,wk inc covid hosp,3,2026-12-05,East,quantile,0.75,58
+2026-11-14,wk inc covid hosp,3,2026-12-05,East,quantile,0.9,69
+2026-11-14,wk inc covid hosp,3,2026-12-05,East,quantile,0.975,83
+2026-11-14,wk inc flu hosp,-1,2026-11-07,East,quantile,0.025,23
+2026-11-14,wk inc flu hosp,-1,2026-11-07,East,quantile,0.1,29
+2026-11-14,wk inc flu hosp,-1,2026-11-07,East,quantile,0.25,36
+2026-11-14,wk inc flu hosp,-1,2026-11-07,East,quantile,0.5,46
+2026-11-14,wk inc flu hosp,-1,2026-11-07,East,quantile,0.75,58
+2026-11-14,wk inc flu hosp,-1,2026-11-07,East,quantile,0.9,69
+2026-11-14,wk inc flu hosp,-1,2026-11-07,East,quantile,0.975,83
+2026-11-14,wk inc flu hosp,0,2026-11-14,East,quantile,0.025,23
+2026-11-14,wk inc flu hosp,0,2026-11-14,East,quantile,0.1,29
+2026-11-14,wk inc flu hosp,0,2026-11-14,East,quantile,0.25,36
+2026-11-14,wk inc flu hosp,0,2026-11-14,East,quantile,0.5,46
+2026-11-14,wk inc flu hosp,0,2026-11-14,East,quantile,0.75,58
+2026-11-14,wk inc flu hosp,0,2026-11-14,East,quantile,0.9,69
+2026-11-14,wk inc flu hosp,0,2026-11-14,East,quantile,0.975,83
+2026-11-14,wk inc flu hosp,1,2026-11-21,East,quantile,0.025,23
+2026-11-14,wk inc flu hosp,1,2026-11-21,East,quantile,0.1,29
+2026-11-14,wk inc flu hosp,1,2026-11-21,East,quantile,0.25,36
+2026-11-14,wk inc flu hosp,1,2026-11-21,East,quantile,0.5,46
+2026-11-14,wk inc flu hosp,1,2026-11-21,East,quantile,0.75,58
+2026-11-14,wk inc flu hosp,1,2026-11-21,East,quantile,0.9,69
+2026-11-14,wk inc flu hosp,1,2026-11-21,East,quantile,0.975,83
+2026-11-14,wk inc flu hosp,2,2026-11-28,East,quantile,0.025,23
+2026-11-14,wk inc flu hosp,2,2026-11-28,East,quantile,0.1,29
+2026-11-14,wk inc flu hosp,2,2026-11-28,East,quantile,0.25,36
+2026-11-14,wk inc flu hosp,2,2026-11-28,East,quantile,0.5,46
+2026-11-14,wk inc flu hosp,2,2026-11-28,East,quantile,0.75,58
+2026-11-14,wk inc flu hosp,2,2026-11-28,East,quantile,0.9,69
+2026-11-14,wk inc flu hosp,2,2026-11-28,East,quantile,0.975,83
+2026-11-14,wk inc flu hosp,3,2026-12-05,East,quantile,0.025,23
+2026-11-14,wk inc flu hosp,3,2026-12-05,East,quantile,0.1,29
+2026-11-14,wk inc flu hosp,3,2026-12-05,East,quantile,0.25,36
+2026-11-14,wk inc flu hosp,3,2026-12-05,East,quantile,0.5,46
+2026-11-14,wk inc flu hosp,3,2026-12-05,East,quantile,0.75,58
+2026-11-14,wk inc flu hosp,3,2026-12-05,East,quantile,0.9,69
+2026-11-14,wk inc flu hosp,3,2026-12-05,East,quantile,0.975,83
+2026-11-14,wk inc rsv hosp,-1,2026-11-07,East,quantile,0.025,0
+2026-11-14,wk inc rsv hosp,-1,2026-11-07,East,quantile,0.1,0
+2026-11-14,wk inc rsv hosp,-1,2026-11-07,East,quantile,0.25,0
+2026-11-14,wk inc rsv hosp,-1,2026-11-07,East,quantile,0.5,1
+2026-11-14,wk inc rsv hosp,-1,2026-11-07,East,quantile,0.75,2
+2026-11-14,wk inc rsv hosp,-1,2026-11-07,East,quantile,0.9,2
+2026-11-14,wk inc rsv hosp,-1,2026-11-07,East,quantile,0.975,2
+2026-11-14,wk inc rsv hosp,0,2026-11-14,East,quantile,0.025,0
+2026-11-14,wk inc rsv hosp,0,2026-11-14,East,quantile,0.1,0
+2026-11-14,wk inc rsv hosp,0,2026-11-14,East,quantile,0.25,0
+2026-11-14,wk inc rsv hosp,0,2026-11-14,East,quantile,0.5,1
+2026-11-14,wk inc rsv hosp,0,2026-11-14,East,quantile,0.75,2
+2026-11-14,wk inc rsv hosp,0,2026-11-14,East,quantile,0.9,2
+2026-11-14,wk inc rsv hosp,0,2026-11-14,East,quantile,0.975,2
+2026-11-14,wk inc rsv hosp,1,2026-11-21,East,quantile,0.025,0
+2026-11-14,wk inc rsv hosp,1,2026-11-21,East,quantile,0.1,0
+2026-11-14,wk inc rsv hosp,1,2026-11-21,East,quantile,0.25,0
+2026-11-14,wk inc rsv hosp,1,2026-11-21,East,quantile,0.5,1
+2026-11-14,wk inc rsv hosp,1,2026-11-21,East,quantile,0.75,2
+2026-11-14,wk inc rsv hosp,1,2026-11-21,East,quantile,0.9,2
+2026-11-14,wk inc rsv hosp,1,2026-11-21,East,quantile,0.975,2
+2026-11-14,wk inc rsv hosp,2,2026-11-28,East,quantile,0.025,0
+2026-11-14,wk inc rsv hosp,2,2026-11-28,East,quantile,0.1,0
+2026-11-14,wk inc rsv hosp,2,2026-11-28,East,quantile,0.25,0
+2026-11-14,wk inc rsv hosp,2,2026-11-28,East,quantile,0.5,1
+2026-11-14,wk inc rsv hosp,2,2026-11-28,East,quantile,0.75,2
+2026-11-14,wk inc rsv hosp,2,2026-11-28,East,quantile,0.9,2
+2026-11-14,wk inc rsv hosp,2,2026-11-28,East,quantile,0.975,2
+2026-11-14,wk inc rsv hosp,3,2026-12-05,East,quantile,0.025,0
+2026-11-14,wk inc rsv hosp,3,2026-12-05,East,quantile,0.1,0
+2026-11-14,wk inc rsv hosp,3,2026-12-05,East,quantile,0.25,0
+2026-11-14,wk inc rsv hosp,3,2026-12-05,East,quantile,0.5,1
+2026-11-14,wk inc rsv hosp,3,2026-12-05,East,quantile,0.75,2
+2026-11-14,wk inc rsv hosp,3,2026-12-05,East,quantile,0.9,2
+2026-11-14,wk inc rsv hosp,3,2026-12-05,East,quantile,0.975,2
+2026-11-14,peak week inc flu hosp,,,East,pmf,2026-10-17,0.03030303
+2026-11-14,peak week inc flu hosp,,,East,pmf,2026-10-24,0.03030303
+2026-11-14,peak week inc flu hosp,,,East,pmf,2026-10-31,0.03030303
+2026-11-14,peak week inc flu hosp,,,East,pmf,2026-11-07,0.03030303
+2026-11-14,peak week inc flu hosp,,,East,pmf,2026-11-14,0.03030303
+2026-11-14,peak week inc flu hosp,,,East,pmf,2026-11-21,0.03030303
+2026-11-14,peak week inc flu hosp,,,East,pmf,2026-11-28,0.03030303
+2026-11-14,peak week inc flu hosp,,,East,pmf,2026-12-05,0.03030303
+2026-11-14,peak week inc flu hosp,,,East,pmf,2026-12-12,0.03030303
+2026-11-14,peak week inc flu hosp,,,East,pmf,2026-12-19,0.03030303
+2026-11-14,peak week inc flu hosp,,,East,pmf,2026-12-26,0.03030303
+2026-11-14,peak week inc flu hosp,,,East,pmf,2027-01-02,0.03030303
+2026-11-14,peak week inc flu hosp,,,East,pmf,2027-01-09,0.03030303
+2026-11-14,peak week inc flu hosp,,,East,pmf,2027-01-16,0.03030303
+2026-11-14,peak week inc flu hosp,,,East,pmf,2027-01-23,0.03030303
+2026-11-14,peak week inc flu hosp,,,East,pmf,2027-01-30,0.03030303
+2026-11-14,peak week inc flu hosp,,,East,pmf,2027-02-06,0.03030303
+2026-11-14,peak week inc flu hosp,,,East,pmf,2027-02-13,0.03030303
+2026-11-14,peak week inc flu hosp,,,East,pmf,2027-02-20,0.03030303
+2026-11-14,peak week inc flu hosp,,,East,pmf,2027-02-27,0.03030303
+2026-11-14,peak week inc flu hosp,,,East,pmf,2027-03-06,0.03030303
+2026-11-14,peak week inc flu hosp,,,East,pmf,2027-03-13,0.03030303
+2026-11-14,peak week inc flu hosp,,,East,pmf,2027-03-20,0.03030303
+2026-11-14,peak week inc flu hosp,,,East,pmf,2027-03-27,0.03030303
+2026-11-14,peak week inc flu hosp,,,East,pmf,2027-04-03,0.03030303
+2026-11-14,peak week inc flu hosp,,,East,pmf,2027-04-10,0.03030303
+2026-11-14,peak week inc flu hosp,,,East,pmf,2027-04-17,0.03030303
+2026-11-14,peak week inc flu hosp,,,East,pmf,2027-04-24,0.03030303
+2026-11-14,peak week inc flu hosp,,,East,pmf,2027-05-01,0.03030303
+2026-11-14,peak week inc flu hosp,,,East,pmf,2027-05-08,0.03030303
+2026-11-14,peak week inc flu hosp,,,East,pmf,2027-05-15,0.03030303
+2026-11-14,peak week inc flu hosp,,,East,pmf,2027-05-22,0.03030303
+2026-11-14,peak week inc flu hosp,,,East,pmf,2027-05-29,0.03030304
+2026-11-14,peak inc flu hosp,,,East,quantile,0.025,30
+2026-11-14,peak inc flu hosp,,,East,quantile,0.1,33
+2026-11-14,peak inc flu hosp,,,East,quantile,0.25,38
+2026-11-14,peak inc flu hosp,,,East,quantile,0.5,45
+2026-11-14,peak inc flu hosp,,,East,quantile,0.75,60
+2026-11-14,peak inc flu hosp,,,East,quantile,0.9,75
+2026-11-14,peak inc flu hosp,,,East,quantile,0.975,90
+2026-11-14,wk inc covid hosp,-1,2026-11-07,Central,quantile,0.025,18
+2026-11-14,wk inc covid hosp,-1,2026-11-07,Central,quantile,0.1,23
+2026-11-14,wk inc covid hosp,-1,2026-11-07,Central,quantile,0.25,28
+2026-11-14,wk inc covid hosp,-1,2026-11-07,Central,quantile,0.5,36
+2026-11-14,wk inc covid hosp,-1,2026-11-07,Central,quantile,0.75,45
+2026-11-14,wk inc covid hosp,-1,2026-11-07,Central,quantile,0.9,54
+2026-11-14,wk inc covid hosp,-1,2026-11-07,Central,quantile,0.975,65
+2026-11-14,wk inc covid hosp,0,2026-11-14,Central,quantile,0.025,18
+2026-11-14,wk inc covid hosp,0,2026-11-14,Central,quantile,0.1,23
+2026-11-14,wk inc covid hosp,0,2026-11-14,Central,quantile,0.25,28
+2026-11-14,wk inc covid hosp,0,2026-11-14,Central,quantile,0.5,36
+2026-11-14,wk inc covid hosp,0,2026-11-14,Central,quantile,0.75,45
+2026-11-14,wk inc covid hosp,0,2026-11-14,Central,quantile,0.9,54
+2026-11-14,wk inc covid hosp,0,2026-11-14,Central,quantile,0.975,65
+2026-11-14,wk inc covid hosp,1,2026-11-21,Central,quantile,0.025,18
+2026-11-14,wk inc covid hosp,1,2026-11-21,Central,quantile,0.1,23
+2026-11-14,wk inc covid hosp,1,2026-11-21,Central,quantile,0.25,28
+2026-11-14,wk inc covid hosp,1,2026-11-21,Central,quantile,0.5,36
+2026-11-14,wk inc covid hosp,1,2026-11-21,Central,quantile,0.75,45
+2026-11-14,wk inc covid hosp,1,2026-11-21,Central,quantile,0.9,54
+2026-11-14,wk inc covid hosp,1,2026-11-21,Central,quantile,0.975,65
+2026-11-14,wk inc covid hosp,2,2026-11-28,Central,quantile,0.025,18
+2026-11-14,wk inc covid hosp,2,2026-11-28,Central,quantile,0.1,23
+2026-11-14,wk inc covid hosp,2,2026-11-28,Central,quantile,0.25,28
+2026-11-14,wk inc covid hosp,2,2026-11-28,Central,quantile,0.5,36
+2026-11-14,wk inc covid hosp,2,2026-11-28,Central,quantile,0.75,45
+2026-11-14,wk inc covid hosp,2,2026-11-28,Central,quantile,0.9,54
+2026-11-14,wk inc covid hosp,2,2026-11-28,Central,quantile,0.975,65
+2026-11-14,wk inc covid hosp,3,2026-12-05,Central,quantile,0.025,18
+2026-11-14,wk inc covid hosp,3,2026-12-05,Central,quantile,0.1,23
+2026-11-14,wk inc covid hosp,3,2026-12-05,Central,quantile,0.25,28
+2026-11-14,wk inc covid hosp,3,2026-12-05,Central,quantile,0.5,36
+2026-11-14,wk inc covid hosp,3,2026-12-05,Central,quantile,0.75,45
+2026-11-14,wk inc covid hosp,3,2026-12-05,Central,quantile,0.9,54
+2026-11-14,wk inc covid hosp,3,2026-12-05,Central,quantile,0.975,65
+2026-11-14,wk inc flu hosp,-1,2026-11-07,Central,quantile,0.025,16
+2026-11-14,wk inc flu hosp,-1,2026-11-07,Central,quantile,0.1,21
+2026-11-14,wk inc flu hosp,-1,2026-11-07,Central,quantile,0.25,26
+2026-11-14,wk inc flu hosp,-1,2026-11-07,Central,quantile,0.5,33
+2026-11-14,wk inc flu hosp,-1,2026-11-07,Central,quantile,0.75,42
+2026-11-14,wk inc flu hosp,-1,2026-11-07,Central,quantile,0.9,50
+2026-11-14,wk inc flu hosp,-1,2026-11-07,Central,quantile,0.975,60
+2026-11-14,wk inc flu hosp,0,2026-11-14,Central,quantile,0.025,16
+2026-11-14,wk inc flu hosp,0,2026-11-14,Central,quantile,0.1,21
+2026-11-14,wk inc flu hosp,0,2026-11-14,Central,quantile,0.25,26
+2026-11-14,wk inc flu hosp,0,2026-11-14,Central,quantile,0.5,33
+2026-11-14,wk inc flu hosp,0,2026-11-14,Central,quantile,0.75,42
+2026-11-14,wk inc flu hosp,0,2026-11-14,Central,quantile,0.9,50
+2026-11-14,wk inc flu hosp,0,2026-11-14,Central,quantile,0.975,60
+2026-11-14,wk inc flu hosp,1,2026-11-21,Central,quantile,0.025,16
+2026-11-14,wk inc flu hosp,1,2026-11-21,Central,quantile,0.1,21
+2026-11-14,wk inc flu hosp,1,2026-11-21,Central,quantile,0.25,26
+2026-11-14,wk inc flu hosp,1,2026-11-21,Central,quantile,0.5,33
+2026-11-14,wk inc flu hosp,1,2026-11-21,Central,quantile,0.75,42
+2026-11-14,wk inc flu hosp,1,2026-11-21,Central,quantile,0.9,50
+2026-11-14,wk inc flu hosp,1,2026-11-21,Central,quantile,0.975,60
+2026-11-14,wk inc flu hosp,2,2026-11-28,Central,quantile,0.025,16
+2026-11-14,wk inc flu hosp,2,2026-11-28,Central,quantile,0.1,21
+2026-11-14,wk inc flu hosp,2,2026-11-28,Central,quantile,0.25,26
+2026-11-14,wk inc flu hosp,2,2026-11-28,Central,quantile,0.5,33
+2026-11-14,wk inc flu hosp,2,2026-11-28,Central,quantile,0.75,42
+2026-11-14,wk inc flu hosp,2,2026-11-28,Central,quantile,0.9,50
+2026-11-14,wk inc flu hosp,2,2026-11-28,Central,quantile,0.975,60
+2026-11-14,wk inc flu hosp,3,2026-12-05,Central,quantile,0.025,16
+2026-11-14,wk inc flu hosp,3,2026-12-05,Central,quantile,0.1,21
+2026-11-14,wk inc flu hosp,3,2026-12-05,Central,quantile,0.25,26
+2026-11-14,wk inc flu hosp,3,2026-12-05,Central,quantile,0.5,33
+2026-11-14,wk inc flu hosp,3,2026-12-05,Central,quantile,0.75,42
+2026-11-14,wk inc flu hosp,3,2026-12-05,Central,quantile,0.9,50
+2026-11-14,wk inc flu hosp,3,2026-12-05,Central,quantile,0.975,60
+2026-11-14,wk inc rsv hosp,-1,2026-11-07,Central,quantile,0.025,1
+2026-11-14,wk inc rsv hosp,-1,2026-11-07,Central,quantile,0.1,1
+2026-11-14,wk inc rsv hosp,-1,2026-11-07,Central,quantile,0.25,2
+2026-11-14,wk inc rsv hosp,-1,2026-11-07,Central,quantile,0.5,3
+2026-11-14,wk inc rsv hosp,-1,2026-11-07,Central,quantile,0.75,4
+2026-11-14,wk inc rsv hosp,-1,2026-11-07,Central,quantile,0.9,5
+2026-11-14,wk inc rsv hosp,-1,2026-11-07,Central,quantile,0.975,6
+2026-11-14,wk inc rsv hosp,0,2026-11-14,Central,quantile,0.025,1
+2026-11-14,wk inc rsv hosp,0,2026-11-14,Central,quantile,0.1,1
+2026-11-14,wk inc rsv hosp,0,2026-11-14,Central,quantile,0.25,2
+2026-11-14,wk inc rsv hosp,0,2026-11-14,Central,quantile,0.5,3
+2026-11-14,wk inc rsv hosp,0,2026-11-14,Central,quantile,0.75,4
+2026-11-14,wk inc rsv hosp,0,2026-11-14,Central,quantile,0.9,5
+2026-11-14,wk inc rsv hosp,0,2026-11-14,Central,quantile,0.975,6
+2026-11-14,wk inc rsv hosp,1,2026-11-21,Central,quantile,0.025,1
+2026-11-14,wk inc rsv hosp,1,2026-11-21,Central,quantile,0.1,1
+2026-11-14,wk inc rsv hosp,1,2026-11-21,Central,quantile,0.25,2
+2026-11-14,wk inc rsv hosp,1,2026-11-21,Central,quantile,0.5,3
+2026-11-14,wk inc rsv hosp,1,2026-11-21,Central,quantile,0.75,4
+2026-11-14,wk inc rsv hosp,1,2026-11-21,Central,quantile,0.9,5
+2026-11-14,wk inc rsv hosp,1,2026-11-21,Central,quantile,0.975,6
+2026-11-14,wk inc rsv hosp,2,2026-11-28,Central,quantile,0.025,1
+2026-11-14,wk inc rsv hosp,2,2026-11-28,Central,quantile,0.1,1
+2026-11-14,wk inc rsv hosp,2,2026-11-28,Central,quantile,0.25,2
+2026-11-14,wk inc rsv hosp,2,2026-11-28,Central,quantile,0.5,3
+2026-11-14,wk inc rsv hosp,2,2026-11-28,Central,quantile,0.75,4
+2026-11-14,wk inc rsv hosp,2,2026-11-28,Central,quantile,0.9,5
+2026-11-14,wk inc rsv hosp,2,2026-11-28,Central,quantile,0.975,6
+2026-11-14,wk inc rsv hosp,3,2026-12-05,Central,quantile,0.025,1
+2026-11-14,wk inc rsv hosp,3,2026-12-05,Central,quantile,0.1,1
+2026-11-14,wk inc rsv hosp,3,2026-12-05,Central,quantile,0.25,2
+2026-11-14,wk inc rsv hosp,3,2026-12-05,Central,quantile,0.5,3
+2026-11-14,wk inc rsv hosp,3,2026-12-05,Central,quantile,0.75,4
+2026-11-14,wk inc rsv hosp,3,2026-12-05,Central,quantile,0.9,5
+2026-11-14,wk inc rsv hosp,3,2026-12-05,Central,quantile,0.975,6
+2026-11-14,peak week inc flu hosp,,,Central,pmf,2026-10-17,0.03030303
+2026-11-14,peak week inc flu hosp,,,Central,pmf,2026-10-24,0.03030303
+2026-11-14,peak week inc flu hosp,,,Central,pmf,2026-10-31,0.03030303
+2026-11-14,peak week inc flu hosp,,,Central,pmf,2026-11-07,0.03030303
+2026-11-14,peak week inc flu hosp,,,Central,pmf,2026-11-14,0.03030303
+2026-11-14,peak week inc flu hosp,,,Central,pmf,2026-11-21,0.03030303
+2026-11-14,peak week inc flu hosp,,,Central,pmf,2026-11-28,0.03030303
+2026-11-14,peak week inc flu hosp,,,Central,pmf,2026-12-05,0.03030303
+2026-11-14,peak week inc flu hosp,,,Central,pmf,2026-12-12,0.03030303
+2026-11-14,peak week inc flu hosp,,,Central,pmf,2026-12-19,0.03030303
+2026-11-14,peak week inc flu hosp,,,Central,pmf,2026-12-26,0.03030303
+2026-11-14,peak week inc flu hosp,,,Central,pmf,2027-01-02,0.03030303
+2026-11-14,peak week inc flu hosp,,,Central,pmf,2027-01-09,0.03030303
+2026-11-14,peak week inc flu hosp,,,Central,pmf,2027-01-16,0.03030303
+2026-11-14,peak week inc flu hosp,,,Central,pmf,2027-01-23,0.03030303
+2026-11-14,peak week inc flu hosp,,,Central,pmf,2027-01-30,0.03030303
+2026-11-14,peak week inc flu hosp,,,Central,pmf,2027-02-06,0.03030303
+2026-11-14,peak week inc flu hosp,,,Central,pmf,2027-02-13,0.03030303
+2026-11-14,peak week inc flu hosp,,,Central,pmf,2027-02-20,0.03030303
+2026-11-14,peak week inc flu hosp,,,Central,pmf,2027-02-27,0.03030303
+2026-11-14,peak week inc flu hosp,,,Central,pmf,2027-03-06,0.03030303
+2026-11-14,peak week inc flu hosp,,,Central,pmf,2027-03-13,0.03030303
+2026-11-14,peak week inc flu hosp,,,Central,pmf,2027-03-20,0.03030303
+2026-11-14,peak week inc flu hosp,,,Central,pmf,2027-03-27,0.03030303
+2026-11-14,peak week inc flu hosp,,,Central,pmf,2027-04-03,0.03030303
+2026-11-14,peak week inc flu hosp,,,Central,pmf,2027-04-10,0.03030303
+2026-11-14,peak week inc flu hosp,,,Central,pmf,2027-04-17,0.03030303
+2026-11-14,peak week inc flu hosp,,,Central,pmf,2027-04-24,0.03030303
+2026-11-14,peak week inc flu hosp,,,Central,pmf,2027-05-01,0.03030303
+2026-11-14,peak week inc flu hosp,,,Central,pmf,2027-05-08,0.03030303
+2026-11-14,peak week inc flu hosp,,,Central,pmf,2027-05-15,0.03030303
+2026-11-14,peak week inc flu hosp,,,Central,pmf,2027-05-22,0.03030303
+2026-11-14,peak week inc flu hosp,,,Central,pmf,2027-05-29,0.03030304
+2026-11-14,peak inc flu hosp,,,Central,quantile,0.025,44
+2026-11-14,peak inc flu hosp,,,Central,quantile,0.1,49
+2026-11-14,peak inc flu hosp,,,Central,quantile,0.25,55
+2026-11-14,peak inc flu hosp,,,Central,quantile,0.5,66
+2026-11-14,peak inc flu hosp,,,Central,quantile,0.75,88
+2026-11-14,peak inc flu hosp,,,Central,quantile,0.9,110
+2026-11-14,peak inc flu hosp,,,Central,quantile,0.975,132
+2026-11-14,wk inc covid hosp,-1,2026-11-07,North West,quantile,0.025,1
+2026-11-14,wk inc covid hosp,-1,2026-11-07,North West,quantile,0.1,1
+2026-11-14,wk inc covid hosp,-1,2026-11-07,North West,quantile,0.25,1
+2026-11-14,wk inc covid hosp,-1,2026-11-07,North West,quantile,0.5,2
+2026-11-14,wk inc covid hosp,-1,2026-11-07,North West,quantile,0.75,3
+2026-11-14,wk inc covid hosp,-1,2026-11-07,North West,quantile,0.9,3
+2026-11-14,wk inc covid hosp,-1,2026-11-07,North West,quantile,0.975,4
+2026-11-14,wk inc covid hosp,0,2026-11-14,North West,quantile,0.025,1
+2026-11-14,wk inc covid hosp,0,2026-11-14,North West,quantile,0.1,1
+2026-11-14,wk inc covid hosp,0,2026-11-14,North West,quantile,0.25,1
+2026-11-14,wk inc covid hosp,0,2026-11-14,North West,quantile,0.5,2
+2026-11-14,wk inc covid hosp,0,2026-11-14,North West,quantile,0.75,3
+2026-11-14,wk inc covid hosp,0,2026-11-14,North West,quantile,0.9,3
+2026-11-14,wk inc covid hosp,0,2026-11-14,North West,quantile,0.975,4
+2026-11-14,wk inc covid hosp,1,2026-11-21,North West,quantile,0.025,1
+2026-11-14,wk inc covid hosp,1,2026-11-21,North West,quantile,0.1,1
+2026-11-14,wk inc covid hosp,1,2026-11-21,North West,quantile,0.25,1
+2026-11-14,wk inc covid hosp,1,2026-11-21,North West,quantile,0.5,2
+2026-11-14,wk inc covid hosp,1,2026-11-21,North West,quantile,0.75,3
+2026-11-14,wk inc covid hosp,1,2026-11-21,North West,quantile,0.9,3
+2026-11-14,wk inc covid hosp,1,2026-11-21,North West,quantile,0.975,4
+2026-11-14,wk inc covid hosp,2,2026-11-28,North West,quantile,0.025,1
+2026-11-14,wk inc covid hosp,2,2026-11-28,North West,quantile,0.1,1
+2026-11-14,wk inc covid hosp,2,2026-11-28,North West,quantile,0.25,1
+2026-11-14,wk inc covid hosp,2,2026-11-28,North West,quantile,0.5,2
+2026-11-14,wk inc covid hosp,2,2026-11-28,North West,quantile,0.75,3
+2026-11-14,wk inc covid hosp,2,2026-11-28,North West,quantile,0.9,3
+2026-11-14,wk inc covid hosp,2,2026-11-28,North West,quantile,0.975,4
+2026-11-14,wk inc covid hosp,3,2026-12-05,North West,quantile,0.025,1
+2026-11-14,wk inc covid hosp,3,2026-12-05,North West,quantile,0.1,1
+2026-11-14,wk inc covid hosp,3,2026-12-05,North West,quantile,0.25,1
+2026-11-14,wk inc covid hosp,3,2026-12-05,North West,quantile,0.5,2
+2026-11-14,wk inc covid hosp,3,2026-12-05,North West,quantile,0.75,3
+2026-11-14,wk inc covid hosp,3,2026-12-05,North West,quantile,0.9,3
+2026-11-14,wk inc covid hosp,3,2026-12-05,North West,quantile,0.975,4
+2026-11-14,wk inc flu hosp,-1,2026-11-07,North West,quantile,0.025,0
+2026-11-14,wk inc flu hosp,-1,2026-11-07,North West,quantile,0.1,0
+2026-11-14,wk inc flu hosp,-1,2026-11-07,North West,quantile,0.25,0
+2026-11-14,wk inc flu hosp,-1,2026-11-07,North West,quantile,0.5,0
+2026-11-14,wk inc flu hosp,-1,2026-11-07,North West,quantile,0.75,0
+2026-11-14,wk inc flu hosp,-1,2026-11-07,North West,quantile,0.9,0
+2026-11-14,wk inc flu hosp,-1,2026-11-07,North West,quantile,0.975,0
+2026-11-14,wk inc flu hosp,0,2026-11-14,North West,quantile,0.025,0
+2026-11-14,wk inc flu hosp,0,2026-11-14,North West,quantile,0.1,0
+2026-11-14,wk inc flu hosp,0,2026-11-14,North West,quantile,0.25,0
+2026-11-14,wk inc flu hosp,0,2026-11-14,North West,quantile,0.5,0
+2026-11-14,wk inc flu hosp,0,2026-11-14,North West,quantile,0.75,0
+2026-11-14,wk inc flu hosp,0,2026-11-14,North West,quantile,0.9,0
+2026-11-14,wk inc flu hosp,0,2026-11-14,North West,quantile,0.975,0
+2026-11-14,wk inc flu hosp,1,2026-11-21,North West,quantile,0.025,0
+2026-11-14,wk inc flu hosp,1,2026-11-21,North West,quantile,0.1,0
+2026-11-14,wk inc flu hosp,1,2026-11-21,North West,quantile,0.25,0
+2026-11-14,wk inc flu hosp,1,2026-11-21,North West,quantile,0.5,0
+2026-11-14,wk inc flu hosp,1,2026-11-21,North West,quantile,0.75,0
+2026-11-14,wk inc flu hosp,1,2026-11-21,North West,quantile,0.9,0
+2026-11-14,wk inc flu hosp,1,2026-11-21,North West,quantile,0.975,0
+2026-11-14,wk inc flu hosp,2,2026-11-28,North West,quantile,0.025,0
+2026-11-14,wk inc flu hosp,2,2026-11-28,North West,quantile,0.1,0
+2026-11-14,wk inc flu hosp,2,2026-11-28,North West,quantile,0.25,0
+2026-11-14,wk inc flu hosp,2,2026-11-28,North West,quantile,0.5,0
+2026-11-14,wk inc flu hosp,2,2026-11-28,North West,quantile,0.75,0
+2026-11-14,wk inc flu hosp,2,2026-11-28,North West,quantile,0.9,0
+2026-11-14,wk inc flu hosp,2,2026-11-28,North West,quantile,0.975,0
+2026-11-14,wk inc flu hosp,3,2026-12-05,North West,quantile,0.025,0
+2026-11-14,wk inc flu hosp,3,2026-12-05,North West,quantile,0.1,0
+2026-11-14,wk inc flu hosp,3,2026-12-05,North West,quantile,0.25,0
+2026-11-14,wk inc flu hosp,3,2026-12-05,North West,quantile,0.5,0
+2026-11-14,wk inc flu hosp,3,2026-12-05,North West,quantile,0.75,0
+2026-11-14,wk inc flu hosp,3,2026-12-05,North West,quantile,0.9,0
+2026-11-14,wk inc flu hosp,3,2026-12-05,North West,quantile,0.975,0
+2026-11-14,wk inc rsv hosp,-1,2026-11-07,North West,quantile,0.025,0
+2026-11-14,wk inc rsv hosp,-1,2026-11-07,North West,quantile,0.1,0
+2026-11-14,wk inc rsv hosp,-1,2026-11-07,North West,quantile,0.25,0
+2026-11-14,wk inc rsv hosp,-1,2026-11-07,North West,quantile,0.5,0
+2026-11-14,wk inc rsv hosp,-1,2026-11-07,North West,quantile,0.75,0
+2026-11-14,wk inc rsv hosp,-1,2026-11-07,North West,quantile,0.9,0
+2026-11-14,wk inc rsv hosp,-1,2026-11-07,North West,quantile,0.975,0
+2026-11-14,wk inc rsv hosp,0,2026-11-14,North West,quantile,0.025,0
+2026-11-14,wk inc rsv hosp,0,2026-11-14,North West,quantile,0.1,0
+2026-11-14,wk inc rsv hosp,0,2026-11-14,North West,quantile,0.25,0
+2026-11-14,wk inc rsv hosp,0,2026-11-14,North West,quantile,0.5,0
+2026-11-14,wk inc rsv hosp,0,2026-11-14,North West,quantile,0.75,0
+2026-11-14,wk inc rsv hosp,0,2026-11-14,North West,quantile,0.9,0
+2026-11-14,wk inc rsv hosp,0,2026-11-14,North West,quantile,0.975,0
+2026-11-14,wk inc rsv hosp,1,2026-11-21,North West,quantile,0.025,0
+2026-11-14,wk inc rsv hosp,1,2026-11-21,North West,quantile,0.1,0
+2026-11-14,wk inc rsv hosp,1,2026-11-21,North West,quantile,0.25,0
+2026-11-14,wk inc rsv hosp,1,2026-11-21,North West,quantile,0.5,0
+2026-11-14,wk inc rsv hosp,1,2026-11-21,North West,quantile,0.75,0
+2026-11-14,wk inc rsv hosp,1,2026-11-21,North West,quantile,0.9,0
+2026-11-14,wk inc rsv hosp,1,2026-11-21,North West,quantile,0.975,0
+2026-11-14,wk inc rsv hosp,2,2026-11-28,North West,quantile,0.025,0
+2026-11-14,wk inc rsv hosp,2,2026-11-28,North West,quantile,0.1,0
+2026-11-14,wk inc rsv hosp,2,2026-11-28,North West,quantile,0.25,0
+2026-11-14,wk inc rsv hosp,2,2026-11-28,North West,quantile,0.5,0
+2026-11-14,wk inc rsv hosp,2,2026-11-28,North West,quantile,0.75,0
+2026-11-14,wk inc rsv hosp,2,2026-11-28,North West,quantile,0.9,0
+2026-11-14,wk inc rsv hosp,2,2026-11-28,North West,quantile,0.975,0
+2026-11-14,wk inc rsv hosp,3,2026-12-05,North West,quantile,0.025,0
+2026-11-14,wk inc rsv hosp,3,2026-12-05,North West,quantile,0.1,0
+2026-11-14,wk inc rsv hosp,3,2026-12-05,North West,quantile,0.25,0
+2026-11-14,wk inc rsv hosp,3,2026-12-05,North West,quantile,0.5,0
+2026-11-14,wk inc rsv hosp,3,2026-12-05,North West,quantile,0.75,0
+2026-11-14,wk inc rsv hosp,3,2026-12-05,North West,quantile,0.9,0
+2026-11-14,wk inc rsv hosp,3,2026-12-05,North West,quantile,0.975,0
+2026-11-14,peak week inc flu hosp,,,North West,pmf,2026-10-17,0.03030303
+2026-11-14,peak week inc flu hosp,,,North West,pmf,2026-10-24,0.03030303
+2026-11-14,peak week inc flu hosp,,,North West,pmf,2026-10-31,0.03030303
+2026-11-14,peak week inc flu hosp,,,North West,pmf,2026-11-07,0.03030303
+2026-11-14,peak week inc flu hosp,,,North West,pmf,2026-11-14,0.03030303
+2026-11-14,peak week inc flu hosp,,,North West,pmf,2026-11-21,0.03030303
+2026-11-14,peak week inc flu hosp,,,North West,pmf,2026-11-28,0.03030303
+2026-11-14,peak week inc flu hosp,,,North West,pmf,2026-12-05,0.03030303
+2026-11-14,peak week inc flu hosp,,,North West,pmf,2026-12-12,0.03030303
+2026-11-14,peak week inc flu hosp,,,North West,pmf,2026-12-19,0.03030303
+2026-11-14,peak week inc flu hosp,,,North West,pmf,2026-12-26,0.03030303
+2026-11-14,peak week inc flu hosp,,,North West,pmf,2027-01-02,0.03030303
+2026-11-14,peak week inc flu hosp,,,North West,pmf,2027-01-09,0.03030303
+2026-11-14,peak week inc flu hosp,,,North West,pmf,2027-01-16,0.03030303
+2026-11-14,peak week inc flu hosp,,,North West,pmf,2027-01-23,0.03030303
+2026-11-14,peak week inc flu hosp,,,North West,pmf,2027-01-30,0.03030303
+2026-11-14,peak week inc flu hosp,,,North West,pmf,2027-02-06,0.03030303
+2026-11-14,peak week inc flu hosp,,,North West,pmf,2027-02-13,0.03030303
+2026-11-14,peak week inc flu hosp,,,North West,pmf,2027-02-20,0.03030303
+2026-11-14,peak week inc flu hosp,,,North West,pmf,2027-02-27,0.03030303
+2026-11-14,peak week inc flu hosp,,,North West,pmf,2027-03-06,0.03030303
+2026-11-14,peak week inc flu hosp,,,North West,pmf,2027-03-13,0.03030303
+2026-11-14,peak week inc flu hosp,,,North West,pmf,2027-03-20,0.03030303
+2026-11-14,peak week inc flu hosp,,,North West,pmf,2027-03-27,0.03030303
+2026-11-14,peak week inc flu hosp,,,North West,pmf,2027-04-03,0.03030303
+2026-11-14,peak week inc flu hosp,,,North West,pmf,2027-04-10,0.03030303
+2026-11-14,peak week inc flu hosp,,,North West,pmf,2027-04-17,0.03030303
+2026-11-14,peak week inc flu hosp,,,North West,pmf,2027-04-24,0.03030303
+2026-11-14,peak week inc flu hosp,,,North West,pmf,2027-05-01,0.03030303
+2026-11-14,peak week inc flu hosp,,,North West,pmf,2027-05-08,0.03030303
+2026-11-14,peak week inc flu hosp,,,North West,pmf,2027-05-15,0.03030303
+2026-11-14,peak week inc flu hosp,,,North West,pmf,2027-05-22,0.03030303
+2026-11-14,peak week inc flu hosp,,,North West,pmf,2027-05-29,0.03030304
+2026-11-14,peak inc flu hosp,,,North West,quantile,0.025,0
+2026-11-14,peak inc flu hosp,,,North West,quantile,0.1,0
+2026-11-14,peak inc flu hosp,,,North West,quantile,0.25,0
+2026-11-14,peak inc flu hosp,,,North West,quantile,0.5,0
+2026-11-14,peak inc flu hosp,,,North West,quantile,0.75,0
+2026-11-14,peak inc flu hosp,,,North West,quantile,0.9,0
+2026-11-14,peak inc flu hosp,,,North West,quantile,0.975,0
+2026-11-14,wk inc covid hosp,-1,2026-11-07,Toronto,quantile,0.025,11
+2026-11-14,wk inc covid hosp,-1,2026-11-07,Toronto,quantile,0.1,14
+2026-11-14,wk inc covid hosp,-1,2026-11-07,Toronto,quantile,0.25,18
+2026-11-14,wk inc covid hosp,-1,2026-11-07,Toronto,quantile,0.5,23
+2026-11-14,wk inc covid hosp,-1,2026-11-07,Toronto,quantile,0.75,29
+2026-11-14,wk inc covid hosp,-1,2026-11-07,Toronto,quantile,0.9,35
+2026-11-14,wk inc covid hosp,-1,2026-11-07,Toronto,quantile,0.975,42
+2026-11-14,wk inc covid hosp,0,2026-11-14,Toronto,quantile,0.025,11
+2026-11-14,wk inc covid hosp,0,2026-11-14,Toronto,quantile,0.1,14
+2026-11-14,wk inc covid hosp,0,2026-11-14,Toronto,quantile,0.25,18
+2026-11-14,wk inc covid hosp,0,2026-11-14,Toronto,quantile,0.5,23
+2026-11-14,wk inc covid hosp,0,2026-11-14,Toronto,quantile,0.75,29
+2026-11-14,wk inc covid hosp,0,2026-11-14,Toronto,quantile,0.9,35
+2026-11-14,wk inc covid hosp,0,2026-11-14,Toronto,quantile,0.975,42
+2026-11-14,wk inc covid hosp,1,2026-11-21,Toronto,quantile,0.025,11
+2026-11-14,wk inc covid hosp,1,2026-11-21,Toronto,quantile,0.1,14
+2026-11-14,wk inc covid hosp,1,2026-11-21,Toronto,quantile,0.25,18
+2026-11-14,wk inc covid hosp,1,2026-11-21,Toronto,quantile,0.5,23
+2026-11-14,wk inc covid hosp,1,2026-11-21,Toronto,quantile,0.75,29
+2026-11-14,wk inc covid hosp,1,2026-11-21,Toronto,quantile,0.9,35
+2026-11-14,wk inc covid hosp,1,2026-11-21,Toronto,quantile,0.975,42
+2026-11-14,wk inc covid hosp,2,2026-11-28,Toronto,quantile,0.025,11
+2026-11-14,wk inc covid hosp,2,2026-11-28,Toronto,quantile,0.1,14
+2026-11-14,wk inc covid hosp,2,2026-11-28,Toronto,quantile,0.25,18
+2026-11-14,wk inc covid hosp,2,2026-11-28,Toronto,quantile,0.5,23
+2026-11-14,wk inc covid hosp,2,2026-11-28,Toronto,quantile,0.75,29
+2026-11-14,wk inc covid hosp,2,2026-11-28,Toronto,quantile,0.9,35
+2026-11-14,wk inc covid hosp,2,2026-11-28,Toronto,quantile,0.975,42
+2026-11-14,wk inc covid hosp,3,2026-12-05,Toronto,quantile,0.025,11
+2026-11-14,wk inc covid hosp,3,2026-12-05,Toronto,quantile,0.1,14
+2026-11-14,wk inc covid hosp,3,2026-12-05,Toronto,quantile,0.25,18
+2026-11-14,wk inc covid hosp,3,2026-12-05,Toronto,quantile,0.5,23
+2026-11-14,wk inc covid hosp,3,2026-12-05,Toronto,quantile,0.75,29
+2026-11-14,wk inc covid hosp,3,2026-12-05,Toronto,quantile,0.9,35
+2026-11-14,wk inc covid hosp,3,2026-12-05,Toronto,quantile,0.975,42
+2026-11-14,wk inc flu hosp,-1,2026-11-07,Toronto,quantile,0.025,21
+2026-11-14,wk inc flu hosp,-1,2026-11-07,Toronto,quantile,0.1,27
+2026-11-14,wk inc flu hosp,-1,2026-11-07,Toronto,quantile,0.25,34
+2026-11-14,wk inc flu hosp,-1,2026-11-07,Toronto,quantile,0.5,43
+2026-11-14,wk inc flu hosp,-1,2026-11-07,Toronto,quantile,0.75,54
+2026-11-14,wk inc flu hosp,-1,2026-11-07,Toronto,quantile,0.9,65
+2026-11-14,wk inc flu hosp,-1,2026-11-07,Toronto,quantile,0.975,78
+2026-11-14,wk inc flu hosp,0,2026-11-14,Toronto,quantile,0.025,21
+2026-11-14,wk inc flu hosp,0,2026-11-14,Toronto,quantile,0.1,27
+2026-11-14,wk inc flu hosp,0,2026-11-14,Toronto,quantile,0.25,34
+2026-11-14,wk inc flu hosp,0,2026-11-14,Toronto,quantile,0.5,43
+2026-11-14,wk inc flu hosp,0,2026-11-14,Toronto,quantile,0.75,54
+2026-11-14,wk inc flu hosp,0,2026-11-14,Toronto,quantile,0.9,65
+2026-11-14,wk inc flu hosp,0,2026-11-14,Toronto,quantile,0.975,78
+2026-11-14,wk inc flu hosp,1,2026-11-21,Toronto,quantile,0.025,21
+2026-11-14,wk inc flu hosp,1,2026-11-21,Toronto,quantile,0.1,27
+2026-11-14,wk inc flu hosp,1,2026-11-21,Toronto,quantile,0.25,34
+2026-11-14,wk inc flu hosp,1,2026-11-21,Toronto,quantile,0.5,43
+2026-11-14,wk inc flu hosp,1,2026-11-21,Toronto,quantile,0.75,54
+2026-11-14,wk inc flu hosp,1,2026-11-21,Toronto,quantile,0.9,65
+2026-11-14,wk inc flu hosp,1,2026-11-21,Toronto,quantile,0.975,78
+2026-11-14,wk inc flu hosp,2,2026-11-28,Toronto,quantile,0.025,21
+2026-11-14,wk inc flu hosp,2,2026-11-28,Toronto,quantile,0.1,27
+2026-11-14,wk inc flu hosp,2,2026-11-28,Toronto,quantile,0.25,34
+2026-11-14,wk inc flu hosp,2,2026-11-28,Toronto,quantile,0.5,43
+2026-11-14,wk inc flu hosp,2,2026-11-28,Toronto,quantile,0.75,54
+2026-11-14,wk inc flu hosp,2,2026-11-28,Toronto,quantile,0.9,65
+2026-11-14,wk inc flu hosp,2,2026-11-28,Toronto,quantile,0.975,78
+2026-11-14,wk inc flu hosp,3,2026-12-05,Toronto,quantile,0.025,21
+2026-11-14,wk inc flu hosp,3,2026-12-05,Toronto,quantile,0.1,27
+2026-11-14,wk inc flu hosp,3,2026-12-05,Toronto,quantile,0.25,34
+2026-11-14,wk inc flu hosp,3,2026-12-05,Toronto,quantile,0.5,43
+2026-11-14,wk inc flu hosp,3,2026-12-05,Toronto,quantile,0.75,54
+2026-11-14,wk inc flu hosp,3,2026-12-05,Toronto,quantile,0.9,65
+2026-11-14,wk inc flu hosp,3,2026-12-05,Toronto,quantile,0.975,78
+2026-11-14,wk inc rsv hosp,-1,2026-11-07,Toronto,quantile,0.025,1
+2026-11-14,wk inc rsv hosp,-1,2026-11-07,Toronto,quantile,0.1,1
+2026-11-14,wk inc rsv hosp,-1,2026-11-07,Toronto,quantile,0.25,2
+2026-11-14,wk inc rsv hosp,-1,2026-11-07,Toronto,quantile,0.5,3
+2026-11-14,wk inc rsv hosp,-1,2026-11-07,Toronto,quantile,0.75,4
+2026-11-14,wk inc rsv hosp,-1,2026-11-07,Toronto,quantile,0.9,5
+2026-11-14,wk inc rsv hosp,-1,2026-11-07,Toronto,quantile,0.975,6
+2026-11-14,wk inc rsv hosp,0,2026-11-14,Toronto,quantile,0.025,1
+2026-11-14,wk inc rsv hosp,0,2026-11-14,Toronto,quantile,0.1,1
+2026-11-14,wk inc rsv hosp,0,2026-11-14,Toronto,quantile,0.25,2
+2026-11-14,wk inc rsv hosp,0,2026-11-14,Toronto,quantile,0.5,3
+2026-11-14,wk inc rsv hosp,0,2026-11-14,Toronto,quantile,0.75,4
+2026-11-14,wk inc rsv hosp,0,2026-11-14,Toronto,quantile,0.9,5
+2026-11-14,wk inc rsv hosp,0,2026-11-14,Toronto,quantile,0.975,6
+2026-11-14,wk inc rsv hosp,1,2026-11-21,Toronto,quantile,0.025,1
+2026-11-14,wk inc rsv hosp,1,2026-11-21,Toronto,quantile,0.1,1
+2026-11-14,wk inc rsv hosp,1,2026-11-21,Toronto,quantile,0.25,2
+2026-11-14,wk inc rsv hosp,1,2026-11-21,Toronto,quantile,0.5,3
+2026-11-14,wk inc rsv hosp,1,2026-11-21,Toronto,quantile,0.75,4
+2026-11-14,wk inc rsv hosp,1,2026-11-21,Toronto,quantile,0.9,5
+2026-11-14,wk inc rsv hosp,1,2026-11-21,Toronto,quantile,0.975,6
+2026-11-14,wk inc rsv hosp,2,2026-11-28,Toronto,quantile,0.025,1
+2026-11-14,wk inc rsv hosp,2,2026-11-28,Toronto,quantile,0.1,1
+2026-11-14,wk inc rsv hosp,2,2026-11-28,Toronto,quantile,0.25,2
+2026-11-14,wk inc rsv hosp,2,2026-11-28,Toronto,quantile,0.5,3
+2026-11-14,wk inc rsv hosp,2,2026-11-28,Toronto,quantile,0.75,4
+2026-11-14,wk inc rsv hosp,2,2026-11-28,Toronto,quantile,0.9,5
+2026-11-14,wk inc rsv hosp,2,2026-11-28,Toronto,quantile,0.975,6
+2026-11-14,wk inc rsv hosp,3,2026-12-05,Toronto,quantile,0.025,1
+2026-11-14,wk inc rsv hosp,3,2026-12-05,Toronto,quantile,0.1,1
+2026-11-14,wk inc rsv hosp,3,2026-12-05,Toronto,quantile,0.25,2
+2026-11-14,wk inc rsv hosp,3,2026-12-05,Toronto,quantile,0.5,3
+2026-11-14,wk inc rsv hosp,3,2026-12-05,Toronto,quantile,0.75,4
+2026-11-14,wk inc rsv hosp,3,2026-12-05,Toronto,quantile,0.9,5
+2026-11-14,wk inc rsv hosp,3,2026-12-05,Toronto,quantile,0.975,6
+2026-11-14,peak week inc flu hosp,,,Toronto,pmf,2026-10-17,0.03030303
+2026-11-14,peak week inc flu hosp,,,Toronto,pmf,2026-10-24,0.03030303
+2026-11-14,peak week inc flu hosp,,,Toronto,pmf,2026-10-31,0.03030303
+2026-11-14,peak week inc flu hosp,,,Toronto,pmf,2026-11-07,0.03030303
+2026-11-14,peak week inc flu hosp,,,Toronto,pmf,2026-11-14,0.03030303
+2026-11-14,peak week inc flu hosp,,,Toronto,pmf,2026-11-21,0.03030303
+2026-11-14,peak week inc flu hosp,,,Toronto,pmf,2026-11-28,0.03030303
+2026-11-14,peak week inc flu hosp,,,Toronto,pmf,2026-12-05,0.03030303
+2026-11-14,peak week inc flu hosp,,,Toronto,pmf,2026-12-12,0.03030303
+2026-11-14,peak week inc flu hosp,,,Toronto,pmf,2026-12-19,0.03030303
+2026-11-14,peak week inc flu hosp,,,Toronto,pmf,2026-12-26,0.03030303
+2026-11-14,peak week inc flu hosp,,,Toronto,pmf,2027-01-02,0.03030303
+2026-11-14,peak week inc flu hosp,,,Toronto,pmf,2027-01-09,0.03030303
+2026-11-14,peak week inc flu hosp,,,Toronto,pmf,2027-01-16,0.03030303
+2026-11-14,peak week inc flu hosp,,,Toronto,pmf,2027-01-23,0.03030303
+2026-11-14,peak week inc flu hosp,,,Toronto,pmf,2027-01-30,0.03030303
+2026-11-14,peak week inc flu hosp,,,Toronto,pmf,2027-02-06,0.03030303
+2026-11-14,peak week inc flu hosp,,,Toronto,pmf,2027-02-13,0.03030303
+2026-11-14,peak week inc flu hosp,,,Toronto,pmf,2027-02-20,0.03030303
+2026-11-14,peak week inc flu hosp,,,Toronto,pmf,2027-02-27,0.03030303
+2026-11-14,peak week inc flu hosp,,,Toronto,pmf,2027-03-06,0.03030303
+2026-11-14,peak week inc flu hosp,,,Toronto,pmf,2027-03-13,0.03030303
+2026-11-14,peak week inc flu hosp,,,Toronto,pmf,2027-03-20,0.03030303
+2026-11-14,peak week inc flu hosp,,,Toronto,pmf,2027-03-27,0.03030303
+2026-11-14,peak week inc flu hosp,,,Toronto,pmf,2027-04-03,0.03030303
+2026-11-14,peak week inc flu hosp,,,Toronto,pmf,2027-04-10,0.03030303
+2026-11-14,peak week inc flu hosp,,,Toronto,pmf,2027-04-17,0.03030303
+2026-11-14,peak week inc flu hosp,,,Toronto,pmf,2027-04-24,0.03030303
+2026-11-14,peak week inc flu hosp,,,Toronto,pmf,2027-05-01,0.03030303
+2026-11-14,peak week inc flu hosp,,,Toronto,pmf,2027-05-08,0.03030303
+2026-11-14,peak week inc flu hosp,,,Toronto,pmf,2027-05-15,0.03030303
+2026-11-14,peak week inc flu hosp,,,Toronto,pmf,2027-05-22,0.03030303
+2026-11-14,peak week inc flu hosp,,,Toronto,pmf,2027-05-29,0.03030304
+2026-11-14,peak inc flu hosp,,,Toronto,quantile,0.025,45
+2026-11-14,peak inc flu hosp,,,Toronto,quantile,0.1,50
+2026-11-14,peak inc flu hosp,,,Toronto,quantile,0.25,57
+2026-11-14,peak inc flu hosp,,,Toronto,quantile,0.5,68
+2026-11-14,peak inc flu hosp,,,Toronto,quantile,0.75,90
+2026-11-14,peak inc flu hosp,,,Toronto,quantile,0.9,113
+2026-11-14,peak inc flu hosp,,,Toronto,quantile,0.975,135
