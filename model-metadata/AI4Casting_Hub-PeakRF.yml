@@ -1,0 +1,14 @@
+team_name: "AI4Casting_Hub"
+team_abbr: "AI4Casting_Hub"
+model_name: "PeakRF"
+model_abbr: "PeakRF"
+model_version: "1.0"
+model_contributors: [{"name": "AI4Casting Hub Administrator", "affiliation": "AI4Casting Hub, University of Guelph", "email": "4castinghub@uoguelph.ca"}]
+website_url: "https://4castinghub.uoguelph.ca"
+license: "CC-BY-4.0"
+designated_model: true
+methods: "Seasonal random forest with simulated admission trajectories"
+data_inputs: "PHO weekly influenza hospital admissions"
+methods_long: "Fits a one-week-ahead log-scale random forest with three weekly lags and seasonal terms, resamples out-of-bag residuals to simulate the remaining season, and extracts each trajectory's peak."
+ensemble_of_models: false
+ensemble_of_hub_models: false

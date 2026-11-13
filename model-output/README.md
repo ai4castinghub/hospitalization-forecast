@@ -32,6 +32,10 @@ Leave `horizon` and `target_end_date` empty for these rows. For peak week set `o
 
 For example, a peak-week row is `2026-11-14,peak week inc flu hosp,,,Ontario,pmf,2026-10-17,0` and an incidence row is `2026-11-14,peak inc flu hosp,,,Ontario,quantile,0.5,150`, using the column order below. Each is only one row of the required full distribution. Peak forecasts are not being evaluated for now.
 
+The hub produces `AI4Casting_Hub-PeakBaseline`, `AI4Casting_Hub-PeakAR`, and `AI4Casting_Hub-PeakRF` forecasts when sufficient regional admissions data are available. The baseline needs at least two complete historical seasons; two seasons provide limited historical support. The AR and random-forest models require at least 26 usable training weeks and recent admissions. Missing regions or models are skipped. Historical workbook data are a snapshot and do not provide historical release vintages.
+
+The hub ensemble includes valid peak forecasts from designated models, including all three hub peak models, for each target and location with at least one available forecast. It averages peak-week probabilities and takes the median of peak-incidence quantiles. Forecasts from hub ensembles are excluded to avoid recursion. This peak ensemble is included in the existing `AI4Casting_Hub-Ensemble_v1` submission.
+
 Teams are encouraged to submit predictions for all forecast horizons, but it is not mandatory to cover every time period or location. Similarly, while teams are encouraged to forecast for all three targets, submitting predictions for all of them is not required. Predictions for the previous week's hospital admissions (horizon -1) are optional and will not be scored in summary evaluations.
 
 ## Data Formatting

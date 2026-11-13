@@ -20,6 +20,8 @@ Predictions will be compared against confirmed hospital bed occupancy data relea
 
 Two additional, independently optional 2026–27 targets forecast the peak week and peak weekly count of **influenza hospital admissions**. These use admissions rather than the weekly occupancy outcome. Forecasts can cover any of the six regions or Ontario. See [submission instructions](model-output/README.md#optional-influenza-admission-peak-targets).
 
+The Monday hub pipeline also generates seasonal baseline, autoregressive, and random-forest peak forecasts where complete admissions history is available. The peak ensemble is included alongside the weekly ensemble forecasts. Seasonal forecasts are not currently evaluated.
+
 ### Key Dates
 * First PHO update of the challenge: Friday, October 23, 2026
 * Last PHO update of the challenge: Saturday, May 29, 2027

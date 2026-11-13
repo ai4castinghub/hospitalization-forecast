@@ -58,6 +58,18 @@ jobs:
             Rscript scripts/hub-model-forecasts.R
           fi
 
+      - name: Generate optional seasonal peak forecasts
+        continue-on-error: true
+        env:
+          PEAK_REFERENCE_DATE: ${{ steps.generate.outputs.reference_date }}
+        shell: bash
+        run: |
+          if [[ "$PEAK_REFERENCE_DATE" < "2026-10-24" || "$PEAK_REFERENCE_DATE" > "2027-05-29" ]]; then
+            echo "Seasonal peak models are not configured for $PEAK_REFERENCE_DATE."
+          else
+            Rscript scripts/hub-peak-forecasts.R "--date=$PEAK_REFERENCE_DATE"
+          fi
+
       - name: Commit forecast files
         shell: bash
         run: |
@@ -65,6 +77,9 @@ jobs:
             model-output/AI4Casting_Hub-Quantile_AR/ \
             model-output/AI4Casting_Hub-RF_Quantile_AR/ \
             model-output/AI4Casting_Hub-Quantile_Baseline/
+          for directory in model-output/AI4Casting_Hub-PeakBaseline model-output/AI4Casting_Hub-PeakAR model-output/AI4Casting_Hub-PeakRF; do
+            if [ -d "$directory" ]; then git add "$directory"; fi
+          done
           if git diff --cached --quiet; then
             echo "No forecast changes to commit."
             exit 0
@@ -90,5 +105,13 @@ jobs:
     uses: ./.github/workflows/hub-ensemble-forecasts.yml
     with:
       date: ${{ needs.forecast.outputs.reference_date }}
+    permissions:
+      contents: write
+
+  concatenate-after-ensemble:
+    needs: ensemble
+    uses: ./.github/workflows/concat-data.yml
+    with:
+      mode: models
     permissions:
       contents: write

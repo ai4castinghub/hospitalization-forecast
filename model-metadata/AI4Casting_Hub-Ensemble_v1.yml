@@ -14,7 +14,7 @@ website_url: "https://4castinghub.uoguelph.ca"
 license: "CC-BY-4.0"
 designated_model: true
 methods: "Simple Ensemble"
-data_inputs: "Hospital Bed Occupancy ON"
-methods_long: "This is a simple ensemble of collaborated forecasting model outputs."
+data_inputs: "Ontario hospital bed occupancy and influenza hospital admissions forecasts"
+methods_long: "A mean ensemble of weekly quantiles. For influenza peak forecasts, averages peak-week probabilities and takes the median of peak-incidence quantiles from eligible models."
 ensemble_of_models: False
 ensemble_of_hub_models: True

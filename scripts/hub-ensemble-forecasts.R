@@ -1,7 +1,7 @@
 # Create the hub's simple ensemble from submitted forecasts for one Saturday.
 # Run from the repository root after the four hub model files are present.
 
-required_packages <- c("dplyr", "hubEnsembles", "readr")
+required_packages <- c("dplyr", "hubEnsembles", "readr", "yaml")
 missing_packages <- required_packages[
   !vapply(required_packages, requireNamespace, logical(1), quietly = TRUE)
 ]
@@ -19,6 +19,7 @@ hub_model_ids <- c(
   "AI4Casting_Hub-RF_Quantile_AR", "AI4Casting_Hub-Quantile_Baseline"
 )
 ensemble_id <- "AI4Casting_Hub-Ensemble_v1"
+source("scripts/peak-ensemble.R")
 excluded_model_ids <- c(
   ensemble_id, "AI4Casting_Hub-Weighted_Ensemble", "AI4Casting_Hub-GPT_4o"
 )
@@ -143,9 +144,13 @@ run_for_date <- function(reference_date) {
     )
   validate_output(ensemble, reference_date)
 
+  peak <- peak_ensemble_rows(paths, reference_date, locations, quantile_levels,
+                             excluded_model_ids)
+  ensemble <- dplyr::bind_rows(ensemble, peak)
+
   path <- output_path(ensemble_id, reference_date)
   dir.create(dirname(path), recursive = TRUE, showWarnings = FALSE)
-  readr::write_csv(ensemble, path)
+  readr::write_csv(ensemble, path, na = "")
   message("Wrote ", path, " (", nrow(ensemble), " rows from ",
           length(paths), " models)")
   invisible(ensemble)
