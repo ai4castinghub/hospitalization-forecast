@@ -17,6 +17,15 @@ peak_columns <- c('location', 'reference_date', 'target_end_date', 'target', 'ho
 read_admissions_history <- function(workbook = 'auxiliary-data/data.xlsx',
                                     mapping_file = 'auxiliary-data/phu_region_mapping.csv',
                                     current_file = 'target-data/season_2026_2027/influenza-admissions.csv') {
+  status_file <- file.path(dirname(current_file), 'influenza-admissions-status.csv')
+  if (!file.exists(status_file)) {
+    stop('Current influenza admissions status is missing; peak forecasts will be skipped')
+  }
+  status <- read_csv(status_file, show_col_types = FALSE, col_types = cols(.default = col_character()))
+  if (!'status' %in% names(status) || nrow(status) != 1L ||
+      is.na(status$status[[1]]) || status$status[[1]] != 'available') {
+    stop('Current influenza admissions are unavailable; peak forecasts will be skipped')
+  }
   mapping <- read_csv(mapping_file, show_col_types = FALSE, col_types = cols(.default = col_character())) |>
     filter(!is.na(NAME_ENG), !is.na(OH_Name)) |>
     transmute(phu = NAME_ENG, location = OH_Name)

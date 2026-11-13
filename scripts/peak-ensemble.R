@@ -3,9 +3,20 @@ peak_ensemble_rows <- function(paths, reference_date, locations, quantile_levels
   if (reference_date < as.Date('2026-10-24') || reference_date > max(weeks)) return(tibble::tibble())
   targets <- c('peak week inc flu hosp', 'peak inc flu hosp')
   hub_peak_models <- c('AI4Casting_Hub-PeakBaseline', 'AI4Casting_Hub-PeakAR', 'AI4Casting_Hub-PeakRF')
+  status_file <- file.path('target-data', 'season_2026_2027', 'influenza-admissions-status.csv')
+  admissions_available <- tryCatch({
+    status <- readr::read_csv(status_file, show_col_types = FALSE,
+                              col_types = readr::cols(.default = readr::col_character()))
+    'status' %in% names(status) && nrow(status) == 1L &&
+      !is.na(status$status[[1]]) && status$status[[1]] == 'available'
+  }, error = function(e) FALSE)
   groups <- list()
   for (path in paths) {
     model <- basename(dirname(path))
+    if (model %in% hub_peak_models && !admissions_available) {
+      message('Skipping hub peak forecast because influenza admissions are unavailable: ', model)
+      next
+    }
     metadata_files <- file.path('model-metadata', paste0(model, c('.yml', '.yaml')))
     metadata_files <- metadata_files[file.exists(metadata_files)]
     if (model %in% excluded_model_ids || length(metadata_files) != 1L) next

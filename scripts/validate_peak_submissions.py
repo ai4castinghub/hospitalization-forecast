@@ -1,4 +1,4 @@
-"""Validate optional seasonal forecasts in model-output CSV files."""
+"""Validate weekly target dates and optional seasonal forecasts."""
 import csv
 import datetime as dt
 import math
@@ -13,11 +13,23 @@ LOCATIONS = {'Ontario', 'North East', 'West', 'East', 'Central', 'North West', '
 START = dt.date(2026, 10, 17)
 END = dt.date(2027, 5, 29)
 WEEKS = {(START + dt.timedelta(weeks=i)).isoformat() for i in range((END - START).days // 7 + 1)}
+WEEKLY_TARGETS = {f'wk inc {disease} hosp' for disease in ('covid', 'flu', 'rsv')}
 
 def validate(path):
     groups = defaultdict(list)
     with open(path, newline='', encoding='utf-8-sig') as f:
-        for row in csv.DictReader(f):
+        for line, row in enumerate(csv.DictReader(f), start=2):
+            if row.get('target') in WEEKLY_TARGETS:
+                try:
+                    reference = dt.date.fromisoformat(row.get('reference_date', ''))
+                    target_date = dt.date.fromisoformat(row.get('target_end_date', ''))
+                    horizon = float(row.get('horizon', ''))
+                except (ValueError, TypeError):
+                    raise ValueError(f'line {line}: invalid weekly date or horizon')
+                if horizon not in (-1, 0, 1, 2, 3):
+                    raise ValueError(f'line {line}: invalid weekly horizon')
+                if target_date != reference + dt.timedelta(weeks=int(horizon)):
+                    raise ValueError(f'line {line}: weekly target_end_date must equal reference_date + 7 days × horizon')
             if row.get('target') in (WEEK, INC):
                 groups[(row.get('reference_date'), row.get('location'), row['target'])].append(row)
     for (reference, location, target), rows in groups.items():

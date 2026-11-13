@@ -21,7 +21,7 @@ jobs:
       - uses: actions/checkout@v6
       - uses: hubverse-org/hubverse-actions/validate-submission@v2
         with:
-          summary: true
+          summary: false
 
   validate_and_check:
     runs-on: ubuntu-22.04  # R not supported for ubuntu-latest
@@ -68,8 +68,42 @@ jobs:
         if: github.event_name == 'pull_request'
         run: python3 scripts/check-submission-deadline.py "$GITHUB_EVENT_PATH" changed_files.txt
 
-      - name: Validate optional influenza peak forecasts
+      - name: Validate weekly dates and optional influenza peak forecasts
         if: github.event_name == 'pull_request'
         run: |
           mapfile -t files < changed_files.txt
           python3 scripts/validate_peak_submissions.py "${files[@]}"
+
+  validation-summary:
+    needs: [validate-submission, validate_and_check]
+    if: ${{ always() && github.event_name == 'pull_request' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Summarize all validation jobs
+        env:
+          HUBVERSE_RESULT: ${{ needs['validate-submission'].result }}
+          ADDITIONAL_RESULT: ${{ needs.validate_and_check.result }}
+        run: |
+          if [[ "$HUBVERSE_RESULT" == success && "$ADDITIONAL_RESULT" == success ]]; then
+            heading=':white_check_mark: **All validation checks passed.**'
+          else
+            heading=':x: **Not all validation checks passed.**'
+          fi
+          {
+            echo '## Submission validation'
+            echo
+            echo "$heading"
+            echo
+            echo "- Hubverse validation: **$HUBVERSE_RESULT**"
+            echo "- Submission paths, deadline, weekly dates, and peak forecasts: **$ADDITIONAL_RESULT**"
+            echo
+            echo "[View validation details]($GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID)"
+          } > "$RUNNER_TEMP/summary.md"
+
+      - name: Upload combined validation summary
+        uses: actions/upload-artifact@v4
+        with:
+          name: submission-validation-results
+          path: ${{ runner.temp }}/summary.md
+          if-no-files-found: error
+          retention-days: 1
