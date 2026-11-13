@@ -1,0 +1,62 @@
+name: Hub ensemble forecasts
+
+on:
+  workflow_call:
+    inputs:
+      date:
+        description: Saturday reference date (YYYY-MM-DD)
+        required: true
+        type: string
+  workflow_dispatch:
+    inputs:
+      date:
+        description: Optional Saturday reference date; defaults to the newest complete hub model date
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hub-ensemble-forecasts-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  ensemble:
+    if: ${{ github.repository_owner == 'ai4castinghub' }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    env:
+      FORECAST_DATE: ${{ inputs.date }}
+
+    steps:
+      - name: Check out latest branch files
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.ref_name }}
+
+      - name: Set up cached ensemble dependencies
+        uses: ./.github/actions/setup-ensemble-r
+
+      - name: Generate ensemble forecast
+        shell: bash
+        run: |
+          if [ -n "$FORECAST_DATE" ]; then
+            Rscript scripts/hub-ensemble-forecasts.R "--date=$FORECAST_DATE"
+          else
+            Rscript scripts/hub-ensemble-forecasts.R
+          fi
+
+      - name: Commit ensemble file
+        shell: bash
+        run: |
+          git add model-output/AI4Casting_Hub-Ensemble_v1/
+          if git diff --cached --quiet; then
+            echo "No ensemble changes to commit."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Update hub ensemble forecast"
+          git push origin "HEAD:${GITHUB_REF_NAME}"

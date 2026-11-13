@@ -9,7 +9,20 @@ on:
       - 'model-metadata/*'
       - '!**README**'
 
+permissions:
+  contents: read
+  pull-requests: read
+
 jobs:
+  validate-submission:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: hubverse-org/hubverse-actions/validate-submission@v2
+        with:
+          summary: true
+
   validate_and_check:
     runs-on: ubuntu-22.04  # R not supported for ubuntu-latest
     env:
@@ -20,24 +33,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-
-      # Set up R environment
-      - uses: r-lib/actions/setup-r@v2
-        with:
-          install-r: false
-          use-public-rspm: true
-          extra-repositories: 'https://hubverse-org.r-universe.dev'
-
-      - name: Update R
-        run: |
-          sudo apt-get update
-
-      - uses: r-lib/actions/setup-r-dependencies@v2
-        with:
-          pak-version: "devel"
-          packages: |
-            any::hubValidations
-            any::sessioninfo
 
       # ---------- Git diff + path checks ----------
 
@@ -69,18 +64,12 @@ jobs:
             echo "All changes are within allowed directories."
           fi
 
-      # ---------- validations  ----------
-
-      - name: Run validations
+      - name: Check 2026-2027 Saturday 11:30 p.m. submission deadline
         if: github.event_name == 'pull_request'
-        env:
-          PR_NUMBER: ${{ github.event.number }}
+        run: python3 scripts/check-submission-deadline.py "$GITHUB_EVENT_PATH" changed_files.txt
+
+      - name: Validate optional influenza peak forecasts
+        if: github.event_name == 'pull_request'
         run: |
-          library("hubValidations")
-          v <- hubValidations::validate_pr(
-              gh_repo = Sys.getenv("GITHUB_REPOSITORY"),
-              pr_number = Sys.getenv("PR_NUMBER"),
-              skip_submit_window_check = FALSE
-          )
-          hubValidations::check_for_errors(v, verbose = TRUE)
-        shell: Rscript {0}
+          mapfile -t files < changed_files.txt
+          python3 scripts/validate_peak_submissions.py "${files[@]}"

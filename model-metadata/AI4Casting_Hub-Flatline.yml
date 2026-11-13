@@ -1,0 +1,20 @@
+team_name: "AI4Casting_Hub"
+team_abbr: "AI4Casting_Hub"
+model_name: "Flatline"
+model_abbr: "Flatline"
+model_version: "x.0"
+model_contributors: [
+  {
+    "name": "AI4Casting Hub Administrator",
+    "affiliation": "AI4Casting Hub, University of Guelph",
+    "email": "4castinghub@uoguelph.ca"
+  }
+]
+website_url: "https://4castinghub.uoguelph.ca"
+license: "CC-BY-4.0"
+designated_model: true
+methods: "Flat Baseline"
+data_inputs: "Hospital Bed Occupancy ON"
+methods_long: "a simple forecasting model for epiprocess::epi_df data. It uses the most recent observation as the forecast for any future date, and produces intervals based on the quantiles of the residuals of such a 'flatline' forecast over all available training data."
+ensemble_of_models: False
+ensemble_of_hub_models: False

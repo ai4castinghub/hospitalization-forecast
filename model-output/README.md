@@ -24,6 +24,14 @@ Forecasts are quantitative predictions about data to be observed in the future. 
 
 This project focuses on hospital bed occupancy data for COVID-19, Influenza, and RSV, as reported in the [Ontario Respiratory Virus Tool](https://www.publichealthontario.ca/en/Data-and-Analysis/Infectious-Disease/Respiratory-Virus-Tool). Further details regarding the target-data can be found in the [target-data folder README](../target-data/README.md).
 
+## Optional influenza admission peak targets
+
+The independently optional targets `peak week inc flu hosp` and `peak inc flu hosp` predict the timing and size of the highest weekly **influenza hospital admissions** count between October 17, 2026 and May 29, 2027, inclusive. These are separate from the existing weekly bed-occupancy targets. Submit either target for any of Ontario and the six regions in the same file as other forecasts, or alone. Continue submitting after an apparent peak: future revisions or a later peak remain possible.
+
+Leave `horizon` and `target_end_date` empty for these rows. For peak week set `output_type` to `pmf`; submit one row for every Saturday in the season, using the ISO date as `output_type_id` and a probability in `value`. Probabilities must sum to one for each reference date and location. For peak incidence set `output_type` to `quantile` and submit all seven levels 0.025, 0.1, 0.25, 0.5, 0.75, 0.9 and 0.975 with nonnegative integer counts in increasing order.
+
+For example, a peak-week row is `2026-11-14,peak week inc flu hosp,,,Ontario,pmf,2026-10-17,0` and an incidence row is `2026-11-14,peak inc flu hosp,,,Ontario,quantile,0.5,150`, using the column order below. Each is only one row of the required full distribution. Peak forecasts are not being evaluated for now.
+
 Teams are encouraged to submit predictions for all forecast horizons, but it is not mandatory to cover every time period or location. Similarly, while teams are encouraged to forecast for all three targets, submitting predictions for all of them is not required. Predictions for the previous week's hospital admissions (horizon -1) are optional and will not be scored in summary evaluations.
 
 ## Data Formatting
@@ -40,7 +48,7 @@ Where:
 - `team` is the team name
 - `model` is the model name
 
-Both `team` and `model` should be under 15 characters and not contain special characters, except for underscores (`_`). Each team-model combination must be unique.
+The `team` abbreviation may have up to 16 characters and the `model` abbreviation up to 17, as specified in `hub-config/model-metadata-schema.json`. Use letters, digits, underscores (`_`), or plus signs (`+`). Each team-model combination must be unique.
 
 ### Metadata
 
@@ -63,7 +71,7 @@ Where:
 - `team` is the team name
 - `model` is the model name
 
-The `YYYY-MM-DD` date should be the Saturday following the submission date and match the `reference_date` inside the file. The `team` and `model` in the filename must match the subdirectory names.
+The `YYYY-MM-DD` date should be the Saturday of the submission round, whether the file is submitted on Friday or Saturday, and match the `reference_date` inside the file. The `team` and `model` in the filename must match the subdirectory names.
 
 ## Forecast File Format
 
@@ -84,7 +92,7 @@ Each row in the file represents a quantile prediction for a specific location, d
 
 ### `reference_date`
 
-This date (in `YYYY-MM-DD` format) indicates when the forecast is made. It should always be the Saturday following the submission date.
+This date (in `YYYY-MM-DD` format) identifies the Saturday forecast round. For a Friday or Saturday submission, use that Saturday's date. The 2026-2027 rounds run from October 24, 2026 through May 29, 2027.
 
 ### `target`
 
@@ -92,6 +100,8 @@ This column must contain one of the following target strings:
 - `wk inc flu hosp` (Influenza Hospital Bed Occupancy Count)
 - `wk inc rsv hosp` (RSV Hospital Bed Occupancy Count)
 - `wk inc covid hosp` (COVID-19 Hospital Bed Occupancy Count)
+- `peak week inc flu hosp` (optional influenza admission peak week)
+- `peak inc flu hosp` (optional influenza admission peak count)
 
 ### `horizon`
 
@@ -225,7 +235,7 @@ The validation checks produced some failures/errors reported above.
 
 ## Policy on late or updated submissions 
 
-In order to ensure that forecasting is done in real-time, all forecasts are required to be submitted to this repository by 11PM America/Toronto on Saturdays each week. We do not accept late forecasts.
+PHO updates its dashboard on Friday morning. Teams may submit forecasts for that week's Saturday reference date from Friday through 11:30 p.m. America/Toronto time on Saturday. For 2026-2027, the first deadline is October 24, 2026 and the last is May 29, 2027. The deadline uses Toronto local time, including daylight saving time. A new or updated forecast file must be included in a pull request update by the deadline; late forecasts are not accepted.
 
 ## Evaluation criteria
-Forecasts will be evaluated using `Weighted Interval Score (WIS)`, `Absolute Error (AE)` and `Mean Squared Error (MSE)`. The CMU [Delphi group's Forecast Evaluation Dashboard](https://delphi.cmu.edu/forecast-eval/) and the COVID-19 Forecast Hub periodic [Forecast Evaluation Reports](https://covid19forecasthub.org/eval-reports/) provide examples of evaluations using these criteria.
+Weekly forecasts will be evaluated using `Weighted Interval Score (WIS)`, `Absolute Error (AE)` and `Mean Squared Error (MSE)`. The CMU [Delphi group's Forecast Evaluation Dashboard](https://delphi.cmu.edu/forecast-eval/) and the COVID-19 Forecast Hub periodic [Forecast Evaluation Reports](https://covid19forecasthub.org/eval-reports/) provide examples of evaluations using these criteria. The optional influenza peak forecasts are not being evaluated for now.

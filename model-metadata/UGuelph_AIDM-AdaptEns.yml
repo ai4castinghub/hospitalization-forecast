@@ -1,0 +1,19 @@
+team_name: "University of Guelph - AI-Driven Medical Imaging & Diagnostics Lab"
+team_abbr: "UGuelph_AIDM"
+model_name: "Adaptive Ensemble"
+model_abbr: "AdaptEns"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "Mohammadreze Riyazat",
+    "affiliation": "University of Guelph",
+    "email": "mriyazat@uoguelph.ca"
+  }
+]
+license: "CC-BY-4.0"
+designated_model: true
+methods: "Adaptive ensemble of statistical and machine learning models"
+data_inputs: "Hospital Bed Occupancy ON"
+methods_long: "This model employs an adaptive ensemble strategy that adjusts model weights based on detected epidemic growth patterns. The ensemble combines multiple forecasting approaches and adapts to changing disease dynamics."
+ensemble_of_models: true
+ensemble_of_hub_models: false

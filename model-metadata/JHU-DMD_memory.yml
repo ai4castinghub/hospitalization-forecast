@@ -1,0 +1,25 @@
+team_name: "Johns Hopkins University"
+team_abbr: "JHU"
+model_name: "Dynamic mode decomposition with memory"
+model_abbr: "DMD_memory"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "William T. Redman",
+    "affiliation": "Johns Hopkins University",
+    "email": "wredman4@jh.edu"
+  },
+  {
+    "name": "Luke Mullany",
+    "affiliation": "Johns Hopkins University Applied Physics Lab",
+    "email": "Luke.Mullany@jhuapl.edu"
+  }
+]
+website_url: "https://wredman4.wixsite.com/wtredman"
+license: "CC-BY-4.0"
+designated_model: true
+methods: "Dynamic mode decomposition with memory for time-series"
+data_inputs: "Hospital Bed Occupancy ON"
+methods_long: "A sliding window is used to construct a temporally local approximation of the Koopman operator. Time-delays and radial basis functions are used for the lifting to function space. All Ontario regions are used to construct the approximation of the Koopman operator to estimate couplings/correlations. Spectral information of the local approximation of the Koopman operator is compared to spectral information from previous sliding windows. If there is a match, the past information is used to inform the prediction."
+ensemble_of_models: False
+ensemble_of_hub_models: False

@@ -4,7 +4,7 @@ library(readr)
 library(MMWRweek)
 
 
-df_hhs <- read_csv('hospitalization/target-data/season_2024_2025/hospitalization-data.csv') %>%
+df_hhs <- read_csv('hospitalization/target-data/season_2025_2026/hospitalization-data.csv') %>%
   mutate(date = as_date(time, format = "%d-%m-%Y"),
          mmwr_week = MMWRweek(date)$MMWRweek) %>%
   arrange(date)
@@ -17,8 +17,8 @@ model_output_dir <- "hospitalization/model-output"
 model_names <- list.dirs(model_output_dir, full.names = FALSE, recursive = FALSE)
 print(model_names)
 
-current_reference_date <- floor_date(Sys.Date(), unit = "week") + days(6)
-start_reference_date <- as_date("2024-10-19")
+current_reference_date <- as_date("2026-05-16") # floor_date(Sys.Date(), unit = "week") + days(6)
+start_reference_date <- as_date("2025-11-22")
 all_ref_dates <- seq(start_reference_date, current_reference_date, by = "7 days")
 
 # set all target and locations
@@ -94,7 +94,7 @@ for (reference_date in all_ref_dates) {
   
   # Removing 2024-12-28 and 2025-04-19 dates from evaluations
 
-  if (reference_date == as_date('2024-12-28') || reference_date == as_date('2025-04-19')) {
+  if (reference_date == as_date('2025-12-30') || reference_date == as_date('2025-12-23') || reference_date == as_date('2026-04-04')) {
     next
   }
   
@@ -178,8 +178,8 @@ if (length(WIS_all) == 0 || is.null(WIS_all) || nrow(WIS_all) == 0) {
            AE = ifelse(AE < 0, NA, round(AE, 3)),
            MSE = ifelse(MSE < 0, NA, round(MSE, 3)))
   
-  write_csv(WIS_average, "hospitalization-output/WIS_average.csv")
-  write_csv(WIS_all, "hospitalization-output/all_hospitalization_scores.csv")
+  write_csv(WIS_average, "hospitalization-output/WIS_average_2025-26.csv")
+  write_csv(WIS_all, "hospitalization-output/all_hospitalization_scores_2025-26.csv")
 }
 
 # Aggregate model output with additional checks
@@ -217,6 +217,6 @@ cat("Combining model data...\n")
 concatenated_data <- bind_rows(all_model_data) %>%
   filter(!is.na(reference_date), !is.na(target_end_date))
 
-write_csv(concatenated_data, "hospitalization-output/concatenated_model_output.csv")
+write_csv(concatenated_data, "hospitalization-output/concatenated_model_output_2025-26.csv")
 
 cat("Script completed successfully.\n")

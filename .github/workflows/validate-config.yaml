@@ -1,0 +1,20 @@
+name: Hub Config Validation (R)
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'hub-config/**'
+      - '!**README**'
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  validate-hub-config:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: hubverse-org/hubverse-actions/validate-config@v2

@@ -1,0 +1,20 @@
+team_name: "AI4Casting_Hub"
+team_abbr: "AI4Casting_Hub"
+model_name: "RF_Quantile_AR"
+model_abbr: "RF_Quantile_AR"
+model_version: "x.0"
+model_contributors: [
+  {
+    "name": "AI4Casting Hub Administrator",
+    "affiliation": "AI4Casting Hub, University of Guelph",
+    "email": "4castinghub@uoguelph.ca"
+  }
+]
+website_url: "https://4castinghub.uoguelph.ca"
+license: "CC-BY-4.0"
+designated_model: true
+methods: "Direct autoregressive forecaster"
+data_inputs: "Hospital Bed Occupancy ON"
+methods_long: "Direct random forest autoregressive quantile model"
+ensemble_of_models: False
+ensemble_of_hub_models: False

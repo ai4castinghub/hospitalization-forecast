@@ -1,0 +1,589 @@
+location,reference_date,target_end_date,target,horizon,output_type,output_type_id,value
+Central,2026-10-31,2026-10-31,wk inc covid hosp,0,quantile,0.025,0
+Central,2026-10-31,2026-10-31,wk inc covid hosp,0,quantile,0.1,6
+Central,2026-10-31,2026-10-31,wk inc covid hosp,0,quantile,0.25,25
+Central,2026-10-31,2026-10-31,wk inc covid hosp,0,quantile,0.5,35
+Central,2026-10-31,2026-10-31,wk inc covid hosp,0,quantile,0.75,45
+Central,2026-10-31,2026-10-31,wk inc covid hosp,0,quantile,0.9,64
+Central,2026-10-31,2026-10-31,wk inc covid hosp,0,quantile,0.975,106
+East,2026-10-31,2026-10-31,wk inc covid hosp,0,quantile,0.025,0
+East,2026-10-31,2026-10-31,wk inc covid hosp,0,quantile,0.1,16
+East,2026-10-31,2026-10-31,wk inc covid hosp,0,quantile,0.25,35
+East,2026-10-31,2026-10-31,wk inc covid hosp,0,quantile,0.5,45
+East,2026-10-31,2026-10-31,wk inc covid hosp,0,quantile,0.75,55
+East,2026-10-31,2026-10-31,wk inc covid hosp,0,quantile,0.9,74
+East,2026-10-31,2026-10-31,wk inc covid hosp,0,quantile,0.975,116
+North East,2026-10-31,2026-10-31,wk inc covid hosp,0,quantile,0.025,0
+North East,2026-10-31,2026-10-31,wk inc covid hosp,0,quantile,0.1,0
+North East,2026-10-31,2026-10-31,wk inc covid hosp,0,quantile,0.25,0
+North East,2026-10-31,2026-10-31,wk inc covid hosp,0,quantile,0.5,5
+North East,2026-10-31,2026-10-31,wk inc covid hosp,0,quantile,0.75,15
+North East,2026-10-31,2026-10-31,wk inc covid hosp,0,quantile,0.9,34
+North East,2026-10-31,2026-10-31,wk inc covid hosp,0,quantile,0.975,76
+North West,2026-10-31,2026-10-31,wk inc covid hosp,0,quantile,0.025,0
+North West,2026-10-31,2026-10-31,wk inc covid hosp,0,quantile,0.1,0
+North West,2026-10-31,2026-10-31,wk inc covid hosp,0,quantile,0.25,0
+North West,2026-10-31,2026-10-31,wk inc covid hosp,0,quantile,0.5,2
+North West,2026-10-31,2026-10-31,wk inc covid hosp,0,quantile,0.75,12
+North West,2026-10-31,2026-10-31,wk inc covid hosp,0,quantile,0.9,31
+North West,2026-10-31,2026-10-31,wk inc covid hosp,0,quantile,0.975,73
+Ontario,2026-10-31,2026-10-31,wk inc covid hosp,0,quantile,0.025,57
+Ontario,2026-10-31,2026-10-31,wk inc covid hosp,0,quantile,0.1,99
+Ontario,2026-10-31,2026-10-31,wk inc covid hosp,0,quantile,0.25,118
+Ontario,2026-10-31,2026-10-31,wk inc covid hosp,0,quantile,0.5,128
+Ontario,2026-10-31,2026-10-31,wk inc covid hosp,0,quantile,0.75,138
+Ontario,2026-10-31,2026-10-31,wk inc covid hosp,0,quantile,0.9,157
+Ontario,2026-10-31,2026-10-31,wk inc covid hosp,0,quantile,0.975,199
+Toronto,2026-10-31,2026-10-31,wk inc covid hosp,0,quantile,0.025,0
+Toronto,2026-10-31,2026-10-31,wk inc covid hosp,0,quantile,0.1,0
+Toronto,2026-10-31,2026-10-31,wk inc covid hosp,0,quantile,0.25,18
+Toronto,2026-10-31,2026-10-31,wk inc covid hosp,0,quantile,0.5,29
+Toronto,2026-10-31,2026-10-31,wk inc covid hosp,0,quantile,0.75,39
+Toronto,2026-10-31,2026-10-31,wk inc covid hosp,0,quantile,0.9,58
+Toronto,2026-10-31,2026-10-31,wk inc covid hosp,0,quantile,0.975,99
+West,2026-10-31,2026-10-31,wk inc covid hosp,0,quantile,0.025,0
+West,2026-10-31,2026-10-31,wk inc covid hosp,0,quantile,0.1,1
+West,2026-10-31,2026-10-31,wk inc covid hosp,0,quantile,0.25,20
+West,2026-10-31,2026-10-31,wk inc covid hosp,0,quantile,0.5,30
+West,2026-10-31,2026-10-31,wk inc covid hosp,0,quantile,0.75,40
+West,2026-10-31,2026-10-31,wk inc covid hosp,0,quantile,0.9,59
+West,2026-10-31,2026-10-31,wk inc covid hosp,0,quantile,0.975,101
+Central,2026-10-31,2026-11-07,wk inc covid hosp,1,quantile,0.025,0
+Central,2026-10-31,2026-11-07,wk inc covid hosp,1,quantile,0.1,0
+Central,2026-10-31,2026-11-07,wk inc covid hosp,1,quantile,0.25,20
+Central,2026-10-31,2026-11-07,wk inc covid hosp,1,quantile,0.5,40
+Central,2026-10-31,2026-11-07,wk inc covid hosp,1,quantile,0.75,61
+Central,2026-10-31,2026-11-07,wk inc covid hosp,1,quantile,0.9,96
+Central,2026-10-31,2026-11-07,wk inc covid hosp,1,quantile,0.975,192
+East,2026-10-31,2026-11-07,wk inc covid hosp,1,quantile,0.025,0
+East,2026-10-31,2026-11-07,wk inc covid hosp,1,quantile,0.1,9
+East,2026-10-31,2026-11-07,wk inc covid hosp,1,quantile,0.25,44
+East,2026-10-31,2026-11-07,wk inc covid hosp,1,quantile,0.5,65
+East,2026-10-31,2026-11-07,wk inc covid hosp,1,quantile,0.75,85
+East,2026-10-31,2026-11-07,wk inc covid hosp,1,quantile,0.9,121
+East,2026-10-31,2026-11-07,wk inc covid hosp,1,quantile,0.975,217
+North East,2026-10-31,2026-11-07,wk inc covid hosp,1,quantile,0.025,0
+North East,2026-10-31,2026-11-07,wk inc covid hosp,1,quantile,0.1,0
+North East,2026-10-31,2026-11-07,wk inc covid hosp,1,quantile,0.25,0
+North East,2026-10-31,2026-11-07,wk inc covid hosp,1,quantile,0.5,14
+North East,2026-10-31,2026-11-07,wk inc covid hosp,1,quantile,0.75,34
+North East,2026-10-31,2026-11-07,wk inc covid hosp,1,quantile,0.9,70
+North East,2026-10-31,2026-11-07,wk inc covid hosp,1,quantile,0.975,166
+North West,2026-10-31,2026-11-07,wk inc covid hosp,1,quantile,0.025,0
+North West,2026-10-31,2026-11-07,wk inc covid hosp,1,quantile,0.1,0
+North West,2026-10-31,2026-11-07,wk inc covid hosp,1,quantile,0.25,0
+North West,2026-10-31,2026-11-07,wk inc covid hosp,1,quantile,0.5,8
+North West,2026-10-31,2026-11-07,wk inc covid hosp,1,quantile,0.75,29
+North West,2026-10-31,2026-11-07,wk inc covid hosp,1,quantile,0.9,64
+North West,2026-10-31,2026-11-07,wk inc covid hosp,1,quantile,0.975,160
+Ontario,2026-10-31,2026-11-07,wk inc covid hosp,1,quantile,0.025,0
+Ontario,2026-10-31,2026-11-07,wk inc covid hosp,1,quantile,0.1,72
+Ontario,2026-10-31,2026-11-07,wk inc covid hosp,1,quantile,0.25,107
+Ontario,2026-10-31,2026-11-07,wk inc covid hosp,1,quantile,0.5,128
+Ontario,2026-10-31,2026-11-07,wk inc covid hosp,1,quantile,0.75,148
+Ontario,2026-10-31,2026-11-07,wk inc covid hosp,1,quantile,0.9,184
+Ontario,2026-10-31,2026-11-07,wk inc covid hosp,1,quantile,0.975,280
+Toronto,2026-10-31,2026-11-07,wk inc covid hosp,1,quantile,0.025,0
+Toronto,2026-10-31,2026-11-07,wk inc covid hosp,1,quantile,0.1,0
+Toronto,2026-10-31,2026-11-07,wk inc covid hosp,1,quantile,0.25,13
+Toronto,2026-10-31,2026-11-07,wk inc covid hosp,1,quantile,0.5,34
+Toronto,2026-10-31,2026-11-07,wk inc covid hosp,1,quantile,0.75,54
+Toronto,2026-10-31,2026-11-07,wk inc covid hosp,1,quantile,0.9,90
+Toronto,2026-10-31,2026-11-07,wk inc covid hosp,1,quantile,0.975,186
+West,2026-10-31,2026-11-07,wk inc covid hosp,1,quantile,0.025,0
+West,2026-10-31,2026-11-07,wk inc covid hosp,1,quantile,0.1,0
+West,2026-10-31,2026-11-07,wk inc covid hosp,1,quantile,0.25,8
+West,2026-10-31,2026-11-07,wk inc covid hosp,1,quantile,0.5,28
+West,2026-10-31,2026-11-07,wk inc covid hosp,1,quantile,0.75,49
+West,2026-10-31,2026-11-07,wk inc covid hosp,1,quantile,0.9,84
+West,2026-10-31,2026-11-07,wk inc covid hosp,1,quantile,0.975,180
+Central,2026-10-31,2026-11-14,wk inc covid hosp,2,quantile,0.025,0
+Central,2026-10-31,2026-11-14,wk inc covid hosp,2,quantile,0.1,0
+Central,2026-10-31,2026-11-14,wk inc covid hosp,2,quantile,0.25,19
+Central,2026-10-31,2026-11-14,wk inc covid hosp,2,quantile,0.5,49
+Central,2026-10-31,2026-11-14,wk inc covid hosp,2,quantile,0.75,79
+Central,2026-10-31,2026-11-14,wk inc covid hosp,2,quantile,0.9,128
+Central,2026-10-31,2026-11-14,wk inc covid hosp,2,quantile,0.975,275
+East,2026-10-31,2026-11-14,wk inc covid hosp,2,quantile,0.025,0
+East,2026-10-31,2026-11-14,wk inc covid hosp,2,quantile,0.1,2
+East,2026-10-31,2026-11-14,wk inc covid hosp,2,quantile,0.25,51
+East,2026-10-31,2026-11-14,wk inc covid hosp,2,quantile,0.5,81
+East,2026-10-31,2026-11-14,wk inc covid hosp,2,quantile,0.75,111
+East,2026-10-31,2026-11-14,wk inc covid hosp,2,quantile,0.9,160
+East,2026-10-31,2026-11-14,wk inc covid hosp,2,quantile,0.975,307
+North East,2026-10-31,2026-11-14,wk inc covid hosp,2,quantile,0.025,0
+North East,2026-10-31,2026-11-14,wk inc covid hosp,2,quantile,0.1,0
+North East,2026-10-31,2026-11-14,wk inc covid hosp,2,quantile,0.25,0
+North East,2026-10-31,2026-11-14,wk inc covid hosp,2,quantile,0.5,27
+North East,2026-10-31,2026-11-14,wk inc covid hosp,2,quantile,0.75,57
+North East,2026-10-31,2026-11-14,wk inc covid hosp,2,quantile,0.9,106
+North East,2026-10-31,2026-11-14,wk inc covid hosp,2,quantile,0.975,253
+North West,2026-10-31,2026-11-14,wk inc covid hosp,2,quantile,0.025,0
+North West,2026-10-31,2026-11-14,wk inc covid hosp,2,quantile,0.1,0
+North West,2026-10-31,2026-11-14,wk inc covid hosp,2,quantile,0.25,0
+North West,2026-10-31,2026-11-14,wk inc covid hosp,2,quantile,0.5,19
+North West,2026-10-31,2026-11-14,wk inc covid hosp,2,quantile,0.75,49
+North West,2026-10-31,2026-11-14,wk inc covid hosp,2,quantile,0.9,98
+North West,2026-10-31,2026-11-14,wk inc covid hosp,2,quantile,0.975,245
+Ontario,2026-10-31,2026-11-14,wk inc covid hosp,2,quantile,0.025,0
+Ontario,2026-10-31,2026-11-14,wk inc covid hosp,2,quantile,0.1,49
+Ontario,2026-10-31,2026-11-14,wk inc covid hosp,2,quantile,0.25,98
+Ontario,2026-10-31,2026-11-14,wk inc covid hosp,2,quantile,0.5,128
+Ontario,2026-10-31,2026-11-14,wk inc covid hosp,2,quantile,0.75,158
+Ontario,2026-10-31,2026-11-14,wk inc covid hosp,2,quantile,0.9,207
+Ontario,2026-10-31,2026-11-14,wk inc covid hosp,2,quantile,0.975,354
+Toronto,2026-10-31,2026-11-14,wk inc covid hosp,2,quantile,0.025,0
+Toronto,2026-10-31,2026-11-14,wk inc covid hosp,2,quantile,0.1,0
+Toronto,2026-10-31,2026-11-14,wk inc covid hosp,2,quantile,0.25,12
+Toronto,2026-10-31,2026-11-14,wk inc covid hosp,2,quantile,0.5,42
+Toronto,2026-10-31,2026-11-14,wk inc covid hosp,2,quantile,0.75,72
+Toronto,2026-10-31,2026-11-14,wk inc covid hosp,2,quantile,0.9,121
+Toronto,2026-10-31,2026-11-14,wk inc covid hosp,2,quantile,0.975,268
+West,2026-10-31,2026-11-14,wk inc covid hosp,2,quantile,0.025,0
+West,2026-10-31,2026-11-14,wk inc covid hosp,2,quantile,0.1,0
+West,2026-10-31,2026-11-14,wk inc covid hosp,2,quantile,0.25,3
+West,2026-10-31,2026-11-14,wk inc covid hosp,2,quantile,0.5,33
+West,2026-10-31,2026-11-14,wk inc covid hosp,2,quantile,0.75,63
+West,2026-10-31,2026-11-14,wk inc covid hosp,2,quantile,0.9,112
+West,2026-10-31,2026-11-14,wk inc covid hosp,2,quantile,0.975,259
+Central,2026-10-31,2026-11-21,wk inc covid hosp,3,quantile,0.025,0
+Central,2026-10-31,2026-11-21,wk inc covid hosp,3,quantile,0.1,0
+Central,2026-10-31,2026-11-21,wk inc covid hosp,3,quantile,0.25,18
+Central,2026-10-31,2026-11-21,wk inc covid hosp,3,quantile,0.5,58
+Central,2026-10-31,2026-11-21,wk inc covid hosp,3,quantile,0.75,99
+Central,2026-10-31,2026-11-21,wk inc covid hosp,3,quantile,0.9,158
+Central,2026-10-31,2026-11-21,wk inc covid hosp,3,quantile,0.975,352
+East,2026-10-31,2026-11-21,wk inc covid hosp,3,quantile,0.025,0
+East,2026-10-31,2026-11-21,wk inc covid hosp,3,quantile,0.1,0
+East,2026-10-31,2026-11-21,wk inc covid hosp,3,quantile,0.25,51
+East,2026-10-31,2026-11-21,wk inc covid hosp,3,quantile,0.5,92
+East,2026-10-31,2026-11-21,wk inc covid hosp,3,quantile,0.75,133
+East,2026-10-31,2026-11-21,wk inc covid hosp,3,quantile,0.9,191
+East,2026-10-31,2026-11-21,wk inc covid hosp,3,quantile,0.975,385
+North East,2026-10-31,2026-11-21,wk inc covid hosp,3,quantile,0.025,0
+North East,2026-10-31,2026-11-21,wk inc covid hosp,3,quantile,0.1,0
+North East,2026-10-31,2026-11-21,wk inc covid hosp,3,quantile,0.25,0
+North East,2026-10-31,2026-11-21,wk inc covid hosp,3,quantile,0.5,39
+North East,2026-10-31,2026-11-21,wk inc covid hosp,3,quantile,0.75,80
+North East,2026-10-31,2026-11-21,wk inc covid hosp,3,quantile,0.9,139
+North East,2026-10-31,2026-11-21,wk inc covid hosp,3,quantile,0.975,333
+North West,2026-10-31,2026-11-21,wk inc covid hosp,3,quantile,0.025,0
+North West,2026-10-31,2026-11-21,wk inc covid hosp,3,quantile,0.1,0
+North West,2026-10-31,2026-11-21,wk inc covid hosp,3,quantile,0.25,0
+North West,2026-10-31,2026-11-21,wk inc covid hosp,3,quantile,0.5,32
+North West,2026-10-31,2026-11-21,wk inc covid hosp,3,quantile,0.75,73
+North West,2026-10-31,2026-11-21,wk inc covid hosp,3,quantile,0.9,131
+North West,2026-10-31,2026-11-21,wk inc covid hosp,3,quantile,0.975,325
+Ontario,2026-10-31,2026-11-21,wk inc covid hosp,3,quantile,0.025,0
+Ontario,2026-10-31,2026-11-21,wk inc covid hosp,3,quantile,0.1,30
+Ontario,2026-10-31,2026-11-21,wk inc covid hosp,3,quantile,0.25,89
+Ontario,2026-10-31,2026-11-21,wk inc covid hosp,3,quantile,0.5,130
+Ontario,2026-10-31,2026-11-21,wk inc covid hosp,3,quantile,0.75,170
+Ontario,2026-10-31,2026-11-21,wk inc covid hosp,3,quantile,0.9,229
+Ontario,2026-10-31,2026-11-21,wk inc covid hosp,3,quantile,0.975,423
+Toronto,2026-10-31,2026-11-21,wk inc covid hosp,3,quantile,0.025,0
+Toronto,2026-10-31,2026-11-21,wk inc covid hosp,3,quantile,0.1,0
+Toronto,2026-10-31,2026-11-21,wk inc covid hosp,3,quantile,0.25,11
+Toronto,2026-10-31,2026-11-21,wk inc covid hosp,3,quantile,0.5,52
+Toronto,2026-10-31,2026-11-21,wk inc covid hosp,3,quantile,0.75,93
+Toronto,2026-10-31,2026-11-21,wk inc covid hosp,3,quantile,0.9,151
+Toronto,2026-10-31,2026-11-21,wk inc covid hosp,3,quantile,0.975,346
+West,2026-10-31,2026-11-21,wk inc covid hosp,3,quantile,0.025,0
+West,2026-10-31,2026-11-21,wk inc covid hosp,3,quantile,0.1,0
+West,2026-10-31,2026-11-21,wk inc covid hosp,3,quantile,0.25,1
+West,2026-10-31,2026-11-21,wk inc covid hosp,3,quantile,0.5,42
+West,2026-10-31,2026-11-21,wk inc covid hosp,3,quantile,0.75,83
+West,2026-10-31,2026-11-21,wk inc covid hosp,3,quantile,0.9,141
+West,2026-10-31,2026-11-21,wk inc covid hosp,3,quantile,0.975,335
+Central,2026-10-31,2026-10-31,wk inc rsv hosp,0,quantile,0.025,0
+Central,2026-10-31,2026-10-31,wk inc rsv hosp,0,quantile,0.1,0
+Central,2026-10-31,2026-10-31,wk inc rsv hosp,0,quantile,0.25,0
+Central,2026-10-31,2026-10-31,wk inc rsv hosp,0,quantile,0.5,2
+Central,2026-10-31,2026-10-31,wk inc rsv hosp,0,quantile,0.75,4
+Central,2026-10-31,2026-10-31,wk inc rsv hosp,0,quantile,0.9,7
+Central,2026-10-31,2026-10-31,wk inc rsv hosp,0,quantile,0.975,18
+East,2026-10-31,2026-10-31,wk inc rsv hosp,0,quantile,0.025,0
+East,2026-10-31,2026-10-31,wk inc rsv hosp,0,quantile,0.1,0
+East,2026-10-31,2026-10-31,wk inc rsv hosp,0,quantile,0.25,1
+East,2026-10-31,2026-10-31,wk inc rsv hosp,0,quantile,0.5,3
+East,2026-10-31,2026-10-31,wk inc rsv hosp,0,quantile,0.75,5
+East,2026-10-31,2026-10-31,wk inc rsv hosp,0,quantile,0.9,9
+East,2026-10-31,2026-10-31,wk inc rsv hosp,0,quantile,0.975,19
+North East,2026-10-31,2026-10-31,wk inc rsv hosp,0,quantile,0.025,0
+North East,2026-10-31,2026-10-31,wk inc rsv hosp,0,quantile,0.1,0
+North East,2026-10-31,2026-10-31,wk inc rsv hosp,0,quantile,0.25,0
+North East,2026-10-31,2026-10-31,wk inc rsv hosp,0,quantile,0.5,1
+North East,2026-10-31,2026-10-31,wk inc rsv hosp,0,quantile,0.75,3
+North East,2026-10-31,2026-10-31,wk inc rsv hosp,0,quantile,0.9,7
+North East,2026-10-31,2026-10-31,wk inc rsv hosp,0,quantile,0.975,17
+North West,2026-10-31,2026-10-31,wk inc rsv hosp,0,quantile,0.025,0
+North West,2026-10-31,2026-10-31,wk inc rsv hosp,0,quantile,0.1,0
+North West,2026-10-31,2026-10-31,wk inc rsv hosp,0,quantile,0.25,0
+North West,2026-10-31,2026-10-31,wk inc rsv hosp,0,quantile,0.5,2
+North West,2026-10-31,2026-10-31,wk inc rsv hosp,0,quantile,0.75,5
+North West,2026-10-31,2026-10-31,wk inc rsv hosp,0,quantile,0.9,8
+North West,2026-10-31,2026-10-31,wk inc rsv hosp,0,quantile,0.975,18
+Ontario,2026-10-31,2026-10-31,wk inc rsv hosp,0,quantile,0.025,0
+Ontario,2026-10-31,2026-10-31,wk inc rsv hosp,0,quantile,0.1,0
+Ontario,2026-10-31,2026-10-31,wk inc rsv hosp,0,quantile,0.25,4
+Ontario,2026-10-31,2026-10-31,wk inc rsv hosp,0,quantile,0.5,6
+Ontario,2026-10-31,2026-10-31,wk inc rsv hosp,0,quantile,0.75,8
+Ontario,2026-10-31,2026-10-31,wk inc rsv hosp,0,quantile,0.9,11
+Ontario,2026-10-31,2026-10-31,wk inc rsv hosp,0,quantile,0.975,22
+Toronto,2026-10-31,2026-10-31,wk inc rsv hosp,0,quantile,0.025,0
+Toronto,2026-10-31,2026-10-31,wk inc rsv hosp,0,quantile,0.1,0
+Toronto,2026-10-31,2026-10-31,wk inc rsv hosp,0,quantile,0.25,0
+Toronto,2026-10-31,2026-10-31,wk inc rsv hosp,0,quantile,0.5,2
+Toronto,2026-10-31,2026-10-31,wk inc rsv hosp,0,quantile,0.75,4
+Toronto,2026-10-31,2026-10-31,wk inc rsv hosp,0,quantile,0.9,7
+Toronto,2026-10-31,2026-10-31,wk inc rsv hosp,0,quantile,0.975,18
+West,2026-10-31,2026-10-31,wk inc rsv hosp,0,quantile,0.025,0
+West,2026-10-31,2026-10-31,wk inc rsv hosp,0,quantile,0.1,0
+West,2026-10-31,2026-10-31,wk inc rsv hosp,0,quantile,0.25,0
+West,2026-10-31,2026-10-31,wk inc rsv hosp,0,quantile,0.5,1
+West,2026-10-31,2026-10-31,wk inc rsv hosp,0,quantile,0.75,3
+West,2026-10-31,2026-10-31,wk inc rsv hosp,0,quantile,0.9,7
+West,2026-10-31,2026-10-31,wk inc rsv hosp,0,quantile,0.975,17
+Central,2026-10-31,2026-11-07,wk inc rsv hosp,1,quantile,0.025,0
+Central,2026-10-31,2026-11-07,wk inc rsv hosp,1,quantile,0.1,0
+Central,2026-10-31,2026-11-07,wk inc rsv hosp,1,quantile,0.25,0
+Central,2026-10-31,2026-11-07,wk inc rsv hosp,1,quantile,0.5,3
+Central,2026-10-31,2026-11-07,wk inc rsv hosp,1,quantile,0.75,7
+Central,2026-10-31,2026-11-07,wk inc rsv hosp,1,quantile,0.9,11
+Central,2026-10-31,2026-11-07,wk inc rsv hosp,1,quantile,0.975,29
+East,2026-10-31,2026-11-07,wk inc rsv hosp,1,quantile,0.025,0
+East,2026-10-31,2026-11-07,wk inc rsv hosp,1,quantile,0.1,0
+East,2026-10-31,2026-11-07,wk inc rsv hosp,1,quantile,0.25,1
+East,2026-10-31,2026-11-07,wk inc rsv hosp,1,quantile,0.5,5
+East,2026-10-31,2026-11-07,wk inc rsv hosp,1,quantile,0.75,8
+East,2026-10-31,2026-11-07,wk inc rsv hosp,1,quantile,0.9,13
+East,2026-10-31,2026-11-07,wk inc rsv hosp,1,quantile,0.975,31
+North East,2026-10-31,2026-11-07,wk inc rsv hosp,1,quantile,0.025,0
+North East,2026-10-31,2026-11-07,wk inc rsv hosp,1,quantile,0.1,0
+North East,2026-10-31,2026-11-07,wk inc rsv hosp,1,quantile,0.25,0
+North East,2026-10-31,2026-11-07,wk inc rsv hosp,1,quantile,0.5,3
+North East,2026-10-31,2026-11-07,wk inc rsv hosp,1,quantile,0.75,6
+North East,2026-10-31,2026-11-07,wk inc rsv hosp,1,quantile,0.9,11
+North East,2026-10-31,2026-11-07,wk inc rsv hosp,1,quantile,0.975,29
+North West,2026-10-31,2026-11-07,wk inc rsv hosp,1,quantile,0.025,0
+North West,2026-10-31,2026-11-07,wk inc rsv hosp,1,quantile,0.1,0
+North West,2026-10-31,2026-11-07,wk inc rsv hosp,1,quantile,0.25,1
+North West,2026-10-31,2026-11-07,wk inc rsv hosp,1,quantile,0.5,4
+North West,2026-10-31,2026-11-07,wk inc rsv hosp,1,quantile,0.75,8
+North West,2026-10-31,2026-11-07,wk inc rsv hosp,1,quantile,0.9,12
+North West,2026-10-31,2026-11-07,wk inc rsv hosp,1,quantile,0.975,30
+Ontario,2026-10-31,2026-11-07,wk inc rsv hosp,1,quantile,0.025,0
+Ontario,2026-10-31,2026-11-07,wk inc rsv hosp,1,quantile,0.1,0
+Ontario,2026-10-31,2026-11-07,wk inc rsv hosp,1,quantile,0.25,3
+Ontario,2026-10-31,2026-11-07,wk inc rsv hosp,1,quantile,0.5,7
+Ontario,2026-10-31,2026-11-07,wk inc rsv hosp,1,quantile,0.75,10
+Ontario,2026-10-31,2026-11-07,wk inc rsv hosp,1,quantile,0.9,15
+Ontario,2026-10-31,2026-11-07,wk inc rsv hosp,1,quantile,0.975,33
+Toronto,2026-10-31,2026-11-07,wk inc rsv hosp,1,quantile,0.025,0
+Toronto,2026-10-31,2026-11-07,wk inc rsv hosp,1,quantile,0.1,0
+Toronto,2026-10-31,2026-11-07,wk inc rsv hosp,1,quantile,0.25,0
+Toronto,2026-10-31,2026-11-07,wk inc rsv hosp,1,quantile,0.5,3
+Toronto,2026-10-31,2026-11-07,wk inc rsv hosp,1,quantile,0.75,7
+Toronto,2026-10-31,2026-11-07,wk inc rsv hosp,1,quantile,0.9,11
+Toronto,2026-10-31,2026-11-07,wk inc rsv hosp,1,quantile,0.975,29
+West,2026-10-31,2026-11-07,wk inc rsv hosp,1,quantile,0.025,0
+West,2026-10-31,2026-11-07,wk inc rsv hosp,1,quantile,0.1,0
+West,2026-10-31,2026-11-07,wk inc rsv hosp,1,quantile,0.25,0
+West,2026-10-31,2026-11-07,wk inc rsv hosp,1,quantile,0.5,3
+West,2026-10-31,2026-11-07,wk inc rsv hosp,1,quantile,0.75,6
+West,2026-10-31,2026-11-07,wk inc rsv hosp,1,quantile,0.9,11
+West,2026-10-31,2026-11-07,wk inc rsv hosp,1,quantile,0.975,29
+Central,2026-10-31,2026-11-14,wk inc rsv hosp,2,quantile,0.025,0
+Central,2026-10-31,2026-11-14,wk inc rsv hosp,2,quantile,0.1,0
+Central,2026-10-31,2026-11-14,wk inc rsv hosp,2,quantile,0.25,0
+Central,2026-10-31,2026-11-14,wk inc rsv hosp,2,quantile,0.5,5
+Central,2026-10-31,2026-11-14,wk inc rsv hosp,2,quantile,0.75,10
+Central,2026-10-31,2026-11-14,wk inc rsv hosp,2,quantile,0.9,16
+Central,2026-10-31,2026-11-14,wk inc rsv hosp,2,quantile,0.975,40
+East,2026-10-31,2026-11-14,wk inc rsv hosp,2,quantile,0.025,0
+East,2026-10-31,2026-11-14,wk inc rsv hosp,2,quantile,0.1,0
+East,2026-10-31,2026-11-14,wk inc rsv hosp,2,quantile,0.25,1
+East,2026-10-31,2026-11-14,wk inc rsv hosp,2,quantile,0.5,7
+East,2026-10-31,2026-11-14,wk inc rsv hosp,2,quantile,0.75,12
+East,2026-10-31,2026-11-14,wk inc rsv hosp,2,quantile,0.9,17
+East,2026-10-31,2026-11-14,wk inc rsv hosp,2,quantile,0.975,42
+North East,2026-10-31,2026-11-14,wk inc rsv hosp,2,quantile,0.025,0
+North East,2026-10-31,2026-11-14,wk inc rsv hosp,2,quantile,0.1,0
+North East,2026-10-31,2026-11-14,wk inc rsv hosp,2,quantile,0.25,0
+North East,2026-10-31,2026-11-14,wk inc rsv hosp,2,quantile,0.5,5
+North East,2026-10-31,2026-11-14,wk inc rsv hosp,2,quantile,0.75,10
+North East,2026-10-31,2026-11-14,wk inc rsv hosp,2,quantile,0.9,16
+North East,2026-10-31,2026-11-14,wk inc rsv hosp,2,quantile,0.975,40
+North West,2026-10-31,2026-11-14,wk inc rsv hosp,2,quantile,0.025,0
+North West,2026-10-31,2026-11-14,wk inc rsv hosp,2,quantile,0.1,0
+North West,2026-10-31,2026-11-14,wk inc rsv hosp,2,quantile,0.25,1
+North West,2026-10-31,2026-11-14,wk inc rsv hosp,2,quantile,0.5,6
+North West,2026-10-31,2026-11-14,wk inc rsv hosp,2,quantile,0.75,12
+North West,2026-10-31,2026-11-14,wk inc rsv hosp,2,quantile,0.9,17
+North West,2026-10-31,2026-11-14,wk inc rsv hosp,2,quantile,0.975,41
+Ontario,2026-10-31,2026-11-14,wk inc rsv hosp,2,quantile,0.025,0
+Ontario,2026-10-31,2026-11-14,wk inc rsv hosp,2,quantile,0.1,0
+Ontario,2026-10-31,2026-11-14,wk inc rsv hosp,2,quantile,0.25,3
+Ontario,2026-10-31,2026-11-14,wk inc rsv hosp,2,quantile,0.5,8
+Ontario,2026-10-31,2026-11-14,wk inc rsv hosp,2,quantile,0.75,14
+Ontario,2026-10-31,2026-11-14,wk inc rsv hosp,2,quantile,0.9,19
+Ontario,2026-10-31,2026-11-14,wk inc rsv hosp,2,quantile,0.975,43
+Toronto,2026-10-31,2026-11-14,wk inc rsv hosp,2,quantile,0.025,0
+Toronto,2026-10-31,2026-11-14,wk inc rsv hosp,2,quantile,0.1,0
+Toronto,2026-10-31,2026-11-14,wk inc rsv hosp,2,quantile,0.25,0
+Toronto,2026-10-31,2026-11-14,wk inc rsv hosp,2,quantile,0.5,5
+Toronto,2026-10-31,2026-11-14,wk inc rsv hosp,2,quantile,0.75,11
+Toronto,2026-10-31,2026-11-14,wk inc rsv hosp,2,quantile,0.9,16
+Toronto,2026-10-31,2026-11-14,wk inc rsv hosp,2,quantile,0.975,40
+West,2026-10-31,2026-11-14,wk inc rsv hosp,2,quantile,0.025,0
+West,2026-10-31,2026-11-14,wk inc rsv hosp,2,quantile,0.1,0
+West,2026-10-31,2026-11-14,wk inc rsv hosp,2,quantile,0.25,0
+West,2026-10-31,2026-11-14,wk inc rsv hosp,2,quantile,0.5,5
+West,2026-10-31,2026-11-14,wk inc rsv hosp,2,quantile,0.75,10
+West,2026-10-31,2026-11-14,wk inc rsv hosp,2,quantile,0.9,15
+West,2026-10-31,2026-11-14,wk inc rsv hosp,2,quantile,0.975,40
+Central,2026-10-31,2026-11-21,wk inc rsv hosp,3,quantile,0.025,0
+Central,2026-10-31,2026-11-21,wk inc rsv hosp,3,quantile,0.1,0
+Central,2026-10-31,2026-11-21,wk inc rsv hosp,3,quantile,0.25,0
+Central,2026-10-31,2026-11-21,wk inc rsv hosp,3,quantile,0.5,7
+Central,2026-10-31,2026-11-21,wk inc rsv hosp,3,quantile,0.75,14
+Central,2026-10-31,2026-11-21,wk inc rsv hosp,3,quantile,0.9,20
+Central,2026-10-31,2026-11-21,wk inc rsv hosp,3,quantile,0.975,53
+East,2026-10-31,2026-11-21,wk inc rsv hosp,3,quantile,0.025,0
+East,2026-10-31,2026-11-21,wk inc rsv hosp,3,quantile,0.1,0
+East,2026-10-31,2026-11-21,wk inc rsv hosp,3,quantile,0.25,1
+East,2026-10-31,2026-11-21,wk inc rsv hosp,3,quantile,0.5,9
+East,2026-10-31,2026-11-21,wk inc rsv hosp,3,quantile,0.75,16
+East,2026-10-31,2026-11-21,wk inc rsv hosp,3,quantile,0.9,22
+East,2026-10-31,2026-11-21,wk inc rsv hosp,3,quantile,0.975,55
+North East,2026-10-31,2026-11-21,wk inc rsv hosp,3,quantile,0.025,0
+North East,2026-10-31,2026-11-21,wk inc rsv hosp,3,quantile,0.1,0
+North East,2026-10-31,2026-11-21,wk inc rsv hosp,3,quantile,0.25,0
+North East,2026-10-31,2026-11-21,wk inc rsv hosp,3,quantile,0.5,7
+North East,2026-10-31,2026-11-21,wk inc rsv hosp,3,quantile,0.75,14
+North East,2026-10-31,2026-11-21,wk inc rsv hosp,3,quantile,0.9,20
+North East,2026-10-31,2026-11-21,wk inc rsv hosp,3,quantile,0.975,53
+North West,2026-10-31,2026-11-21,wk inc rsv hosp,3,quantile,0.025,0
+North West,2026-10-31,2026-11-21,wk inc rsv hosp,3,quantile,0.1,0
+North West,2026-10-31,2026-11-21,wk inc rsv hosp,3,quantile,0.25,1
+North West,2026-10-31,2026-11-21,wk inc rsv hosp,3,quantile,0.5,8
+North West,2026-10-31,2026-11-21,wk inc rsv hosp,3,quantile,0.75,16
+North West,2026-10-31,2026-11-21,wk inc rsv hosp,3,quantile,0.9,21
+North West,2026-10-31,2026-11-21,wk inc rsv hosp,3,quantile,0.975,54
+Ontario,2026-10-31,2026-11-21,wk inc rsv hosp,3,quantile,0.025,0
+Ontario,2026-10-31,2026-11-21,wk inc rsv hosp,3,quantile,0.1,0
+Ontario,2026-10-31,2026-11-21,wk inc rsv hosp,3,quantile,0.25,2
+Ontario,2026-10-31,2026-11-21,wk inc rsv hosp,3,quantile,0.5,10
+Ontario,2026-10-31,2026-11-21,wk inc rsv hosp,3,quantile,0.75,17
+Ontario,2026-10-31,2026-11-21,wk inc rsv hosp,3,quantile,0.9,23
+Ontario,2026-10-31,2026-11-21,wk inc rsv hosp,3,quantile,0.975,56
+Toronto,2026-10-31,2026-11-21,wk inc rsv hosp,3,quantile,0.025,0
+Toronto,2026-10-31,2026-11-21,wk inc rsv hosp,3,quantile,0.1,0
+Toronto,2026-10-31,2026-11-21,wk inc rsv hosp,3,quantile,0.25,0
+Toronto,2026-10-31,2026-11-21,wk inc rsv hosp,3,quantile,0.5,7
+Toronto,2026-10-31,2026-11-21,wk inc rsv hosp,3,quantile,0.75,14
+Toronto,2026-10-31,2026-11-21,wk inc rsv hosp,3,quantile,0.9,20
+Toronto,2026-10-31,2026-11-21,wk inc rsv hosp,3,quantile,0.975,53
+West,2026-10-31,2026-11-21,wk inc rsv hosp,3,quantile,0.025,0
+West,2026-10-31,2026-11-21,wk inc rsv hosp,3,quantile,0.1,0
+West,2026-10-31,2026-11-21,wk inc rsv hosp,3,quantile,0.25,0
+West,2026-10-31,2026-11-21,wk inc rsv hosp,3,quantile,0.5,7
+West,2026-10-31,2026-11-21,wk inc rsv hosp,3,quantile,0.75,14
+West,2026-10-31,2026-11-21,wk inc rsv hosp,3,quantile,0.9,20
+West,2026-10-31,2026-11-21,wk inc rsv hosp,3,quantile,0.975,53
+Central,2026-10-31,2026-10-31,wk inc flu hosp,0,quantile,0.025,0
+Central,2026-10-31,2026-10-31,wk inc flu hosp,0,quantile,0.1,18
+Central,2026-10-31,2026-10-31,wk inc flu hosp,0,quantile,0.25,22
+Central,2026-10-31,2026-10-31,wk inc flu hosp,0,quantile,0.5,27
+Central,2026-10-31,2026-10-31,wk inc flu hosp,0,quantile,0.75,31
+Central,2026-10-31,2026-10-31,wk inc flu hosp,0,quantile,0.9,35
+Central,2026-10-31,2026-10-31,wk inc flu hosp,0,quantile,0.975,58
+East,2026-10-31,2026-10-31,wk inc flu hosp,0,quantile,0.025,0
+East,2026-10-31,2026-10-31,wk inc flu hosp,0,quantile,0.1,19
+East,2026-10-31,2026-10-31,wk inc flu hosp,0,quantile,0.25,23
+East,2026-10-31,2026-10-31,wk inc flu hosp,0,quantile,0.5,28
+East,2026-10-31,2026-10-31,wk inc flu hosp,0,quantile,0.75,32
+East,2026-10-31,2026-10-31,wk inc flu hosp,0,quantile,0.9,36
+East,2026-10-31,2026-10-31,wk inc flu hosp,0,quantile,0.975,59
+North East,2026-10-31,2026-10-31,wk inc flu hosp,0,quantile,0.025,0
+North East,2026-10-31,2026-10-31,wk inc flu hosp,0,quantile,0.1,0
+North East,2026-10-31,2026-10-31,wk inc flu hosp,0,quantile,0.25,4
+North East,2026-10-31,2026-10-31,wk inc flu hosp,0,quantile,0.5,8
+North East,2026-10-31,2026-10-31,wk inc flu hosp,0,quantile,0.75,12
+North East,2026-10-31,2026-10-31,wk inc flu hosp,0,quantile,0.9,16
+North East,2026-10-31,2026-10-31,wk inc flu hosp,0,quantile,0.975,39
+North West,2026-10-31,2026-10-31,wk inc flu hosp,0,quantile,0.025,0
+North West,2026-10-31,2026-10-31,wk inc flu hosp,0,quantile,0.1,0
+North West,2026-10-31,2026-10-31,wk inc flu hosp,0,quantile,0.25,0
+North West,2026-10-31,2026-10-31,wk inc flu hosp,0,quantile,0.5,4
+North West,2026-10-31,2026-10-31,wk inc flu hosp,0,quantile,0.75,8
+North West,2026-10-31,2026-10-31,wk inc flu hosp,0,quantile,0.9,12
+North West,2026-10-31,2026-10-31,wk inc flu hosp,0,quantile,0.975,35
+Ontario,2026-10-31,2026-10-31,wk inc flu hosp,0,quantile,0.025,55
+Ontario,2026-10-31,2026-10-31,wk inc flu hosp,0,quantile,0.1,78
+Ontario,2026-10-31,2026-10-31,wk inc flu hosp,0,quantile,0.25,82
+Ontario,2026-10-31,2026-10-31,wk inc flu hosp,0,quantile,0.5,86
+Ontario,2026-10-31,2026-10-31,wk inc flu hosp,0,quantile,0.75,90
+Ontario,2026-10-31,2026-10-31,wk inc flu hosp,0,quantile,0.9,94
+Ontario,2026-10-31,2026-10-31,wk inc flu hosp,0,quantile,0.975,117
+Toronto,2026-10-31,2026-10-31,wk inc flu hosp,0,quantile,0.025,0
+Toronto,2026-10-31,2026-10-31,wk inc flu hosp,0,quantile,0.1,18
+Toronto,2026-10-31,2026-10-31,wk inc flu hosp,0,quantile,0.25,22
+Toronto,2026-10-31,2026-10-31,wk inc flu hosp,0,quantile,0.5,26
+Toronto,2026-10-31,2026-10-31,wk inc flu hosp,0,quantile,0.75,30
+Toronto,2026-10-31,2026-10-31,wk inc flu hosp,0,quantile,0.9,34
+Toronto,2026-10-31,2026-10-31,wk inc flu hosp,0,quantile,0.975,57
+West,2026-10-31,2026-10-31,wk inc flu hosp,0,quantile,0.025,0
+West,2026-10-31,2026-10-31,wk inc flu hosp,0,quantile,0.1,4
+West,2026-10-31,2026-10-31,wk inc flu hosp,0,quantile,0.25,8
+West,2026-10-31,2026-10-31,wk inc flu hosp,0,quantile,0.5,12
+West,2026-10-31,2026-10-31,wk inc flu hosp,0,quantile,0.75,16
+West,2026-10-31,2026-10-31,wk inc flu hosp,0,quantile,0.9,20
+West,2026-10-31,2026-10-31,wk inc flu hosp,0,quantile,0.975,43
+Central,2026-10-31,2026-11-07,wk inc flu hosp,1,quantile,0.025,0
+Central,2026-10-31,2026-11-07,wk inc flu hosp,1,quantile,0.1,16
+Central,2026-10-31,2026-11-07,wk inc flu hosp,1,quantile,0.25,21
+Central,2026-10-31,2026-11-07,wk inc flu hosp,1,quantile,0.5,30
+Central,2026-10-31,2026-11-07,wk inc flu hosp,1,quantile,0.75,39
+Central,2026-10-31,2026-11-07,wk inc flu hosp,1,quantile,0.9,45
+Central,2026-10-31,2026-11-07,wk inc flu hosp,1,quantile,0.975,94
+East,2026-10-31,2026-11-07,wk inc flu hosp,1,quantile,0.025,0
+East,2026-10-31,2026-11-07,wk inc flu hosp,1,quantile,0.1,14
+East,2026-10-31,2026-11-07,wk inc flu hosp,1,quantile,0.25,19
+East,2026-10-31,2026-11-07,wk inc flu hosp,1,quantile,0.5,28
+East,2026-10-31,2026-11-07,wk inc flu hosp,1,quantile,0.75,37
+East,2026-10-31,2026-11-07,wk inc flu hosp,1,quantile,0.9,43
+East,2026-10-31,2026-11-07,wk inc flu hosp,1,quantile,0.975,91
+North East,2026-10-31,2026-11-07,wk inc flu hosp,1,quantile,0.025,0
+North East,2026-10-31,2026-11-07,wk inc flu hosp,1,quantile,0.1,0
+North East,2026-10-31,2026-11-07,wk inc flu hosp,1,quantile,0.25,3
+North East,2026-10-31,2026-11-07,wk inc flu hosp,1,quantile,0.5,13
+North East,2026-10-31,2026-11-07,wk inc flu hosp,1,quantile,0.75,22
+North East,2026-10-31,2026-11-07,wk inc flu hosp,1,quantile,0.9,27
+North East,2026-10-31,2026-11-07,wk inc flu hosp,1,quantile,0.975,76
+North West,2026-10-31,2026-11-07,wk inc flu hosp,1,quantile,0.025,0
+North West,2026-10-31,2026-11-07,wk inc flu hosp,1,quantile,0.1,0
+North West,2026-10-31,2026-11-07,wk inc flu hosp,1,quantile,0.25,0
+North West,2026-10-31,2026-11-07,wk inc flu hosp,1,quantile,0.5,9
+North West,2026-10-31,2026-11-07,wk inc flu hosp,1,quantile,0.75,18
+North West,2026-10-31,2026-11-07,wk inc flu hosp,1,quantile,0.9,23
+North West,2026-10-31,2026-11-07,wk inc flu hosp,1,quantile,0.975,72
+Ontario,2026-10-31,2026-11-07,wk inc flu hosp,1,quantile,0.025,17
+Ontario,2026-10-31,2026-11-07,wk inc flu hosp,1,quantile,0.1,66
+Ontario,2026-10-31,2026-11-07,wk inc flu hosp,1,quantile,0.25,71
+Ontario,2026-10-31,2026-11-07,wk inc flu hosp,1,quantile,0.5,80
+Ontario,2026-10-31,2026-11-07,wk inc flu hosp,1,quantile,0.75,89
+Ontario,2026-10-31,2026-11-07,wk inc flu hosp,1,quantile,0.9,95
+Ontario,2026-10-31,2026-11-07,wk inc flu hosp,1,quantile,0.975,144
+Toronto,2026-10-31,2026-11-07,wk inc flu hosp,1,quantile,0.025,0
+Toronto,2026-10-31,2026-11-07,wk inc flu hosp,1,quantile,0.1,14
+Toronto,2026-10-31,2026-11-07,wk inc flu hosp,1,quantile,0.25,20
+Toronto,2026-10-31,2026-11-07,wk inc flu hosp,1,quantile,0.5,29
+Toronto,2026-10-31,2026-11-07,wk inc flu hosp,1,quantile,0.75,38
+Toronto,2026-10-31,2026-11-07,wk inc flu hosp,1,quantile,0.9,43
+Toronto,2026-10-31,2026-11-07,wk inc flu hosp,1,quantile,0.975,92
+West,2026-10-31,2026-11-07,wk inc flu hosp,1,quantile,0.025,0
+West,2026-10-31,2026-11-07,wk inc flu hosp,1,quantile,0.1,1
+West,2026-10-31,2026-11-07,wk inc flu hosp,1,quantile,0.25,6
+West,2026-10-31,2026-11-07,wk inc flu hosp,1,quantile,0.5,15
+West,2026-10-31,2026-11-07,wk inc flu hosp,1,quantile,0.75,25
+West,2026-10-31,2026-11-07,wk inc flu hosp,1,quantile,0.9,30
+West,2026-10-31,2026-11-07,wk inc flu hosp,1,quantile,0.975,79
+Central,2026-10-31,2026-11-14,wk inc flu hosp,2,quantile,0.025,0
+Central,2026-10-31,2026-11-14,wk inc flu hosp,2,quantile,0.1,13
+Central,2026-10-31,2026-11-14,wk inc flu hosp,2,quantile,0.25,18
+Central,2026-10-31,2026-11-14,wk inc flu hosp,2,quantile,0.5,33
+Central,2026-10-31,2026-11-14,wk inc flu hosp,2,quantile,0.75,48
+Central,2026-10-31,2026-11-14,wk inc flu hosp,2,quantile,0.9,52
+Central,2026-10-31,2026-11-14,wk inc flu hosp,2,quantile,0.975,126
+East,2026-10-31,2026-11-14,wk inc flu hosp,2,quantile,0.025,0
+East,2026-10-31,2026-11-14,wk inc flu hosp,2,quantile,0.1,10
+East,2026-10-31,2026-11-14,wk inc flu hosp,2,quantile,0.25,15
+East,2026-10-31,2026-11-14,wk inc flu hosp,2,quantile,0.5,30
+East,2026-10-31,2026-11-14,wk inc flu hosp,2,quantile,0.75,44
+East,2026-10-31,2026-11-14,wk inc flu hosp,2,quantile,0.9,49
+East,2026-10-31,2026-11-14,wk inc flu hosp,2,quantile,0.975,122
+North East,2026-10-31,2026-11-14,wk inc flu hosp,2,quantile,0.025,0
+North East,2026-10-31,2026-11-14,wk inc flu hosp,2,quantile,0.1,0
+North East,2026-10-31,2026-11-14,wk inc flu hosp,2,quantile,0.25,3
+North East,2026-10-31,2026-11-14,wk inc flu hosp,2,quantile,0.5,18
+North East,2026-10-31,2026-11-14,wk inc flu hosp,2,quantile,0.75,32
+North East,2026-10-31,2026-11-14,wk inc flu hosp,2,quantile,0.9,37
+North East,2026-10-31,2026-11-14,wk inc flu hosp,2,quantile,0.975,110
+North West,2026-10-31,2026-11-14,wk inc flu hosp,2,quantile,0.025,0
+North West,2026-10-31,2026-11-14,wk inc flu hosp,2,quantile,0.1,0
+North West,2026-10-31,2026-11-14,wk inc flu hosp,2,quantile,0.25,0
+North West,2026-10-31,2026-11-14,wk inc flu hosp,2,quantile,0.5,14
+North West,2026-10-31,2026-11-14,wk inc flu hosp,2,quantile,0.75,29
+North West,2026-10-31,2026-11-14,wk inc flu hosp,2,quantile,0.9,34
+North West,2026-10-31,2026-11-14,wk inc flu hosp,2,quantile,0.975,107
+Ontario,2026-10-31,2026-11-14,wk inc flu hosp,2,quantile,0.025,0
+Ontario,2026-10-31,2026-11-14,wk inc flu hosp,2,quantile,0.1,54
+Ontario,2026-10-31,2026-11-14,wk inc flu hosp,2,quantile,0.25,58
+Ontario,2026-10-31,2026-11-14,wk inc flu hosp,2,quantile,0.5,73
+Ontario,2026-10-31,2026-11-14,wk inc flu hosp,2,quantile,0.75,88
+Ontario,2026-10-31,2026-11-14,wk inc flu hosp,2,quantile,0.9,92
+Ontario,2026-10-31,2026-11-14,wk inc flu hosp,2,quantile,0.975,166
+Toronto,2026-10-31,2026-11-14,wk inc flu hosp,2,quantile,0.025,0
+Toronto,2026-10-31,2026-11-14,wk inc flu hosp,2,quantile,0.1,12
+Toronto,2026-10-31,2026-11-14,wk inc flu hosp,2,quantile,0.25,16
+Toronto,2026-10-31,2026-11-14,wk inc flu hosp,2,quantile,0.5,31
+Toronto,2026-10-31,2026-11-14,wk inc flu hosp,2,quantile,0.75,46
+Toronto,2026-10-31,2026-11-14,wk inc flu hosp,2,quantile,0.9,50
+Toronto,2026-10-31,2026-11-14,wk inc flu hosp,2,quantile,0.975,124
+West,2026-10-31,2026-11-14,wk inc flu hosp,2,quantile,0.025,0
+West,2026-10-31,2026-11-14,wk inc flu hosp,2,quantile,0.1,0
+West,2026-10-31,2026-11-14,wk inc flu hosp,2,quantile,0.25,5
+West,2026-10-31,2026-11-14,wk inc flu hosp,2,quantile,0.5,20
+West,2026-10-31,2026-11-14,wk inc flu hosp,2,quantile,0.75,34
+West,2026-10-31,2026-11-14,wk inc flu hosp,2,quantile,0.9,39
+West,2026-10-31,2026-11-14,wk inc flu hosp,2,quantile,0.975,112
+Central,2026-10-31,2026-11-21,wk inc flu hosp,3,quantile,0.025,0
+Central,2026-10-31,2026-11-21,wk inc flu hosp,3,quantile,0.1,11
+Central,2026-10-31,2026-11-21,wk inc flu hosp,3,quantile,0.25,15
+Central,2026-10-31,2026-11-21,wk inc flu hosp,3,quantile,0.5,35
+Central,2026-10-31,2026-11-21,wk inc flu hosp,3,quantile,0.75,55
+Central,2026-10-31,2026-11-21,wk inc flu hosp,3,quantile,0.9,59
+Central,2026-10-31,2026-11-21,wk inc flu hosp,3,quantile,0.975,145
+East,2026-10-31,2026-11-21,wk inc flu hosp,3,quantile,0.025,0
+East,2026-10-31,2026-11-21,wk inc flu hosp,3,quantile,0.1,8
+East,2026-10-31,2026-11-21,wk inc flu hosp,3,quantile,0.25,12
+East,2026-10-31,2026-11-21,wk inc flu hosp,3,quantile,0.5,32
+East,2026-10-31,2026-11-21,wk inc flu hosp,3,quantile,0.75,52
+East,2026-10-31,2026-11-21,wk inc flu hosp,3,quantile,0.9,56
+East,2026-10-31,2026-11-21,wk inc flu hosp,3,quantile,0.975,143
+North East,2026-10-31,2026-11-21,wk inc flu hosp,3,quantile,0.025,0
+North East,2026-10-31,2026-11-21,wk inc flu hosp,3,quantile,0.1,0
+North East,2026-10-31,2026-11-21,wk inc flu hosp,3,quantile,0.25,3
+North East,2026-10-31,2026-11-21,wk inc flu hosp,3,quantile,0.5,23
+North East,2026-10-31,2026-11-21,wk inc flu hosp,3,quantile,0.75,43
+North East,2026-10-31,2026-11-21,wk inc flu hosp,3,quantile,0.9,47
+North East,2026-10-31,2026-11-21,wk inc flu hosp,3,quantile,0.975,133
+North West,2026-10-31,2026-11-21,wk inc flu hosp,3,quantile,0.025,0
+North West,2026-10-31,2026-11-21,wk inc flu hosp,3,quantile,0.1,0
+North West,2026-10-31,2026-11-21,wk inc flu hosp,3,quantile,0.25,0
+North West,2026-10-31,2026-11-21,wk inc flu hosp,3,quantile,0.5,20
+North West,2026-10-31,2026-11-21,wk inc flu hosp,3,quantile,0.75,40
+North West,2026-10-31,2026-11-21,wk inc flu hosp,3,quantile,0.9,44
+North West,2026-10-31,2026-11-21,wk inc flu hosp,3,quantile,0.975,130
+Ontario,2026-10-31,2026-11-21,wk inc flu hosp,3,quantile,0.025,0
+Ontario,2026-10-31,2026-11-21,wk inc flu hosp,3,quantile,0.1,43
+Ontario,2026-10-31,2026-11-21,wk inc flu hosp,3,quantile,0.25,47
+Ontario,2026-10-31,2026-11-21,wk inc flu hosp,3,quantile,0.5,67
+Ontario,2026-10-31,2026-11-21,wk inc flu hosp,3,quantile,0.75,87
+Ontario,2026-10-31,2026-11-21,wk inc flu hosp,3,quantile,0.9,91
+Ontario,2026-10-31,2026-11-21,wk inc flu hosp,3,quantile,0.975,178
+Toronto,2026-10-31,2026-11-21,wk inc flu hosp,3,quantile,0.025,0
+Toronto,2026-10-31,2026-11-21,wk inc flu hosp,3,quantile,0.1,9
+Toronto,2026-10-31,2026-11-21,wk inc flu hosp,3,quantile,0.25,13
+Toronto,2026-10-31,2026-11-21,wk inc flu hosp,3,quantile,0.5,33
+Toronto,2026-10-31,2026-11-21,wk inc flu hosp,3,quantile,0.75,53
+Toronto,2026-10-31,2026-11-21,wk inc flu hosp,3,quantile,0.9,58
+Toronto,2026-10-31,2026-11-21,wk inc flu hosp,3,quantile,0.975,144
+West,2026-10-31,2026-11-21,wk inc flu hosp,3,quantile,0.025,0
+West,2026-10-31,2026-11-21,wk inc flu hosp,3,quantile,0.1,0
+West,2026-10-31,2026-11-21,wk inc flu hosp,3,quantile,0.25,4
+West,2026-10-31,2026-11-21,wk inc flu hosp,3,quantile,0.5,24
+West,2026-10-31,2026-11-21,wk inc flu hosp,3,quantile,0.75,44
+West,2026-10-31,2026-11-21,wk inc flu hosp,3,quantile,0.9,48
+West,2026-10-31,2026-11-21,wk inc flu hosp,3,quantile,0.975,135
