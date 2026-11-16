@@ -1,0 +1,161 @@
+location,reference_date,target_end_date,target,horizon,output_type,output_type_id,value
+Ontario,2026-11-14,,peak week inc flu hosp,,pmf,2026-10-17,0
+Ontario,2026-11-14,,peak week inc flu hosp,,pmf,2026-10-24,0
+Ontario,2026-11-14,,peak week inc flu hosp,,pmf,2026-10-31,0
+Ontario,2026-11-14,,peak week inc flu hosp,,pmf,2026-11-07,0
+Ontario,2026-11-14,,peak week inc flu hosp,,pmf,2026-11-14,0
+Ontario,2026-11-14,,peak week inc flu hosp,,pmf,2026-11-21,0
+Ontario,2026-11-14,,peak week inc flu hosp,,pmf,2026-11-28,0
+Ontario,2026-11-14,,peak week inc flu hosp,,pmf,2026-12-05,0
+Ontario,2026-11-14,,peak week inc flu hosp,,pmf,2026-12-12,0.002
+Ontario,2026-11-14,,peak week inc flu hosp,,pmf,2026-12-19,0.0365
+Ontario,2026-11-14,,peak week inc flu hosp,,pmf,2026-12-26,0.1245
+Ontario,2026-11-14,,peak week inc flu hosp,,pmf,2027-01-02,0.191
+Ontario,2026-11-14,,peak week inc flu hosp,,pmf,2027-01-09,0.12
+Ontario,2026-11-14,,peak week inc flu hosp,,pmf,2027-01-16,0.0335
+Ontario,2026-11-14,,peak week inc flu hosp,,pmf,2027-01-23,0.0375
+Ontario,2026-11-14,,peak week inc flu hosp,,pmf,2027-01-30,0.122
+Ontario,2026-11-14,,peak week inc flu hosp,,pmf,2027-02-06,0.183
+Ontario,2026-11-14,,peak week inc flu hosp,,pmf,2027-02-13,0.116
+Ontario,2026-11-14,,peak week inc flu hosp,,pmf,2027-02-20,0.031
+Ontario,2026-11-14,,peak week inc flu hosp,,pmf,2027-02-27,0.003
+Ontario,2026-11-14,,peak week inc flu hosp,,pmf,2027-03-06,0
+Ontario,2026-11-14,,peak week inc flu hosp,,pmf,2027-03-13,0
+Ontario,2026-11-14,,peak week inc flu hosp,,pmf,2027-03-20,0
+Ontario,2026-11-14,,peak week inc flu hosp,,pmf,2027-03-27,0
+Ontario,2026-11-14,,peak week inc flu hosp,,pmf,2027-04-03,0
+Ontario,2026-11-14,,peak week inc flu hosp,,pmf,2027-04-10,0
+Ontario,2026-11-14,,peak week inc flu hosp,,pmf,2027-04-17,0
+Ontario,2026-11-14,,peak week inc flu hosp,,pmf,2027-04-24,0
+Ontario,2026-11-14,,peak week inc flu hosp,,pmf,2027-05-01,0
+Ontario,2026-11-14,,peak week inc flu hosp,,pmf,2027-05-08,0
+Ontario,2026-11-14,,peak week inc flu hosp,,pmf,2027-05-15,0
+Ontario,2026-11-14,,peak week inc flu hosp,,pmf,2027-05-22,0
+Ontario,2026-11-14,,peak week inc flu hosp,,pmf,2027-05-29,0
+Ontario,2026-11-14,,peak inc flu hosp,,quantile,0.025,332
+Ontario,2026-11-14,,peak inc flu hosp,,quantile,0.1,420
+Ontario,2026-11-14,,peak inc flu hosp,,quantile,0.25,508
+Ontario,2026-11-14,,peak inc flu hosp,,quantile,0.5,617
+Ontario,2026-11-14,,peak inc flu hosp,,quantile,0.75,717
+Ontario,2026-11-14,,peak inc flu hosp,,quantile,0.9,803
+Ontario,2026-11-14,,peak inc flu hosp,,quantile,0.975,894
+Central,2026-11-14,,peak week inc flu hosp,,pmf,2026-10-17,0
+Central,2026-11-14,,peak week inc flu hosp,,pmf,2026-10-24,0
+Central,2026-11-14,,peak week inc flu hosp,,pmf,2026-10-31,0
+Central,2026-11-14,,peak week inc flu hosp,,pmf,2026-11-07,5e-4
+Central,2026-11-14,,peak week inc flu hosp,,pmf,2026-11-14,0
+Central,2026-11-14,,peak week inc flu hosp,,pmf,2026-11-21,0
+Central,2026-11-14,,peak week inc flu hosp,,pmf,2026-11-28,0
+Central,2026-11-14,,peak week inc flu hosp,,pmf,2026-12-05,0
+Central,2026-11-14,,peak week inc flu hosp,,pmf,2026-12-12,0
+Central,2026-11-14,,peak week inc flu hosp,,pmf,2026-12-19,0.0025
+Central,2026-11-14,,peak week inc flu hosp,,pmf,2026-12-26,0.032
+Central,2026-11-14,,peak week inc flu hosp,,pmf,2027-01-02,0.1245
+Central,2026-11-14,,peak week inc flu hosp,,pmf,2027-01-09,0.1765
+Central,2026-11-14,,peak week inc flu hosp,,pmf,2027-01-16,0.13
+Central,2026-11-14,,peak week inc flu hosp,,pmf,2027-01-23,0.0535
+Central,2026-11-14,,peak week inc flu hosp,,pmf,2027-01-30,0.122
+Central,2026-11-14,,peak week inc flu hosp,,pmf,2027-02-06,0.184
+Central,2026-11-14,,peak week inc flu hosp,,pmf,2027-02-13,0.139
+Central,2026-11-14,,peak week inc flu hosp,,pmf,2027-02-20,0.032
+Central,2026-11-14,,peak week inc flu hosp,,pmf,2027-02-27,0.0035
+Central,2026-11-14,,peak week inc flu hosp,,pmf,2027-03-06,0
+Central,2026-11-14,,peak week inc flu hosp,,pmf,2027-03-13,0
+Central,2026-11-14,,peak week inc flu hosp,,pmf,2027-03-20,0
+Central,2026-11-14,,peak week inc flu hosp,,pmf,2027-03-27,0
+Central,2026-11-14,,peak week inc flu hosp,,pmf,2027-04-03,0
+Central,2026-11-14,,peak week inc flu hosp,,pmf,2027-04-10,0
+Central,2026-11-14,,peak week inc flu hosp,,pmf,2027-04-17,0
+Central,2026-11-14,,peak week inc flu hosp,,pmf,2027-04-24,0
+Central,2026-11-14,,peak week inc flu hosp,,pmf,2027-05-01,0
+Central,2026-11-14,,peak week inc flu hosp,,pmf,2027-05-08,0
+Central,2026-11-14,,peak week inc flu hosp,,pmf,2027-05-15,0
+Central,2026-11-14,,peak week inc flu hosp,,pmf,2027-05-22,0
+Central,2026-11-14,,peak week inc flu hosp,,pmf,2027-05-29,0
+Central,2026-11-14,,peak inc flu hosp,,quantile,0.025,92
+Central,2026-11-14,,peak inc flu hosp,,quantile,0.1,123
+Central,2026-11-14,,peak inc flu hosp,,quantile,0.25,154
+Central,2026-11-14,,peak inc flu hosp,,quantile,0.5,190
+Central,2026-11-14,,peak inc flu hosp,,quantile,0.75,223
+Central,2026-11-14,,peak inc flu hosp,,quantile,0.9,253
+Central,2026-11-14,,peak inc flu hosp,,quantile,0.975,282
+East,2026-11-14,,peak week inc flu hosp,,pmf,2026-10-17,0
+East,2026-11-14,,peak week inc flu hosp,,pmf,2026-10-24,0
+East,2026-11-14,,peak week inc flu hosp,,pmf,2026-10-31,0.0435
+East,2026-11-14,,peak week inc flu hosp,,pmf,2026-11-07,0
+East,2026-11-14,,peak week inc flu hosp,,pmf,2026-11-14,0
+East,2026-11-14,,peak week inc flu hosp,,pmf,2026-11-21,0
+East,2026-11-14,,peak week inc flu hosp,,pmf,2026-11-28,0
+East,2026-11-14,,peak week inc flu hosp,,pmf,2026-12-05,0
+East,2026-11-14,,peak week inc flu hosp,,pmf,2026-12-12,0
+East,2026-11-14,,peak week inc flu hosp,,pmf,2026-12-19,0.003
+East,2026-11-14,,peak week inc flu hosp,,pmf,2026-12-26,0.025
+East,2026-11-14,,peak week inc flu hosp,,pmf,2027-01-02,0.1165
+East,2026-11-14,,peak week inc flu hosp,,pmf,2027-01-09,0.168
+East,2026-11-14,,peak week inc flu hosp,,pmf,2027-01-16,0.1225
+East,2026-11-14,,peak week inc flu hosp,,pmf,2027-01-23,0.029
+East,2026-11-14,,peak week inc flu hosp,,pmf,2027-01-30,0.035
+East,2026-11-14,,peak week inc flu hosp,,pmf,2027-02-06,0.135
+East,2026-11-14,,peak week inc flu hosp,,pmf,2027-02-13,0.1815
+East,2026-11-14,,peak week inc flu hosp,,pmf,2027-02-20,0.109
+East,2026-11-14,,peak week inc flu hosp,,pmf,2027-02-27,0.029
+East,2026-11-14,,peak week inc flu hosp,,pmf,2027-03-06,0.003
+East,2026-11-14,,peak week inc flu hosp,,pmf,2027-03-13,0
+East,2026-11-14,,peak week inc flu hosp,,pmf,2027-03-20,0
+East,2026-11-14,,peak week inc flu hosp,,pmf,2027-03-27,0
+East,2026-11-14,,peak week inc flu hosp,,pmf,2027-04-03,0
+East,2026-11-14,,peak week inc flu hosp,,pmf,2027-04-10,0
+East,2026-11-14,,peak week inc flu hosp,,pmf,2027-04-17,0
+East,2026-11-14,,peak week inc flu hosp,,pmf,2027-04-24,0
+East,2026-11-14,,peak week inc flu hosp,,pmf,2027-05-01,0
+East,2026-11-14,,peak week inc flu hosp,,pmf,2027-05-08,0
+East,2026-11-14,,peak week inc flu hosp,,pmf,2027-05-15,0
+East,2026-11-14,,peak week inc flu hosp,,pmf,2027-05-22,0
+East,2026-11-14,,peak week inc flu hosp,,pmf,2027-05-29,0
+East,2026-11-14,,peak inc flu hosp,,quantile,0.025,30
+East,2026-11-14,,peak inc flu hosp,,quantile,0.1,46
+East,2026-11-14,,peak inc flu hosp,,quantile,0.25,70
+East,2026-11-14,,peak inc flu hosp,,quantile,0.5,97
+East,2026-11-14,,peak inc flu hosp,,quantile,0.75,124
+East,2026-11-14,,peak inc flu hosp,,quantile,0.9,147
+East,2026-11-14,,peak inc flu hosp,,quantile,0.975,172
+Toronto,2026-11-14,,peak week inc flu hosp,,pmf,2026-10-17,0
+Toronto,2026-11-14,,peak week inc flu hosp,,pmf,2026-10-24,0
+Toronto,2026-11-14,,peak week inc flu hosp,,pmf,2026-10-31,0
+Toronto,2026-11-14,,peak week inc flu hosp,,pmf,2026-11-07,0
+Toronto,2026-11-14,,peak week inc flu hosp,,pmf,2026-11-14,0
+Toronto,2026-11-14,,peak week inc flu hosp,,pmf,2026-11-21,0
+Toronto,2026-11-14,,peak week inc flu hosp,,pmf,2026-11-28,0
+Toronto,2026-11-14,,peak week inc flu hosp,,pmf,2026-12-05,5e-4
+Toronto,2026-11-14,,peak week inc flu hosp,,pmf,2026-12-12,0.0015
+Toronto,2026-11-14,,peak week inc flu hosp,,pmf,2026-12-19,0.035
+Toronto,2026-11-14,,peak week inc flu hosp,,pmf,2026-12-26,0.121
+Toronto,2026-11-14,,peak week inc flu hosp,,pmf,2027-01-02,0.1935
+Toronto,2026-11-14,,peak week inc flu hosp,,pmf,2027-01-09,0.1545
+Toronto,2026-11-14,,peak week inc flu hosp,,pmf,2027-01-16,0.137
+Toronto,2026-11-14,,peak week inc flu hosp,,pmf,2027-01-23,0.1945
+Toronto,2026-11-14,,peak week inc flu hosp,,pmf,2027-01-30,0.132
+Toronto,2026-11-14,,peak week inc flu hosp,,pmf,2027-02-06,0.028
+Toronto,2026-11-14,,peak week inc flu hosp,,pmf,2027-02-13,0.0025
+Toronto,2026-11-14,,peak week inc flu hosp,,pmf,2027-02-20,0
+Toronto,2026-11-14,,peak week inc flu hosp,,pmf,2027-02-27,0
+Toronto,2026-11-14,,peak week inc flu hosp,,pmf,2027-03-06,0
+Toronto,2026-11-14,,peak week inc flu hosp,,pmf,2027-03-13,0
+Toronto,2026-11-14,,peak week inc flu hosp,,pmf,2027-03-20,0
+Toronto,2026-11-14,,peak week inc flu hosp,,pmf,2027-03-27,0
+Toronto,2026-11-14,,peak week inc flu hosp,,pmf,2027-04-03,0
+Toronto,2026-11-14,,peak week inc flu hosp,,pmf,2027-04-10,0
+Toronto,2026-11-14,,peak week inc flu hosp,,pmf,2027-04-17,0
+Toronto,2026-11-14,,peak week inc flu hosp,,pmf,2027-04-24,0
+Toronto,2026-11-14,,peak week inc flu hosp,,pmf,2027-05-01,0
+Toronto,2026-11-14,,peak week inc flu hosp,,pmf,2027-05-08,0
+Toronto,2026-11-14,,peak week inc flu hosp,,pmf,2027-05-15,0
+Toronto,2026-11-14,,peak week inc flu hosp,,pmf,2027-05-22,0
+Toronto,2026-11-14,,peak week inc flu hosp,,pmf,2027-05-29,0
+Toronto,2026-11-14,,peak inc flu hosp,,quantile,0.025,80
+Toronto,2026-11-14,,peak inc flu hosp,,quantile,0.1,87
+Toronto,2026-11-14,,peak inc flu hosp,,quantile,0.25,94
+Toronto,2026-11-14,,peak inc flu hosp,,quantile,0.5,102
+Toronto,2026-11-14,,peak inc flu hosp,,quantile,0.75,111
+Toronto,2026-11-14,,peak inc flu hosp,,quantile,0.9,118
+Toronto,2026-11-14,,peak inc flu hosp,,quantile,0.975,125
