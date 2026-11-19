@@ -1,0 +1,20 @@
+team_name: "AI4Casting_Hub"
+team_abbr: "AI4Casting_Hub"
+model_name: "Simple_Ens"
+model_abbr: "Simple_Ens"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "AI4Casting Hub Administrator",
+    "affiliation": "AI4Casting Hub, University of Guelph",
+    "email": "4castinghub@uoguelph.ca"
+  }
+]
+website_url: "https://4castinghub.uoguelph.ca"
+license: "CC-BY-4.0"
+designated_model: true
+methods: "Simple Ensemble"
+data_inputs: "Ontario hospital bed occupancy and influenza hospital admissions forecasts"
+methods_long: "A mean ensemble of weekly quantiles, excluding AI4Casting_Hub-Quantile_Baseline and AI4Casting_Hub-Flatline. Replaces AI4Casting_Hub-Ensemble_v1 beginning with the 2026-11-14 reference date. For influenza peak forecasts, retains the previous ensemble method and eligibility: averages peak-week probabilities and takes the median of peak-incidence quantiles from eligible models, including AI4Casting_Hub-PeakBaseline."
+ensemble_of_models: true
+ensemble_of_hub_models: true
