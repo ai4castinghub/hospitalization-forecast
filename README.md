@@ -4,7 +4,7 @@ Welcome to the AI4Casting Hub's repository for the 2026-2027 Hospital Bed Occupa
 [**Link to AI4Casting Hub's Ontario Hospital Bed Occupancy Forecasting Official Page**](https://4castinghub.uoguelph.ca/hospitalization/)
 
 ### Challenge Overview
-AI4Casting Hub is organizing a collaborative nowcasting and forecasting challenge for confirmed hospital bed occupancy during the 2026-2027 respiratory virus season. PHO data updates run from Friday, October 23, 2026 through Friday, May 28, 2027. Participating teams are asked to provide weekly probabilistic interval hindcasts, nowcasts and forecasts for hospital bed occupancy at both the provincial level (Ontario) and for each of the 6 Public Health Regions.
+AI4Casting Hub is organizing a collaborative nowcasting and forecasting challenge for confirmed hospital bed occupancy during the 2026-2027 respiratory virus season. The challenge starts on Friday, November 20, 2026. PHO data updates run from Friday, October 23, 2026 through Friday, May 28, 2027. Participating teams are asked to provide weekly probabilistic interval hindcasts, nowcasts and forecasts for hospital bed occupancy at both the provincial level (Ontario) and for each of the 6 Public Health Regions.
 
 These predictions will cover three major respiratory viruses:
 * COVID-19 Hospital Bed Occupancy Count (wk inc covid hosp)
@@ -23,9 +23,9 @@ Two additional, independently optional 2026–27 targets forecast the peak week 
 The Monday hub pipeline also generates seasonal baseline, autoregressive, and random-forest peak forecasts where complete admissions history is available. The peak ensemble is included alongside the weekly ensemble forecasts. Seasonal forecasts are not currently evaluated.
 
 ### Key Dates
-* First PHO update of the challenge: Friday, October 23, 2026
+* Challenge start and first PHO update of the challenge: Friday, November 20, 2026
 * Last PHO update of the challenge: Saturday, May 29, 2027
-* Forecast rounds: Saturdays from October 24, 2026 through May 29, 2027 (32 rounds).
+* Forecast rounds: Saturdays from November 21, 2026 through May 29, 2027 (28 rounds).
 
 * Weekly submission deadline: Saturday at 11:30 p.m. America/Toronto time. Use that Saturday as the forecast `reference_date` and in the file name.
 

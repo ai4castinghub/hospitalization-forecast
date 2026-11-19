@@ -96,7 +96,7 @@ Each row in the file represents a quantile prediction for a specific location, d
 
 ### `reference_date`
 
-This date (in `YYYY-MM-DD` format) identifies the Saturday forecast round. For a Friday or Saturday submission, use that Saturday's date. The 2026-2027 rounds run from October 24, 2026 through May 29, 2027.
+This date (in `YYYY-MM-DD` format) identifies the Saturday forecast round. For a Friday or Saturday submission, use that Saturday's date. The challenge starts on November 20, 2026, and the 2026-2027 rounds run from November 21, 2026 through May 29, 2027.
 
 ### `target`
 
@@ -239,7 +239,7 @@ The validation checks produced some failures/errors reported above.
 
 ## Policy on late or updated submissions 
 
-PHO updates its dashboard on Friday morning. Teams may submit forecasts for that week's Saturday reference date from Friday through 11:30 p.m. America/Toronto time on Saturday. For 2026-2027, the first deadline is October 24, 2026 and the last is May 29, 2027. The deadline uses Toronto local time, including daylight saving time. A new or updated forecast file must be included in a pull request update by the deadline; late forecasts are not accepted.
+PHO updates its dashboard on Friday morning. Teams may submit forecasts for that week's Saturday reference date from Friday through 11:30 p.m. America/Toronto time on Saturday. For 2026-2027, submissions open on November 20, 2026, the first deadline is November 21, 2026 and the last is May 29, 2027. The deadline uses Toronto local time, including daylight saving time. A new or updated forecast file must be included in a pull request update by the deadline; late forecasts are not accepted.
 
 ## Evaluation criteria
 Weekly forecasts will be evaluated using `Weighted Interval Score (WIS)`, `Absolute Error (AE)` and `Mean Squared Error (MSE)`. The CMU [Delphi group's Forecast Evaluation Dashboard](https://delphi.cmu.edu/forecast-eval/) and the COVID-19 Forecast Hub periodic [Forecast Evaluation Reports](https://covid19forecasthub.org/eval-reports/) provide examples of evaluations using these criteria. The optional influenza peak forecasts are not being evaluated for now.
