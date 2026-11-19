@@ -39,6 +39,13 @@ The Monday pipeline starts at 10:00 a.m. America/Toronto time. It first saves
 concatenated target and model data, then generates the four hub forecasts,
 refreshes the concatenated model data, and finally generates the hub ensemble.
 
+Beginning with the November 14, 2026 reference date, the hub ensemble is saved as
+`AI4Casting_Hub-Simple_Ens`. Its weekly mean ensemble excludes
+`AI4Casting_Hub-Quantile_Baseline` and `AI4Casting_Hub-Flatline`; these models
+continue to be generated as individual forecasts. Influenza peak ensemble
+methods and component eligibility are unchanged. `AI4Casting_Hub-Ensemble_v1`
+is discontinued, with its historical forecasts and metadata retained.
+
 If you have any questions regarding this challenge or the development of prediction targets, please contact Siddhesh S. Kadam at 4castinghub@uoguelph.ca.
 
 ### Acknowledgments

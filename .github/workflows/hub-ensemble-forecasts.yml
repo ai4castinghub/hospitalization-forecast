@@ -50,7 +50,7 @@ jobs:
       - name: Commit ensemble file
         shell: bash
         run: |
-          git add model-output/AI4Casting_Hub-Ensemble_v1/
+          git add model-output/AI4Casting_Hub-Simple_Ens/
           if git diff --cached --quiet; then
             echo "No ensemble changes to commit."
             exit 0
