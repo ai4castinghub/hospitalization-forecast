@@ -63,6 +63,9 @@ for ref_date in ref_dates:
         print(f"No data for {ref_date}, skipping...")
         continue
 
+    ensemble_ids = ('AI4Casting_Hub-Simple_Ens', 'AI4Casting_Hub-Ensemble_v1')
+    ensemble_id = next((model for model in ensemble_ids if model in model_data['model'].values), ensemble_ids[0])
+
     targets = model_data['target'].unique()
 
     file_name = f'weekly-forecast-reports/{ref_date}-Forecast_Report.pdf'
@@ -118,7 +121,7 @@ for ref_date in ref_dates:
                 ax = axes[0]
                 ax.set_ylim([0, ref_yaxis['value'].max() * 1.9])
 
-                non_ensemble = region_data[region_data['model'] != 'AI4Casting_Hub-Ensemble_v1']
+                non_ensemble = region_data[~region_data['model'].isin(ensemble_ids)]
 
                 for model in non_ensemble['model'].unique():
                     model_df = non_ensemble[non_ensemble['model'] == model]
@@ -154,7 +157,7 @@ for ref_date in ref_dates:
                 # RIGHT: Ensemble
                 # ---------------------------
                 ax = axes[1]
-                ensemble_data = region_data[region_data['model'] == 'AI4Casting_Hub-Ensemble_v1']
+                ensemble_data = region_data[region_data['model'] == ensemble_id]
 
                 if not ensemble_data.empty:
                     grouped = calculate_intervals(ensemble_data)

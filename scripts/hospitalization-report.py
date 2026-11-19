@@ -26,6 +26,8 @@ ref_date = current_date + timedelta(days=(6 - current_date.weekday())) - timedel
 print(ref_date)
 # Filter model data for the reference date
 model_data = model_data[model_data['reference_date'] == ref_date]
+ensemble_ids = ('AI4Casting_Hub-Simple_Ens', 'AI4Casting_Hub-Ensemble_v1')
+ensemble_id = next((model for model in ensemble_ids if model in model_data['model'].values), ensemble_ids[0])
 
 # Group by region (location)
 targets = model_data['target'].unique()
@@ -81,7 +83,7 @@ with PdfPages(file_name) as pdf:
             # Left Plot: All Models (excluding ensemble)
             ax = axes[0]
             ax.set_ylim([0, ref_yaxis['value'].max() * 1.9])
-            non_ensemble_data = region_data[region_data['model'] != 'AI4Casting_Hub-Ensemble_v1']
+            non_ensemble_data = region_data[~region_data['model'].isin(ensemble_ids)]
             for model in non_ensemble_data['model'].unique():
                 model_specific_data = non_ensemble_data[non_ensemble_data['model'] == model]
                 
@@ -143,7 +145,7 @@ with PdfPages(file_name) as pdf:
 
             # Right Plot: Truth Data + Ensemble Model
             ax = axes[1]
-            ensemble_data = region_data[region_data['model'] == 'AI4Casting_Hub-Ensemble_v1']
+            ensemble_data = region_data[region_data['model'] == ensemble_id]
             if not ensemble_data.empty:
                 grouped = calculate_intervals(ensemble_data)
                 

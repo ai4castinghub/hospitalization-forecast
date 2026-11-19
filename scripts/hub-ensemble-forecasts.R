@@ -1,5 +1,5 @@
 # Create the hub's simple ensemble from submitted forecasts for one Saturday.
-# Run from the repository root after the four hub model files are present.
+# Run from the repository root after the two hub AR model files are present.
 
 required_packages <- c("dplyr", "hubEnsembles", "readr", "yaml")
 missing_packages <- required_packages[
@@ -15,13 +15,16 @@ diseases <- c("covid", "rsv", "flu")
 locations <- c("Central", "East", "North East", "North West", "Ontario", "Toronto", "West")
 horizons <- 0:3
 hub_model_ids <- c(
-  "AI4Casting_Hub-Flatline", "AI4Casting_Hub-Quantile_AR",
-  "AI4Casting_Hub-RF_Quantile_AR", "AI4Casting_Hub-Quantile_Baseline"
+  "AI4Casting_Hub-Quantile_AR", "AI4Casting_Hub-RF_Quantile_AR"
 )
-ensemble_id <- "AI4Casting_Hub-Ensemble_v1"
+ensemble_id <- "AI4Casting_Hub-Simple_Ens"
 source("scripts/peak-ensemble.R")
 excluded_model_ids <- c(
-  ensemble_id, "AI4Casting_Hub-Weighted_Ensemble", "AI4Casting_Hub-GPT_4o"
+  ensemble_id, "AI4Casting_Hub-Ensemble_v1",
+  "AI4Casting_Hub-Weighted_Ensemble", "AI4Casting_Hub-GPT_4o"
+)
+weekly_excluded_model_ids <- c(
+  "AI4Casting_Hub-Flatline", "AI4Casting_Hub-Quantile_Baseline"
 )
 hub_columns <- c(
   "location", "reference_date", "target_end_date", "target", "horizon",
@@ -43,7 +46,7 @@ latest_complete_reference_date <- function() {
   })
   common <- Reduce(intersect, dates_by_model)
   if (length(common) == 0L) {
-    stop("No reference date has all four hub model forecast files.")
+    stop("No reference date has both hub AR model forecast files.")
   }
   as.Date(max(common))
 }
@@ -122,7 +125,9 @@ run_for_date <- function(reference_date) {
     stop("Multiple component files exist for a model on ", reference_date)
   }
 
-  components <- dplyr::bind_rows(lapply(paths, read_component,
+  # Weekly baseline exclusions do not change seasonal peak eligibility.
+  weekly_paths <- paths[!model_ids %in% weekly_excluded_model_ids]
+  components <- dplyr::bind_rows(lapply(weekly_paths, read_component,
                                         reference_date = reference_date))
   for (model_id in hub_model_ids) {
     validate_output(components[components$model_id == model_id, hub_columns],
@@ -152,7 +157,7 @@ run_for_date <- function(reference_date) {
   dir.create(dirname(path), recursive = TRUE, showWarnings = FALSE)
   readr::write_csv(ensemble, path, na = "")
   message("Wrote ", path, " (", nrow(ensemble), " rows from ",
-          length(paths), " models)")
+          length(unique(components$model_id)), " weekly models)")
   invisible(ensemble)
 }
 
