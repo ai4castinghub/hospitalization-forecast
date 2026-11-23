@@ -1,9 +1,16 @@
 time,geo_value,geo_type,covid,Season,flu,rsv
+2026-11-14,Central,OH Region,45,2026-2027,43,4
+2026-11-14,East,OH Region,49,2026-2027,46,3
+2026-11-14,North East,OH Region,5,2026-2027,2,0
+2026-11-14,North West,OH Region,3,2026-2027,0,0
+2026-11-14,Ontario,Province,171,2026-2027,164,11
+2026-11-14,Toronto,OH Region,38,2026-2027,54,2
+2026-11-14,West,OH Region,32,2026-2027,21,0
 2026-11-07,Central,OH Region,41,2026-2027,55,5
 2026-11-07,East,OH Region,54,2026-2027,45,1
 2026-11-07,North East,OH Region,4,2026-2027,2,0
 2026-11-07,North West,OH Region,2,2026-2027,1,0
-2026-11-07,Ontario,Province,165,2026-2027,173,9
+2026-11-07,Ontario,Province,165,2026-2027,174,9
 2026-11-07,Toronto,OH Region,28,2026-2027,48,2
 2026-11-07,West,OH Region,36,2026-2027,22,1
 2026-10-31,Central,OH Region,36,2026-2027,33,3
