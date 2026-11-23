@@ -38,7 +38,7 @@ jobs:
       - name: Set up cached ensemble dependencies
         uses: ./.github/actions/setup-ensemble-r
 
-      - name: Generate ensemble forecast
+      - name: Generate Simple_Ens and eligible Team_Ens forecasts
         shell: bash
         run: |
           if [ -n "$FORECAST_DATE" ]; then
@@ -47,10 +47,13 @@ jobs:
             Rscript scripts/hub-ensemble-forecasts.R
           fi
 
-      - name: Commit ensemble file
+      - name: Commit ensemble files
         shell: bash
         run: |
           git add model-output/AI4Casting_Hub-Simple_Ens/
+          if [ -d model-output/AI4Casting_Hub-Team_Ens ]; then
+            git add model-output/AI4Casting_Hub-Team_Ens/
+          fi
           if git diff --cached --quiet; then
             echo "No ensemble changes to commit."
             exit 0

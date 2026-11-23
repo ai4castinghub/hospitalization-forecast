@@ -1,0 +1,20 @@
+team_name: "AI4Casting_Hub"
+team_abbr: "AI4Casting_Hub"
+model_name: "Team_Ens"
+model_abbr: "Team_Ens"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "AI4Casting Hub Administrator",
+    "affiliation": "AI4Casting Hub, University of Guelph",
+    "email": "4castinghub@uoguelph.ca"
+  }
+]
+website_url: "https://4castinghub.uoguelph.ca"
+license: "CC-BY-4.0"
+designated_model: true
+methods: "Equal-weight arithmetic mean of eligible team forecast quantiles"
+data_inputs: "External designated models' Ontario hospital bed occupancy forecasts"
+methods_long: "Beginning with the 2026-11-14 reference date, averages weekly hospital bed occupancy quantiles for COVID-19, influenza, and RSV at horizons 0-3 with equal weight per available eligible model. Only external models with designated_model: true in their metadata are eligible, including external models with ensemble_of_hub_models: true. All AI4Casting Hub models are excluded. Uses Simple_Ens rounding: floor below the median, round at the median, and ceiling above the median. Available forecast combinations are included; one eligible model is sufficient, and no file is generated when no eligible weekly submissions exist. Seasonal peak targets and horizon -1 are excluded. Team_Ens is excluded from Simple_Ens inputs and forecast reports."
+ensemble_of_models: true
+ensemble_of_hub_models: true

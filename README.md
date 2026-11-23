@@ -35,9 +35,8 @@ The reference week is defined by the epidemiological week (EW) running from Sund
 PHO updates its dashboard on Friday morning. The hub retrieves the updated data on Friday, and teams may submit forecasts from Friday through Saturday at 11:30 p.m. America/Toronto time. The Friday data describe the preceding week, ending on the previous Saturday.
 Forecasts for the previous week (horizon -1) will not be included in official evaluations but are encouraged.
 
-The Monday pipeline starts at 10:00 a.m. America/Toronto time. It first saves
-concatenated target and model data, then generates the four hub forecasts,
-refreshes the concatenated model data, and finally generates the hub ensemble.
+The Monday pipeline runs at 10:00 a.m. America/Toronto time, generating hub models
+and ensembles and refreshing concatenated data before and after generation.
 
 Beginning with the November 14, 2026 reference date, the hub ensemble is saved as
 `AI4Casting_Hub-Simple_Ens`. Its weekly mean ensemble excludes
@@ -45,6 +44,13 @@ Beginning with the November 14, 2026 reference date, the hub ensemble is saved a
 continue to be generated as individual forecasts. Influenza peak ensemble
 methods and component eligibility are unchanged. `AI4Casting_Hub-Ensemble_v1`
 is discontinued, with its historical forecasts and metadata retained.
+
+From November 14, 2026, the same run generates `AI4Casting_Hub-Team_Ens` for weekly
+horizons 0-3 using external models with `designated_model: true`, including team
+ensembles. It uses Simple_Ens's quantile mean and rounding with equal model
+weights. One eligible submission suffices; none means no output. Team_Ens is
+excluded from Simple_Ens inputs and reports; reports retain Simple_Ens and the
+historical Ensemble_v1 fallback.
 
 If you have any questions regarding this challenge or the development of prediction targets, please contact Siddhesh S. Kadam at 4castinghub@uoguelph.ca.
 

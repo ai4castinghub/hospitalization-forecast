@@ -1,4 +1,4 @@
-# Create the hub's simple ensemble from submitted forecasts for one Saturday.
+# Create the hub's simple and team ensembles for one Saturday.
 # Run from the repository root after the two hub AR model files are present.
 
 required_packages <- c("dplyr", "hubEnsembles", "readr", "yaml")
@@ -18,9 +18,10 @@ hub_model_ids <- c(
   "AI4Casting_Hub-Quantile_AR", "AI4Casting_Hub-RF_Quantile_AR"
 )
 ensemble_id <- "AI4Casting_Hub-Simple_Ens"
+team_ensemble_id <- "AI4Casting_Hub-Team_Ens"
 source("scripts/peak-ensemble.R")
 excluded_model_ids <- c(
-  ensemble_id, "AI4Casting_Hub-Ensemble_v1",
+  ensemble_id, team_ensemble_id, "AI4Casting_Hub-Ensemble_v1",
   "AI4Casting_Hub-Weighted_Ensemble", "AI4Casting_Hub-GPT_4o"
 )
 weekly_excluded_model_ids <- c(
@@ -72,7 +73,7 @@ read_component <- function(path, reference_date) {
   }
   piece |>
     dplyr::filter(.data$output_type == "quantile",
-                  as.Date(.data$reference_date) == reference_date) |>
+                  as.Date(.data$reference_date) == .env$reference_date) |>
     dplyr::select(dplyr::all_of(hub_columns)) |>
     dplyr::mutate(
       reference_date = as.Date(.data$reference_date),
@@ -86,7 +87,7 @@ read_component <- function(path, reference_date) {
       .data$target %in% paste("wk inc", diseases, "hosp"),
       .data$horizon %in% horizons,
       .data$output_type_id %in% as.character(quantile_levels),
-      .data$target_end_date == reference_date + 7L * .data$horizon
+      .data$target_end_date == .env$reference_date + 7L * .data$horizon
     )
 }
 
@@ -103,6 +104,59 @@ validate_output <- function(data, reference_date) {
     stop("Incomplete or invalid hub ensemble for ", reference_date)
   }
   invisible(data)
+}
+
+weekly_mean_ensemble <- function(components, model_id) {
+  hubEnsembles::simple_ensemble(
+    components, agg_fun = mean, model_id = model_id
+  ) |>
+    dplyr::select(-"model_id") |>
+    dplyr::select(dplyr::all_of(hub_columns)) |>
+    dplyr::mutate(
+      output_type_id = as.character(.data$output_type_id),
+      value = pmax(0, dplyr::case_when(
+        as.numeric(.data$output_type_id) < 0.5 ~ floor(.data$value),
+        as.numeric(.data$output_type_id) > 0.5 ~ ceiling(.data$value),
+        TRUE ~ round(.data$value)
+      ))
+    )
+}
+
+eligible_team_model <- function(model_id) {
+  if (startsWith(model_id, "AI4Casting_Hub-")) return(FALSE)
+  metadata_files <- file.path("model-metadata", paste0(model_id, c(".yml", ".yaml")))
+  metadata_files <- metadata_files[file.exists(metadata_files)]
+  if (length(metadata_files) != 1L) return(FALSE)
+  metadata <- tryCatch(yaml::read_yaml(metadata_files[[1]]), error = function(e) NULL)
+  # Team ensembles are allowed; eligibility is controlled by designated_model.
+  is.list(metadata) && isTRUE(metadata$designated_model) &&
+    !identical(metadata$team_abbr, "AI4Casting_Hub") &&
+    !identical(metadata$team_name, "AI4Casting_Hub")
+}
+
+run_team_for_date <- function(reference_date, paths) {
+  model_ids <- basename(dirname(paths))
+  paths <- paths[vapply(model_ids, eligible_team_model, logical(1))]
+  components <- dplyr::bind_rows(lapply(paths, read_component,
+                                       reference_date = reference_date))
+  if (nrow(components) == 0L) {
+    message("Skipping ", team_ensemble_id, " for ", reference_date,
+            ": no eligible team weekly submissions.")
+    return(invisible(NULL))
+  }
+  # Reject duplicate rows so each model gets exactly one vote per quantile.
+  keys <- c("model_id", setdiff(hub_columns, "value"))
+  if (anyDuplicated(components[keys]) || anyNA(components) ||
+      any(!is.finite(components$value)) || any(components$value < 0)) {
+    stop("Invalid team ensemble components for ", reference_date)
+  }
+  ensemble <- weekly_mean_ensemble(components, team_ensemble_id)
+  path <- output_path(team_ensemble_id, reference_date)
+  dir.create(dirname(path), recursive = TRUE, showWarnings = FALSE)
+  readr::write_csv(ensemble, path, na = "")
+  message("Wrote ", path, " (", nrow(ensemble), " rows from ",
+          length(unique(components$model_id)), " team models)")
+  invisible(ensemble)
 }
 
 run_for_date <- function(reference_date) {
@@ -134,19 +188,7 @@ run_for_date <- function(reference_date) {
                     reference_date)
   }
 
-  ensemble <- hubEnsembles::simple_ensemble(
-    components, agg_fun = mean, model_id = ensemble_id
-  ) |>
-    dplyr::select(-"model_id") |>
-    dplyr::select(dplyr::all_of(hub_columns)) |>
-    dplyr::mutate(
-      output_type_id = as.character(.data$output_type_id),
-      value = pmax(0, dplyr::case_when(
-        as.numeric(.data$output_type_id) < 0.5 ~ floor(.data$value),
-        as.numeric(.data$output_type_id) > 0.5 ~ ceiling(.data$value),
-        TRUE ~ round(.data$value)
-      ))
-    )
+  ensemble <- weekly_mean_ensemble(components, ensemble_id)
   validate_output(ensemble, reference_date)
 
   peak <- peak_ensemble_rows(paths, reference_date, locations, quantile_levels,
@@ -158,6 +200,7 @@ run_for_date <- function(reference_date) {
   readr::write_csv(ensemble, path, na = "")
   message("Wrote ", path, " (", nrow(ensemble), " rows from ",
           length(unique(components$model_id)), " weekly models)")
+  run_team_for_date(reference_date, paths)
   invisible(ensemble)
 }
 

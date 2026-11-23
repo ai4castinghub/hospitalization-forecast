@@ -6,6 +6,8 @@ from pathlib import Path
 
 # Load the model data
 model_data = pd.read_csv('auxiliary-data/concatenated_model_output.csv')
+# Team_Ens is saved for evaluation but is not shown in forecast reports.
+model_data = model_data[model_data['model'] != 'AI4Casting_Hub-Team_Ens']
 model_data = model_data[model_data['target'].isin(['wk inc flu hosp', 'wk inc covid hosp', 'wk inc rsv hosp'])].copy()
 
 # Load the truth data

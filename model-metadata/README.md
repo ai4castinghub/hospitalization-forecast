@@ -68,6 +68,9 @@ A team-specified boolean indicator (`true` or `false`) for whether the model sho
 
 For the seasonal influenza peak ensemble, the three hub-produced peak models are an administrative exception to the two-model guidance. Participant model eligibility continues to follow `designated_model`.
 
+`AI4Casting_Hub-Team_Ens` includes external designated models, including team
+ensembles, for weekly horizons 0-3. See [ensemble details](../README.md).
+
 ### data_inputs
 
 List or description of the data sources used to inform the model. Particularly those used beyond the target data of confirmed influenza hospital admissions.

@@ -12,6 +12,8 @@ warnings.filterwarnings("ignore")
 # ---------------------------
 
 model_data_all = pd.read_csv('auxiliary-data/concatenated_model_output.csv')
+# Team_Ens is saved for evaluation but is not shown in forecast reports.
+model_data_all = model_data_all[model_data_all['model'] != 'AI4Casting_Hub-Team_Ens']
 
 truth_data = pd.read_csv('target-data/season_2025_2026/hospitalization-data.csv')
 truth_data['time'] = pd.to_datetime(truth_data['time'])
