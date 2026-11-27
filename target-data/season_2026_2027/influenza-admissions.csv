@@ -1,18 +1,25 @@
 time,geo_value,geo_type,admissions
-2026-11-14,Central,OH Region,44
-2026-11-14,East,OH Region,30
+2026-11-21,Central,OH Region,55
+2026-11-21,East,OH Region,24
+2026-11-21,North East,OH Region,5
+2026-11-21,North West,OH Region,2
+2026-11-21,Ontario,Province,160
+2026-11-21,Toronto,OH Region,35
+2026-11-21,West,OH Region,39
+2026-11-14,Central,OH Region,45
+2026-11-14,East,OH Region,31
 2026-11-14,North East,OH Region,0
 2026-11-14,North West,OH Region,0
-2026-11-14,Ontario,Province,133
+2026-11-14,Ontario,Province,139
 2026-11-14,Toronto,OH Region,31
-2026-11-14,West,OH Region,28
+2026-11-14,West,OH Region,32
 2026-11-07,Central,OH Region,49
 2026-11-07,East,OH Region,31
 2026-11-07,North East,OH Region,2
 2026-11-07,North West,OH Region,3
-2026-11-07,Ontario,Province,147
+2026-11-07,Ontario,Province,149
 2026-11-07,Toronto,OH Region,35
-2026-11-07,West,OH Region,27
+2026-11-07,West,OH Region,29
 2026-10-31,Central,OH Region,44
 2026-10-31,East,OH Region,30
 2026-10-31,North East,OH Region,2

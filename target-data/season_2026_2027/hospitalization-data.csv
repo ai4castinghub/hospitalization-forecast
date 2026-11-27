@@ -1,18 +1,25 @@
 time,geo_value,geo_type,covid,flu,rsv
-2026-11-14,Central,OH Region,45,43,4
-2026-11-14,East,OH Region,49,46,3
+2026-11-21,Central,OH Region,64,41,4
+2026-11-21,East,OH Region,42,37,1
+2026-11-21,North East,OH Region,7,8,0
+2026-11-21,North West,OH Region,3,0,0
+2026-11-21,Ontario,Province,190,171,7
+2026-11-21,Toronto,OH Region,50,52,1
+2026-11-21,West,OH Region,27,37,0
+2026-11-14,Central,OH Region,46,43,4
+2026-11-14,East,OH Region,49,47,3
 2026-11-14,North East,OH Region,5,2,0
 2026-11-14,North West,OH Region,3,0,0
-2026-11-14,Ontario,Province,171,164,11
-2026-11-14,Toronto,OH Region,38,54,2
-2026-11-14,West,OH Region,32,21,0
+2026-11-14,Ontario,Province,172,169,11
+2026-11-14,Toronto,OH Region,38,55,2
+2026-11-14,West,OH Region,32,23,0
 2026-11-07,Central,OH Region,41,55,5
 2026-11-07,East,OH Region,54,45,1
 2026-11-07,North East,OH Region,4,2,0
 2026-11-07,North West,OH Region,2,1,0
-2026-11-07,Ontario,Province,165,174,9
+2026-11-07,Ontario,Province,166,175,9
 2026-11-07,Toronto,OH Region,28,48,2
-2026-11-07,West,OH Region,36,22,1
+2026-11-07,West,OH Region,37,23,1
 2026-10-31,Central,OH Region,36,33,3
 2026-10-31,East,OH Region,48,47,1
 2026-10-31,North East,OH Region,2,2,0
